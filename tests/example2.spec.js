@@ -1,4 +1,4 @@
 import{test} from "@playwright/test";
 test("validate flipcKart Application", async( {page} ) => {
-    await page.goto("https://www.meesho.com/");
+    await page.goto("//www.https://www.facebook.com/");
 })
