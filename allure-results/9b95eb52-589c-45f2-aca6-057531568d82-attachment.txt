@@ -1,0 +1,2 @@
+simple alert I am an alert box!
+simple alert Press a Button !
