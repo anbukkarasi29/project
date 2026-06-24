@@ -1,0 +1,2376 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: WindowHandling.spec.js >> Window Handling
+- Location: tests\WindowHandling.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation "Shortcuts menu" [ref=e3]:
+    - heading "Skip to" [level=2] [ref=e4]
+    - list "Skip to" [ref=e5]:
+      - listitem [ref=e6]:
+        - link "main content" [ref=e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+      - listitem [ref=e8]:
+        - link "Results" [ref=e9] [cursor=pointer]:
+          - /url: .s-asin a:has(h2)
+    - separator [ref=e10]
+    - heading "Keyboard shortcuts" [level=2] [ref=e11]
+    - list "Keyboard shortcuts" [ref=e12]:
+      - listitem [ref=e13]:
+        - link "Search, alt, forward slash" [ref=e14] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e15]:
+            - generic [ref=e16]: Search
+            - generic [ref=e17]:
+              - generic [ref=e18]: alt
+              - generic [ref=e19]: +
+              - generic [ref=e20]: /
+      - listitem [ref=e21]:
+        - link "Cart, shift, alt, c" [ref=e22] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e23]:
+            - generic [ref=e24]: Cart
+            - generic [ref=e25]:
+              - generic [ref=e26]: shift
+              - generic [ref=e27]: +
+              - generic [ref=e28]: alt
+              - generic [ref=e29]: +
+              - generic [ref=e30]: C
+      - listitem [ref=e31]:
+        - link "Home, shift, alt, h" [ref=e32] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e33]:
+            - generic [ref=e34]: Home
+            - generic [ref=e35]:
+              - generic [ref=e36]: shift
+              - generic [ref=e37]: +
+              - generic [ref=e38]: alt
+              - generic [ref=e39]: +
+              - generic [ref=e40]: H
+      - listitem [ref=e41]:
+        - link "Your orders, shift, alt, o" [ref=e42] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e43]:
+            - generic [ref=e44]: Orders
+            - generic [ref=e45]:
+              - generic [ref=e46]: shift
+              - generic [ref=e47]: +
+              - generic [ref=e48]: alt
+              - generic [ref=e49]: +
+              - generic [ref=e50]: O
+      - listitem [ref=e51]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=e52] [cursor=pointer]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: Show/Hide shortcuts
+            - generic [ref=e55]:
+              - generic [ref=e56]: shift
+              - generic [ref=e57]: +
+              - generic [ref=e58]: alt
+              - generic [ref=e59]: +
+              - generic [ref=e60]: Z
+    - generic [ref=e66]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=e67]:
+    - navigation "Primary" [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - link "Amazon.in" [ref=e72] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Chennai 600001 Update location" [ref=e75] [cursor=pointer]:
+            - generic [ref=e77]:
+              - generic [ref=e78]: Delivering to Chennai 600001
+              - generic [ref=e79]: Update location
+        - search [ref=e82]:
+          - generic [ref=e85]:
+            - generic [ref=e87]: All
+            - combobox "Select the department you want to search in" [ref=e89] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Fresh Meat"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=e92]: samsung tv 55 inch
+          - generic "Go" [ref=e95] [cursor=pointer]:
+            - button "Go" [ref=e96]
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e100] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+              - generic [ref=e103]:
+                - img "India" [ref=e104]
+                - generic [ref=e105]: EN
+            - button "Expand to Change Language or Country" [ref=e106] [cursor=pointer]
+          - generic [ref=e107]:
+            - link "Hello, sign in Account & Lists" [ref=e108] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dsamsung%2Btv%2B55%2Binch%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+              - generic [ref=e110]: Hello, sign in
+              - generic [ref=e111]: Account & Lists
+            - button "Expand Account and Lists" [ref=e112] [cursor=pointer]
+          - link "Returns & Orders" [ref=e113] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=e114]: Returns
+            - generic [ref=e115]: "& Orders"
+          - link "0 items in cart" [ref=e116] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [ref=e118]: "0"
+            - generic [ref=e121]: Cart
+      - generic [ref=e122]:
+        - button "Open All Categories Menu" [ref=e124] [cursor=pointer]:
+          - generic [ref=e126]: All
+        - list [ref=e130]:
+          - listitem [ref=e131]:
+            - generic [ref=e132]:
+              - link "Fresh" [ref=e133] [cursor=pointer]:
+                - /url: /fresh?ref_=nav_cs_grocery
+              - button "Fresh Details" [ref=e134] [cursor=pointer]
+          - listitem [ref=e135]:
+            - link "MX Player" [ref=e137] [cursor=pointer]:
+              - /url: /minitv?ref_=nav_avod_desktop_topnav
+          - listitem [ref=e138]:
+            - link "Sell" [ref=e140] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=e141]:
+            - link "Bestsellers" [ref=e143] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=e144]:
+            - link "Today's Deals" [ref=e146] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=e147]:
+            - generic [ref=e148]:
+              - link "Prime" [ref=e149] [cursor=pointer]:
+                - /url: /prime?ref_=nav_cs_primelink_nonmember
+              - button "Prime Details" [ref=e150] [cursor=pointer]
+          - listitem [ref=e151]:
+            - link "Mobiles" [ref=e153] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=e154]:
+            - link "New Releases" [ref=e156] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=e157]:
+            - link "Customer Service" [ref=e159] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=e160]:
+            - link "Amazon Pay" [ref=e162] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=e163]:
+            - link "Electronics" [ref=e165] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=e166]:
+            - link "Home & Kitchen" [ref=e168] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=e169]:
+            - link "Fashion" [ref=e171] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=e172]:
+            - link "Computers" [ref=e174] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=e175]:
+            - link "Toys & Games" [ref=e177] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=e178]:
+            - link "Car & Motorbike" [ref=e180] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=e181]:
+            - link "Beauty & Personal Care" [ref=e183] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=e184]:
+            - link "Gift Cards" [ref=e186] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=e187]:
+            - link "Home Improvement" [ref=e189] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=e190]:
+            - link "Grocery & Gourmet Foods" [ref=e192] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=e193]:
+            - link "Health, Household & Personal Care" [ref=e195] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=e196]:
+            - link "Video Games" [ref=e198] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=e199]:
+            - link "Custom Products" [ref=e201] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=e202]:
+            - link "Sports, Fitness & Outdoors" [ref=e204] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=e205]:
+            - link "Baby" [ref=e207] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=e208]:
+            - link "Pet Supplies" [ref=e210] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=e211]:
+            - link "Audible" [ref=e213] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=e214]:
+            - link "AmazonBasics" [ref=e216] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=e217]:
+            - link "Subscribe & Save" [ref=e219] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=e220]:
+            - link "Books" [ref=e222] [cursor=pointer]:
+              - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+          - listitem [ref=e223]:
+            - link "Kindle eBooks" [ref=e225] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=e226]:
+            - link "Flights" [ref=e228] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+        - link "PD26_Event" [ref=e232] [cursor=pointer]:
+          - /url: /events/primeday/?_encoding=UTF8&ref_=nav_swm_event&pf_rd_p=43119a04-109d-4825-a1ce-4d8cbe47aea6&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4
+          - img "PD26_Event" [ref=e233]
+      - dialog [ref=e234]
+  - generic [ref=e236]:
+    - 'heading "1-16 of 751 results for \"samsung tv 55 inch\" Sort by: Featured" [level=1] [ref=e239]':
+      - generic [ref=e240]:
+        - heading "1-16 of 751 results for \"samsung tv 55 inch\"" [level=2] [ref=e245]
+        - generic [ref=e250]:
+          - generic [ref=e251]: "Sort by:"
+          - combobox "Sort by:" [ref=e252]:
+            - option "Featured" [selected]
+            - 'option "Price: Low to High"'
+            - 'option "Price: High to Low"'
+            - option "Avg. Customer Review"
+            - option "Newest Arrivals"
+            - option "Best Sellers"
+          - generic [ref=e255] [cursor=pointer]: Sort by:Featured
+    - generic [ref=e257]:
+      - generic [ref=e259]:
+        - generic [ref=e261]:
+          - generic [ref=e263]:
+            - generic [ref=e266]:
+              - heading "Results" [level=2] [ref=e267]
+              - generic [ref=e268]: Check each product page for other buying options.
+            - generic:
+              - list:
+                - listitem [ref=e269]:
+                  - generic [ref=e277]:
+                    - link [ref=e283] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTA4NDEzOTM0OTAzMjo6MDo6&url=%2FHisense-inches-Ultra-Google-55E6S%2Fdp%2FB0GL7G3KWM%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-1-spons%26aref%3DANIcLhjzt7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ANIcLhjzt7&sp_cr=ZAZ
+                      - img [ref=e285]
+                    - generic [ref=e288]:
+                      - generic [ref=e289]:
+                        - button "View Sponsored information or leave ad feedback" [ref=e292] [cursor=pointer]:
+                          - generic [ref=e293]: Sponsored
+                        - heading "Hisense" [level=2] [ref=e297]
+                        - link "Sponsored Ad - 139 cm (55 inches) E6S Series 4K Ultra HD Smart LED Google TV 55E6S" [ref=e298] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTA4NDEzOTM0OTAzMjo6MDo6&url=%2FHisense-inches-Ultra-Google-55E6S%2Fdp%2FB0GL7G3KWM%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-1-spons%26aref%3DANIcLhjzt7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ANIcLhjzt7&sp_cr=ZAZ
+                          - heading "Sponsored Ad - 139 cm (55 inches) E6S Series 4K Ultra HD Smart LED Google TV 55E6S" [level=2] [ref=e299]: 139 cm (55 inches) E6S Series 4K Ultra HD Smart LED Google TV 55E6S
+                      - generic [ref=e301]:
+                        - text: "3.6"
+                        - button "3.6 out of 5 stars, rating details" [ref=e303] [cursor=pointer]:
+                          - generic [ref=e305]: 3.6 out of 5 stars
+                        - link "4 ratings" [ref=e307] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTA4NDEzOTM0OTAzMjo6MDo6&url=%2FHisense-inches-Ultra-Google-55E6S%2Fdp%2FB0GL7G3KWM%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-1-spons%26aref%3DANIcLhjzt7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ANIcLhjzt7&sp_cr=ZAZ#customerReviews
+                          - text: (4)
+                      - generic [ref=e310]:
+                        - generic [ref=e311]:
+                          - generic [ref=e313]:
+                            - generic [ref=e314]: Price, product page
+                            - 'link "₹35,990 M.R.P: ₹59,999 M.R.P: ₹59,999" [ref=e315] [cursor=pointer]':
+                              - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTA4NDEzOTM0OTAzMjo6MDo6&url=%2FHisense-inches-Ultra-Google-55E6S%2Fdp%2FB0GL7G3KWM%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-1-spons%26aref%3DANIcLhjzt7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=ANIcLhjzt7&sp_cr=ZAZ
+                              - generic [ref=e316]:
+                                - generic [ref=e317]: ₹35,990
+                                - generic [ref=e318]: ₹35,990
+                              - generic [ref=e319]: "M.R.P: ₹59,999"
+                              - generic [ref=e320]:
+                                - text: "M.R.P:"
+                                - generic [ref=e321]:
+                                  - generic [ref=e322]: ₹59,999
+                                  - text: ₹59,999
+                            - text: (40% off)
+                          - generic [ref=e326]:
+                            - generic [ref=e327]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=e328]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=e333]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e335]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e350] [cursor=pointer]
+                - listitem [ref=e353]:
+                  - generic [ref=e361]:
+                    - link [ref=e367] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTE2MDU4MDg2NTIzMjo6MDo6&url=%2FToshiba-inches-E350SP-Google-55E350SP%2Fdp%2FB0GHR3CBHL%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-2-spons%26aref%3D1BwBsykgmo%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=1BwBsykgmo&sp_cr=ZAZ
+                      - img [ref=e369]
+                    - generic [ref=e372]:
+                      - generic [ref=e373]:
+                        - button "View Sponsored information or leave ad feedback" [ref=e376] [cursor=pointer]:
+                          - generic [ref=e377]: Sponsored
+                        - heading "TOSHIBA" [level=2] [ref=e381]
+                        - link "Sponsored Ad - 139 cm (55 inches) E350SP Series 4K Ultra HD Smart LED Google TV 55E350SP" [ref=e382] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTE2MDU4MDg2NTIzMjo6MDo6&url=%2FToshiba-inches-E350SP-Google-55E350SP%2Fdp%2FB0GHR3CBHL%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-2-spons%26aref%3D1BwBsykgmo%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=1BwBsykgmo&sp_cr=ZAZ
+                          - heading "Sponsored Ad - 139 cm (55 inches) E350SP Series 4K Ultra HD Smart LED Google TV 55E350SP" [level=2] [ref=e383]: 139 cm (55 inches) E350SP Series 4K Ultra HD Smart LED Google TV 55E350SP
+                      - generic [ref=e385]:
+                        - text: "5.0"
+                        - button "5.0 out of 5 stars, rating details" [ref=e387] [cursor=pointer]:
+                          - generic [ref=e389]: 5.0 out of 5 stars
+                        - link "2 ratings" [ref=e391] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTE2MDU4MDg2NTIzMjo6MDo6&url=%2FToshiba-inches-E350SP-Google-55E350SP%2Fdp%2FB0GHR3CBHL%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-2-spons%26aref%3D1BwBsykgmo%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=1BwBsykgmo&sp_cr=ZAZ#customerReviews
+                          - text: (2)
+                      - generic [ref=e394]:
+                        - generic [ref=e395]:
+                          - generic [ref=e397]:
+                            - generic [ref=e398]: Price, product page
+                            - 'link "₹39,990 M.R.P: ₹63,999 M.R.P: ₹63,999" [ref=e399] [cursor=pointer]':
+                              - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYXRmOjMwMTE2MDU4MDg2NTIzMjo6MDo6&url=%2FToshiba-inches-E350SP-Google-55E350SP%2Fdp%2FB0GHR3CBHL%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-2-spons%26aref%3D1BwBsykgmo%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=1BwBsykgmo&sp_cr=ZAZ
+                              - generic [ref=e400]:
+                                - generic [ref=e401]: ₹39,990
+                                - generic [ref=e402]: ₹39,990
+                              - generic [ref=e403]: "M.R.P: ₹63,999"
+                              - generic [ref=e404]:
+                                - text: "M.R.P:"
+                                - generic [ref=e405]:
+                                  - generic [ref=e406]: ₹63,999
+                                  - text: ₹63,999
+                            - text: (38% off)
+                          - generic [ref=e410]:
+                            - generic [ref=e411]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=e412]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=e417]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e419]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e434] [cursor=pointer]
+                - listitem [ref=e437]:
+                  - generic [ref=e443]:
+                    - generic [ref=e445]:
+                      - generic "Amazon's Choice" [ref=e448]:
+                        - group "Amazon's Choice for \"samsung tv 55 inch\"" [ref=e451]:
+                          - generic [ref=e453]: Amazon's Choice
+                      - link [ref=e457] [cursor=pointer]:
+                        - /url: /Samsung-inches-Crystal-Vista-UA55UE81AFULXL/dp/B0F43DGPWX/ref=sr_1_3?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-3
+                        - img [ref=e459]
+                    - generic [ref=e462]:
+                      - generic [ref=e463]:
+                        - heading "Samsung" [level=2] [ref=e466]
+                        - link "138 cm (55 inches) Crystal 4K Vista Ultra HD Smart LED TV UA55UE81AFULXL" [ref=e467] [cursor=pointer]:
+                          - /url: /Samsung-inches-Crystal-Vista-UA55UE81AFULXL/dp/B0F43DGPWX/ref=sr_1_3?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-3
+                          - heading "138 cm (55 inches) Crystal 4K Vista Ultra HD Smart LED TV UA55UE81AFULXL" [level=2] [ref=e468]
+                      - generic [ref=e469]:
+                        - generic [ref=e470]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=e472] [cursor=pointer]:
+                            - generic [ref=e474]: 4.0 out of 5 stars
+                          - link "689 ratings" [ref=e476] [cursor=pointer]:
+                            - /url: /Samsung-inches-Crystal-Vista-UA55UE81AFULXL/dp/B0F43DGPWX/ref=sr_1_3?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-3#customerReviews
+                            - text: (689)
+                        - generic [ref=e477]: 400+ bought in past month
+                      - generic [ref=e480]:
+                        - generic [ref=e481]:
+                          - generic [ref=e483]:
+                            - generic [ref=e484]: Price, product page
+                            - 'link "₹40,990 M.R.P: ₹55,200 M.R.P: ₹55,200" [ref=e485] [cursor=pointer]':
+                              - /url: /Samsung-inches-Crystal-Vista-UA55UE81AFULXL/dp/B0F43DGPWX/ref=sr_1_3?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-3
+                              - generic [ref=e486]:
+                                - generic [ref=e487]: ₹40,990
+                                - generic [ref=e488]: ₹40,990
+                              - generic [ref=e489]: "M.R.P: ₹55,200"
+                              - generic [ref=e490]:
+                                - text: "M.R.P:"
+                                - generic [ref=e491]:
+                                  - generic [ref=e492]: ₹55,200
+                                  - text: ₹55,200
+                            - text: (26% off)
+                          - generic [ref=e495]:
+                            - generic [ref=e496]: Save ₹4,000
+                            - text: with coupon
+                        - generic [ref=e501]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e503]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e518] [cursor=pointer]
+                - listitem [ref=e521]:
+                  - generic [ref=e527]:
+                    - link [ref=e533] [cursor=pointer]:
+                      - /url: /Samsung-inches-Vision-Ultra-QA55QEF1AULXL/dp/B0F43CHDSN/ref=sr_1_4?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-4
+                      - img [ref=e535]
+                    - generic [ref=e538]:
+                      - generic [ref=e539]:
+                        - heading "Samsung" [level=2] [ref=e542]
+                        - link "138 cm (55 inches) Vision AI 4K Ultra HD Smart QLED TV QA55QEF1AULXL" [ref=e543] [cursor=pointer]:
+                          - /url: /Samsung-inches-Vision-Ultra-QA55QEF1AULXL/dp/B0F43CHDSN/ref=sr_1_4?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-4
+                          - heading "138 cm (55 inches) Vision AI 4K Ultra HD Smart QLED TV QA55QEF1AULXL" [level=2] [ref=e544]
+                      - generic [ref=e545]:
+                        - generic [ref=e546]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=e548] [cursor=pointer]:
+                            - generic [ref=e550]: 4.0 out of 5 stars
+                          - link "1,326 ratings" [ref=e552] [cursor=pointer]:
+                            - /url: /Samsung-inches-Vision-Ultra-QA55QEF1AULXL/dp/B0F43CHDSN/ref=sr_1_4?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-4#customerReviews
+                            - text: (1.3K)
+                        - generic [ref=e553]: 500+ bought in past month
+                      - generic [ref=e556]:
+                        - link "See options" [ref=e565] [cursor=pointer]:
+                          - /url: /Samsung-inches-Vision-Ultra-QA55QEF1AULXL/dp/B0F43CHDSN/ref=sr_1_4_so_TELEVISION?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-4
+                        - generic [ref=e567]:
+                          - text: No featured offers available
+                          - text: ₹43,990
+                          - link "(1 new offer)" [ref=e569] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B0F43CHDSN/ref=sr_1_4_olp?keywords=samsung+tv+55+inch&dib_tag=se&dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&qid=1782114443&sr=8-4
+                - listitem [ref=e572]:
+                  - generic [ref=e578]:
+                    - generic [ref=e580]:
+                      - group "Best sellerin Smart Televisions" [ref=e586]:
+                        - generic "Best seller" [ref=e588]
+                      - link [ref=e592] [cursor=pointer]:
+                        - /url: /Samsung-inches-Crystal-Vision-UA55UE85AHULXL/dp/B0GYRRLP87/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-5
+                        - img [ref=e594]
+                    - generic [ref=e597]:
+                      - generic [ref=e598]:
+                        - heading "Samsung" [level=2] [ref=e601]
+                        - link "55 inches Crystal UHD 4K Samsung Vision AI Smart TV UA55UE85AHULXL" [ref=e602] [cursor=pointer]:
+                          - /url: /Samsung-inches-Crystal-Vision-UA55UE85AHULXL/dp/B0GYRRLP87/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-5
+                          - heading "55 inches Crystal UHD 4K Samsung Vision AI Smart TV UA55UE85AHULXL" [level=2] [ref=e603]
+                      - generic [ref=e604]:
+                        - generic [ref=e605]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=e607] [cursor=pointer]:
+                            - generic [ref=e609]: 4.0 out of 5 stars
+                          - link "128 ratings" [ref=e611] [cursor=pointer]:
+                            - /url: /Samsung-inches-Crystal-Vision-UA55UE85AHULXL/dp/B0GYRRLP87/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-5#customerReviews
+                            - text: (128)
+                        - generic [ref=e612]: 500+ bought in past month
+                      - generic [ref=e615]:
+                        - generic [ref=e616]:
+                          - link "Limited time deal" [ref=e618] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e621]: Limited time deal
+                          - generic [ref=e623]:
+                            - generic [ref=e624]: Price, product page
+                            - 'link "₹44,990 M.R.P: ₹54,900 M.R.P: ₹54,900" [ref=e625] [cursor=pointer]':
+                              - /url: /Samsung-inches-Crystal-Vision-UA55UE85AHULXL/dp/B0GYRRLP87/ref=sr_1_5?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-5
+                              - generic [ref=e626]:
+                                - generic [ref=e627]: ₹44,990
+                                - generic [ref=e628]: ₹44,990
+                              - generic [ref=e629]: "M.R.P: ₹54,900"
+                              - generic [ref=e630]:
+                                - text: "M.R.P:"
+                                - generic [ref=e631]:
+                                  - generic [ref=e632]: ₹54,900
+                                  - text: ₹54,900
+                            - text: (18% off)
+                          - generic [ref=e635]:
+                            - generic [ref=e636]: Save ₹5,000
+                            - text: with coupon
+                        - generic [ref=e641]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e643]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e658] [cursor=pointer]
+          - generic [ref=e664]:
+            - generic [ref=e669]:
+              - heading "Highly rated" [level=2] [ref=e671]
+              - generic [ref=e672]:
+                - button "View Sponsored information or leave ad feedback" [ref=e674] [cursor=pointer]: Sponsored
+                - text: "| Based on star rating and number of customer ratings"
+            - region "Highly rated" [ref=e676]:
+              - list [ref=e682]:
+                - listitem "1 of 5" [ref=e683]:
+                  - generic [ref=e689]:
+                    - link [ref=e692] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F6YVKDR2%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ
+                      - img [ref=e694]
+                    - generic [ref=e695]:
+                      - link "Sponsored Ad - Xiaomi 138 cm (55 inch) X Ultra HD 4K Smart Google LED TV L55MB-AIN" [ref=e697] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F6YVKDR2%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Xiaomi 138 cm (55 inch) X Ultra HD 4K Smart Google LED TV L55MB-AIN" [level=2] [ref=e698]: Xiaomi 138 cm (55 inch) X Ultra HD 4K Smart Google LED TV L55MB-AIN
+                      - generic [ref=e699]:
+                        - generic [ref=e700]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=e702] [cursor=pointer]:
+                            - generic [ref=e704]: 4.1 out of 5 stars
+                          - link "4,495 ratings" [ref=e706] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F6YVKDR2%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ#customerReviews
+                            - text: (4.4K)
+                        - generic [ref=e707]: 100+ bought in past month
+                      - generic [ref=e708]:
+                        - generic [ref=e710]:
+                          - generic [ref=e711]: Price, product page
+                          - 'link "₹36,999 M.R.P: ₹48,999 M.R.P: ₹48,999" [ref=e712] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F6YVKDR2%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ
+                            - generic [ref=e713]:
+                              - generic [ref=e714]: ₹36,999
+                              - generic [ref=e715]: ₹36,999
+                            - generic [ref=e716]: "M.R.P: ₹48,999"
+                            - generic [ref=e717]:
+                              - text: "M.R.P:"
+                              - generic [ref=e718]:
+                                - generic [ref=e719]: ₹48,999
+                                - text: ₹48,999
+                          - text: (24% off)
+                        - generic [ref=e723]:
+                          - generic [ref=e724]: Flat INR 500 Off on Select Bank Cards
+                          - generic [ref=e725]: Flat INR 500 Off on Select Bank...
+                      - generic [ref=e731]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                      - generic [ref=e733]: "Service: Setup at delivery"
+                      - button "Add to cart" [ref=e748] [cursor=pointer]
+                - listitem "2 of 5" [ref=e749]:
+                  - generic [ref=e755]:
+                    - link [ref=e758] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTA1NDQzNjQ5MTczMjo6MTo6&url=%2FPhilips-inches-QD-Mini-65MLED610-94%2Fdp%2FB0G6LYM6DY%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0G6LYM6DY%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DcWaeoEHKDw%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=cWaeoEHKDw&sp_cr=ZAZ
+                      - img [ref=e760]
+                    - generic [ref=e761]:
+                      - link "Sponsored Ad - Philips 164 cm (65 inches) 4K Ultra HD QLED Smart QD-Mini LED Google TV 65MLED610/94" [ref=e763] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTA1NDQzNjQ5MTczMjo6MTo6&url=%2FPhilips-inches-QD-Mini-65MLED610-94%2Fdp%2FB0G6LYM6DY%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0G6LYM6DY%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DcWaeoEHKDw%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=cWaeoEHKDw&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Philips 164 cm (65 inches) 4K Ultra HD QLED Smart QD-Mini LED Google TV 65MLED610/94" [level=2] [ref=e764]: Philips 164 cm (65 inches) 4K Ultra HD QLED Smart QD-Mini LED Google TV 65MLED610/94
+                      - generic [ref=e765]:
+                        - generic [ref=e766]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=e768] [cursor=pointer]:
+                            - generic [ref=e770]: 4.4 out of 5 stars
+                          - link "186 ratings" [ref=e772] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTA1NDQzNjQ5MTczMjo6MTo6&url=%2FPhilips-inches-QD-Mini-65MLED610-94%2Fdp%2FB0G6LYM6DY%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0G6LYM6DY%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DcWaeoEHKDw%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=cWaeoEHKDw&sp_cr=ZAZ#customerReviews
+                            - text: (186)
+                        - generic [ref=e773]: 100+ bought in past month
+                      - generic [ref=e774]:
+                        - generic [ref=e776]:
+                          - generic [ref=e777]: Price, product page
+                          - 'link "₹57,999 M.R.P: ₹99,999 M.R.P: ₹99,999" [ref=e778] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTA1NDQzNjQ5MTczMjo6MTo6&url=%2FPhilips-inches-QD-Mini-65MLED610-94%2Fdp%2FB0G6LYM6DY%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0G6LYM6DY%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DcWaeoEHKDw%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=cWaeoEHKDw&sp_cr=ZAZ
+                            - generic [ref=e779]:
+                              - generic [ref=e780]: ₹57,999
+                              - generic [ref=e781]: ₹57,999
+                            - generic [ref=e782]: "M.R.P: ₹99,999"
+                            - generic [ref=e783]:
+                              - text: "M.R.P:"
+                              - generic [ref=e784]:
+                                - generic [ref=e785]: ₹99,999
+                                - text: ₹99,999
+                          - text: (42% off)
+                        - generic [ref=e788]:
+                          - generic [ref=e789]: Save ₹1,000
+                          - text: with coupon
+                      - generic [ref=e795]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                      - generic [ref=e797]: "Service: Setup at delivery"
+                      - button "Add to cart" [ref=e812] [cursor=pointer]
+                - listitem "3 of 5" [ref=e813]:
+                  - generic [ref=e819]:
+                    - link [ref=e822] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyODg2MTU5MzYzMjo6Mjo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X6RBFK%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ
+                      - img [ref=e824]
+                    - generic [ref=e825]:
+                      - link "Sponsored Ad - Hisense 254 cm (100 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ Adaptive | 144 Hz Game Mode Pro | 2.1 CH 50W Speakers with Subwoofer | VIDAA OS | 100E7Q PRO (Charcoal Grey)" [ref=e827] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyODg2MTU5MzYzMjo6Mjo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X6RBFK%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Hisense 254 cm (100 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ Adaptive | 144 Hz Game Mode Pro | 2.1 CH 50W Speakers with Subwoofer | VIDAA OS | 100E7Q PRO (Charcoal Grey)" [level=2] [ref=e828]: Hisense 254 cm (100 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ Adaptive | 144 Hz Game Mode Pro | 2.1 CH 50W Speakers with Subwoofer | VIDAA OS | 100E7Q PRO (Charcoal Grey)
+                      - generic [ref=e830]:
+                        - text: "4.1"
+                        - button "4.1 out of 5 stars, rating details" [ref=e832] [cursor=pointer]:
+                          - generic [ref=e834]: 4.1 out of 5 stars
+                        - link "111 ratings" [ref=e836] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyODg2MTU5MzYzMjo6Mjo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X6RBFK%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ#customerReviews
+                          - text: (111)
+                      - link "See options" [ref=e845] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyODg2MTU5MzYzMjo6Mjo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsxin_14_pa_sp_search_thematic_so_TELEVISION%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X6RBFK%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ
+                - listitem "4 of 5" [ref=e846]:
+                  - generic [ref=e852]:
+                    - link [ref=e855] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjYzMjo6Mzo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0FJLSNZBW%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ
+                      - img [ref=e857]
+                    - generic [ref=e858]:
+                      - link "Sponsored Ad - Hisense 139 cm (55 Inches) 4K Ultra HD Smart QLED TV 55E75Q | E75Q Series | 48W Powerful Speakers | Dolby Atmos & HDR10+ | ALLM, VRR & Game Mode | Cricket Mode | AI 4K Upscaler | VIDAA OS (Black)" [ref=e860] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjYzMjo6Mzo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0FJLSNZBW%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Hisense 139 cm (55 Inches) 4K Ultra HD Smart QLED TV 55E75Q | E75Q Series | 48W Powerful Speakers | Dolby Atmos & HDR10+ | ALLM, VRR & Game Mode | Cricket Mode | AI 4K Upscaler | VIDAA OS (Black)" [level=2] [ref=e861]: Hisense 139 cm (55 Inches) 4K Ultra HD Smart QLED TV 55E75Q | E75Q Series | 48W Powerful Speakers | Dolby Atmos & HDR10+ | ALLM, VRR & Game Mode | Cricket Mode | AI 4K Upscaler | VIDAA OS (Black)
+                      - generic [ref=e862]:
+                        - generic [ref=e863]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=e865] [cursor=pointer]:
+                            - generic [ref=e867]: 4.0 out of 5 stars
+                          - link "116 ratings" [ref=e869] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjYzMjo6Mzo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0FJLSNZBW%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ#customerReviews
+                            - text: (116)
+                        - generic [ref=e870]: 50+ bought in past month
+                      - generic [ref=e871]:
+                        - generic [ref=e873]:
+                          - generic [ref=e874]: Price, product page
+                          - 'link "₹37,999 M.R.P: ₹69,999 M.R.P: ₹69,999" [ref=e875] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjYzMjo6Mzo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0FJLSNZBW%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ
+                            - generic [ref=e876]:
+                              - generic [ref=e877]: ₹37,999
+                              - generic [ref=e878]: ₹37,999
+                            - generic [ref=e879]: "M.R.P: ₹69,999"
+                            - generic [ref=e880]:
+                              - text: "M.R.P:"
+                              - generic [ref=e881]:
+                                - generic [ref=e882]: ₹69,999
+                                - text: ₹69,999
+                          - text: (46% off)
+                        - generic [ref=e885]:
+                          - generic [ref=e886]: Save ₹1,000
+                          - text: with coupon
+                      - generic [ref=e892]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                      - generic [ref=e894]: "Service: Setup at delivery"
+                      - button "Add to cart" [ref=e909] [cursor=pointer]
+                - listitem "5 of 5" [ref=e910]:
+                  - generic [ref=e916]:
+                    - link [ref=e919] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjgzMjo6NDo6&url=%2FTOSHIBA-inches-Z570RP-Ultra-55Z570RP%2Fdp%2FB0F4X2R46D%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X2R46D%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DwTWz3btFoK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wTWz3btFoK&sp_cr=ZAZ
+                      - img [ref=e921]
+                    - generic [ref=e922]:
+                      - link "Sponsored Ad - Toshiba 139 cm (55 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ | 144 Hz Panel | 24W Powerful Speaker | REGZA Engine ZRi | Voice Control | VIDAA OS | 55Z570RP (Black) (55Z570RP)" [ref=e924] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjgzMjo6NDo6&url=%2FTOSHIBA-inches-Z570RP-Ultra-55Z570RP%2Fdp%2FB0F4X2R46D%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X2R46D%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DwTWz3btFoK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wTWz3btFoK&sp_cr=ZAZ
+                        - heading "Sponsored Ad - Toshiba 139 cm (55 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ | 144 Hz Panel | 24W Powerful Speaker | REGZA Engine ZRi | Voice Control | VIDAA OS | 55Z570RP (Black) (55Z570RP)" [level=2] [ref=e925]: Toshiba 139 cm (55 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ | 144 Hz Panel | 24W Powerful Speaker | REGZA Engine ZRi | Voice Control | VIDAA OS | 55Z570RP (Black) (55Z570RP)
+                      - generic [ref=e927]:
+                        - text: "4.2"
+                        - button "4.2 out of 5 stars, rating details" [ref=e929] [cursor=pointer]:
+                          - generic [ref=e931]: 4.2 out of 5 stars
+                        - link "114 ratings" [ref=e933] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjgzMjo6NDo6&url=%2FTOSHIBA-inches-Z570RP-Ultra-55Z570RP%2Fdp%2FB0F4X2R46D%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X2R46D%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DwTWz3btFoK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wTWz3btFoK&sp_cr=ZAZ#customerReviews
+                          - text: (114)
+                      - generic [ref=e936]:
+                        - generic [ref=e937]: Price, product page
+                        - 'link "₹40,999 M.R.P: ₹71,999 M.R.P: ₹71,999" [ref=e938] [cursor=pointer]':
+                          - /url: /sspa/click?ie=UTF8&spc=MTo3Nzg2MzI3NzExMTIwNTgxOjE3ODIxMTQ0NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDkyOTU3ODEwMjgzMjo6NDo6&url=%2FTOSHIBA-inches-Z570RP-Ultra-55Z570RP%2Fdp%2FB0F4X2R46D%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%253Aamzn1.sym.8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26cv_ct_cx%3Dsamsung%2Btv%2B55%2Binch%26keywords%3Dsamsung%2Btv%2B55%2Binch%26pd_rd_i%3DB0F4X2R46D%26pd_rd_r%3D1e75ff39-a56f-4255-9802-469291c882e2%26pd_rd_w%3D75I2e%26pd_rd_wg%3DPYSOf%26pf_rd_p%3D8b99ac48-0c8d-4226-ac23-52de60b2e5f1%26pf_rd_r%3DDVP0ZQQ5G4NR5SN95PV4%26qid%3D1782114443%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons%26aref%3DwTWz3btFoK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wTWz3btFoK&sp_cr=ZAZ
+                          - generic [ref=e939]:
+                            - generic [ref=e940]: ₹40,999
+                            - generic [ref=e941]: ₹40,999
+                          - generic [ref=e942]: "M.R.P: ₹71,999"
+                          - generic [ref=e943]:
+                            - text: "M.R.P:"
+                            - generic [ref=e944]:
+                              - generic [ref=e945]: ₹71,999
+                              - text: ₹71,999
+                        - text: (43% off)
+                      - generic [ref=e951]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                      - generic [ref=e953]: "Service: Setup at delivery"
+                      - button "Add to cart" [ref=e968] [cursor=pointer]
+          - generic [ref=e976]:
+            - link "Sponsored video; click to navigate to featured product page. TCL 139 cm (55 inches) 4K Ultra HD Smart QLED Google TV 55T8C" [ref=e980] [cursor=pointer]:
+              - /url: https://aax-eu-zaz.amazon.in/x/c/JBLfA7eKpvFX2MK-qYujSsQAAAGe7kxjYAoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJPAZr/clv1c_ek-wBIP3FcbWznwnE78Zs2PkkBKfGpddNY7--X-ijwP_gm0klA4irIV-g89WEmufPmJ3mqOlHGe3qIKO7VrqaAlZ-0exw2Yd8Chj7rAixK26khzl2LQJay5558kclhL3cYcsUeDKUaZ3GBZl00EyudbSgr3clleCl9HMk79ijESZWljaXO0dooI1DI8OsiftJ3yUjtJFFDuUzUQuFkvFKaz5KEoHIGq7E_l-QntvHt3dmPi9ulewtDwHDfdZWESEt3tZGEneVFT92jhbijQCw5EqAowshzrx24yJbSFgF4u4dqKzeHwiEFddUWUQqLsyfbU8jUqmATvDaSmCEVb6D8sr_X46hv0Jy2Fm6ExS_Lh6jJnLvwA5F1spwmWotR3dIlS1jgUnP505ssfkO2BQt5Zck2n-zAp4eanJK3-_7D832FSBvfBgHr-TmbXZfi7tyt6k04wpqrM9pI1Qex2ujHfe_M4NOUFNfosVO3Z3UeTY34b7zy2k3ts-XTLdWayG0oaAxpADfSP-fiMDxkmuBvDkDZXLVsz03s7t8_G-jVhFmB3vNm3EGVxC3XBBrUBWRU_9Z5QabE5temhN-GiDA7AQ4uBkiWNhzNY7e04gO3pUBCqVt3bUaxdQdEuJvuwD4gGcvb4yP_9jU_HKioCUu9WVIGNcGQIJ1C5q6u1l3IUWJ3Ei7T4fZ0wq8Ja_fvetdaB82pc_4NDbAhfZSmhW5gZGVe_kpQm2RauK272AT3_dHSiw7O62mbUpTzGNKDep621sGJRwFVbtQ8hdTMW7yjBHSSfa4-QiU4Y7jtlfxgHdPOt3_XEozzMSnUH_7Xt9RXgJhEV1mwIhuMi9KRDC17OIfr01zOMPlF9ZDCTOnvpZeaN_TnKlopPfQyYM5lp10r42krmjx_oTKF9AVKj2zqpIeS6S5tr0qda4emboS2IknmYaC84E9joeUuoWzfmG-hJfXGwgyJ5Ri6gDJ-xskbJD1sw02OL4k3N3ZSFR-mE1yqHi3xHw05Px5HcQU2i8yi1xBZ-q8_-0RNQFJTY8JMveFUNnlFhd91wH8YBXWnN5WKEms8x-JK-oJmCCE7TAAeNSpOk-FqZvoiwC4XSRn7huHfYgGR25xUJ0o8DfyL6eHA0jMSabwAmiTuzA9-7izNABzFutLnhrS6XEzCEPzy3jpLPIIt6eENlbbykOaCB98Z26bnqLo5Lp3MvPmVe50yzVSTob5epw7EzOpXH_GjBmtHhsfT0QxO_T4RIx98DnuqSVKWgGilsmnHcDj0tPvV8VDGMAMeeyfnc8RUtyvXJm6y0LtBfGmv3Sa9xL4Eb5s7AhZ4mpEqc6BJRNXMf8lboKyqFu1bqcVYHqjTvImf0vtEZiPPYtXDINM1Dg49J-uh2PQ_KSCbEBK3UafqgyUsp2MTYdBhgcYyp7jS6iMqQoQJ2UDTsp8PMEmVcle3i1P1kcfB_Ad7BpdmPKfCUMusnxdgGleaovD2TmdCWhkvswxzlBQLkZlgHu1vWNYpHXTatyxAhQX4v4niNjG-mQafJh1drPgLTSLN3_P1OxJc_JSHzWOzS81PfDXOWNcIAzOljBpIIcaPv4hmIvic7qmjhqLm6spN4jwMDVDNaIbrPSXQdUrOL0q6UQ-jsYEPJO6jRep5iSbIztLXu1ktTL-H_Fy3PeWD2VEOvhKGB8p0uvy1fA_bYvXOKZ5LaYxkY/https://www.amazon.in/dp/B0F38M36TN?aref=L1s1InZkWs&pd_rd_i=B0F38M36TN&pf_rd_p=7f127af2-01e9-4e9a-857b-f7f598682cc6&pd_rd_wg=PYSOf&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_w=ZSf0U&pd_rd_r=1e75ff39-a56f-4255-9802-469291c882e2
+              - generic "Sponsored video; click to navigate to featured product page. TCL 139 cm (55 inches) 4K Ultra HD Smart QLED Google TV 55T8C" [ref=e981]
+            - generic [ref=e989]:
+              - link [ref=e995] [cursor=pointer]:
+                - /url: https://aax-eu-zaz.amazon.in/x/c/JBLfA7eKpvFX2MK-qYujSsQAAAGe7kxjYAoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJPAZr/clv1c_ek-wBIP3FcbWznwnE78Zs2PkkBKfGpddNY7--X-ijwP_gm0klA4irIV-g89WEmufPmJ3mqOlHGe3qIKO7VrqaAlZ-0exw2Yd8Chj7rAixK26khzl2LQJay5558kclhL3cYcsUeDKUaZ3GBZl00EyudbSgr3clleCl9HMk79ijESZWljaXO0dooI1DI8OsiftJ3yUjtJFFDuUzUQuFkvFKaz5KEoHIGq7E_l-QntvHt3dmPi9ulewtDwHDfdZWESEt3tZGEneVFT92jhbijQCw5EqAowshzrx24yJbSFgF4u4dqKzeHwiEFddUWUQqLsyfbU8jUqmATvDaSmCEVb6D8sr_X46hv0Jy2Fm6ExS_Lh6jJnLvwA5F1spwmWotR3dIlS1jgUnP505ssfkO2BQt5Zck2n-zAp4eanJK3-_7D832FSBvfBgHr-TmbXZfi7tyt6k04wpqrM9pI1Qex2ujHfe_M4NOUFNfosVO3Z3UeTY34b7zy2k3ts-XTLdWayG0oaAxpADfSP-fiMDxkmuBvDkDZXLVsz03s7t8_G-jVhFmB3vNm3EGVxC3XBBrUBWRU_9Z5QabE5temhN-GiDA7AQ4uBkiWNhzNY7e04gO3pUBCqVt3bUaxdQdEuJvuwD4gGcvb4yP_9jU_HKioCUu9WVIGNcGQIJ1C5q6u1l3IUWJ3Ei7T4fZ0wq8Ja_fvetdaB82pc_4NDbAhfZSmhW5gZGVe_kpQm2RauK272AT3_dHSiw7O62mbUpTzGNKDep621sGJRwFVbtQ8hdTMW7yjBHSSfa4-QiU4Y7jtlfxgHdPOt3_XEozzMSnUH_7Xt9RXgJhEV1mwIhuMi9KRDC17OIfr01zOMPlF9ZDCTOnvpZeaN_TnKlopPfQyYM5lp10r42krmjx_oTKF9AVKj2zqpIeS6S5tr0qda4emboS2IknmYaC84E9joeUuoWzfmG-hJfXGwgyJ5Ri6gDJ-xskbJD1sw02OL4k3N3ZSFR-mE1yqHi3xHw05Px5HcQU2i8yi1xBZ-q8_-0RNQFJTY8JMveFUNnlFhd91wH8YBXWnN5WKEms8x-JK-oJmCCE7TAAeNSpOk-FqZvoiwC4XSRn7huHfYgGR25xUJ0o8DfyL6eHA0jMSabwAmiTuzA9-7izNABzFutLnhrS6XEzCEPzy3jpLPIIt6eENlbbykOaCB98Z26bnqLo5Lp3MvPmVe50yzVSTob5epw7EzOpXH_GjBmtHhsfT0QxO_T4RIx98DnuqSVKWgGilsmnHcDj0tPvV8VDGMAMeeyfnc8RUtyvXJm6y0LtBfGmv3Sa9xL4Eb5s7AhZ4mpEqc6BJRNXMf8lboKyqFu1bqcVYHqjTvImf0vtEZiPPYtXDINM1Dg49J-uh2PQ_KSCbEBK3UafqgyUsp2MTYdBhgcYyp7jS6iMqQoQJ2UDTsp8PMEmVcle3i1P1kcfB_Ad7BpdmPKfCUMusnxdgGleaovD2TmdCWhkvswxzlBQLkZlgHu1vWNYpHXTatyxAhQX4v4niNjG-mQafJh1drPgLTSLN3_P1OxJc_JSHzWOzS81PfDXOWNcIAzOljBpIIcaPv4hmIvic7qmjhqLm6spN4jwMDVDNaIbrPSXQdUrOL0q6UQ-jsYEPJO6jRep5iSbIztLXu1ktTL-H_Fy3PeWD2VEOvhKGB8p0uvy1fA_bYvXOKZ5LaYxkY/https://www.amazon.in/TCL-inches-Ultra-Google-55T8C/dp/B0F38M36TN/ref=sxin_15_sbv_search_btf?aref=L1s1InZkWs&content-id=amzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6%3Aamzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F38M36TN&pd_rd_r=1e75ff39-a56f-4255-9802-469291c882e2&pd_rd_w=ZSf0U&pd_rd_wg=PYSOf&pf_rd_p=7f127af2-01e9-4e9a-857b-f7f598682cc6&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+                - img [ref=e997]
+              - generic [ref=e1000]:
+                - generic [ref=e1001]:
+                  - generic [ref=e1004] [cursor=pointer]: Sponsored
+                  - link "TCL 139 cm (55 inches) 4K Ultra HD Smart QLED Google TV 55T8C" [ref=e1006] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JBLfA7eKpvFX2MK-qYujSsQAAAGe7kxjYAoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJPAZr/clv1c_ek-wBIP3FcbWznwnE78Zs2PkkBKfGpddNY7--X-ijwP_gm0klA4irIV-g89WEmufPmJ3mqOlHGe3qIKO7VrqaAlZ-0exw2Yd8Chj7rAixK26khzl2LQJay5558kclhL3cYcsUeDKUaZ3GBZl00EyudbSgr3clleCl9HMk79ijESZWljaXO0dooI1DI8OsiftJ3yUjtJFFDuUzUQuFkvFKaz5KEoHIGq7E_l-QntvHt3dmPi9ulewtDwHDfdZWESEt3tZGEneVFT92jhbijQCw5EqAowshzrx24yJbSFgF4u4dqKzeHwiEFddUWUQqLsyfbU8jUqmATvDaSmCEVb6D8sr_X46hv0Jy2Fm6ExS_Lh6jJnLvwA5F1spwmWotR3dIlS1jgUnP505ssfkO2BQt5Zck2n-zAp4eanJK3-_7D832FSBvfBgHr-TmbXZfi7tyt6k04wpqrM9pI1Qex2ujHfe_M4NOUFNfosVO3Z3UeTY34b7zy2k3ts-XTLdWayG0oaAxpADfSP-fiMDxkmuBvDkDZXLVsz03s7t8_G-jVhFmB3vNm3EGVxC3XBBrUBWRU_9Z5QabE5temhN-GiDA7AQ4uBkiWNhzNY7e04gO3pUBCqVt3bUaxdQdEuJvuwD4gGcvb4yP_9jU_HKioCUu9WVIGNcGQIJ1C5q6u1l3IUWJ3Ei7T4fZ0wq8Ja_fvetdaB82pc_4NDbAhfZSmhW5gZGVe_kpQm2RauK272AT3_dHSiw7O62mbUpTzGNKDep621sGJRwFVbtQ8hdTMW7yjBHSSfa4-QiU4Y7jtlfxgHdPOt3_XEozzMSnUH_7Xt9RXgJhEV1mwIhuMi9KRDC17OIfr01zOMPlF9ZDCTOnvpZeaN_TnKlopPfQyYM5lp10r42krmjx_oTKF9AVKj2zqpIeS6S5tr0qda4emboS2IknmYaC84E9joeUuoWzfmG-hJfXGwgyJ5Ri6gDJ-xskbJD1sw02OL4k3N3ZSFR-mE1yqHi3xHw05Px5HcQU2i8yi1xBZ-q8_-0RNQFJTY8JMveFUNnlFhd91wH8YBXWnN5WKEms8x-JK-oJmCCE7TAAeNSpOk-FqZvoiwC4XSRn7huHfYgGR25xUJ0o8DfyL6eHA0jMSabwAmiTuzA9-7izNABzFutLnhrS6XEzCEPzy3jpLPIIt6eENlbbykOaCB98Z26bnqLo5Lp3MvPmVe50yzVSTob5epw7EzOpXH_GjBmtHhsfT0QxO_T4RIx98DnuqSVKWgGilsmnHcDj0tPvV8VDGMAMeeyfnc8RUtyvXJm6y0LtBfGmv3Sa9xL4Eb5s7AhZ4mpEqc6BJRNXMf8lboKyqFu1bqcVYHqjTvImf0vtEZiPPYtXDINM1Dg49J-uh2PQ_KSCbEBK3UafqgyUsp2MTYdBhgcYyp7jS6iMqQoQJ2UDTsp8PMEmVcle3i1P1kcfB_Ad7BpdmPKfCUMusnxdgGleaovD2TmdCWhkvswxzlBQLkZlgHu1vWNYpHXTatyxAhQX4v4niNjG-mQafJh1drPgLTSLN3_P1OxJc_JSHzWOzS81PfDXOWNcIAzOljBpIIcaPv4hmIvic7qmjhqLm6spN4jwMDVDNaIbrPSXQdUrOL0q6UQ-jsYEPJO6jRep5iSbIztLXu1ktTL-H_Fy3PeWD2VEOvhKGB8p0uvy1fA_bYvXOKZ5LaYxkY/https://www.amazon.in/TCL-inches-Ultra-Google-55T8C/dp/B0F38M36TN/ref=sxin_15_sbv_search_btf?aref=L1s1InZkWs&content-id=amzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6%3Aamzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F38M36TN&pd_rd_r=1e75ff39-a56f-4255-9802-469291c882e2&pd_rd_w=ZSf0U&pd_rd_wg=PYSOf&pf_rd_p=7f127af2-01e9-4e9a-857b-f7f598682cc6&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+                    - heading "TCL 139 cm (55 inches) 4K Ultra HD Smart QLED Google TV 55T8C" [level=2] [ref=e1007]
+                - generic [ref=e1008]:
+                  - generic [ref=e1009]:
+                    - text: "4.1"
+                    - button "4.1 out of 5 stars, rating details" [ref=e1011] [cursor=pointer]:
+                      - generic [ref=e1013]: 4.1 out of 5 stars
+                    - link "1,246 ratings" [ref=e1015] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/JBLfA7eKpvFX2MK-qYujSsQAAAGe7kxjYAoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJPAZr/clv1c_ek-wBIP3FcbWznwnE78Zs2PkkBKfGpddNY7--X-ijwP_gm0klA4irIV-g89WEmufPmJ3mqOlHGe3qIKO7VrqaAlZ-0exw2Yd8Chj7rAixK26khzl2LQJay5558kclhL3cYcsUeDKUaZ3GBZl00EyudbSgr3clleCl9HMk79ijESZWljaXO0dooI1DI8OsiftJ3yUjtJFFDuUzUQuFkvFKaz5KEoHIGq7E_l-QntvHt3dmPi9ulewtDwHDfdZWESEt3tZGEneVFT92jhbijQCw5EqAowshzrx24yJbSFgF4u4dqKzeHwiEFddUWUQqLsyfbU8jUqmATvDaSmCEVb6D8sr_X46hv0Jy2Fm6ExS_Lh6jJnLvwA5F1spwmWotR3dIlS1jgUnP505ssfkO2BQt5Zck2n-zAp4eanJK3-_7D832FSBvfBgHr-TmbXZfi7tyt6k04wpqrM9pI1Qex2ujHfe_M4NOUFNfosVO3Z3UeTY34b7zy2k3ts-XTLdWayG0oaAxpADfSP-fiMDxkmuBvDkDZXLVsz03s7t8_G-jVhFmB3vNm3EGVxC3XBBrUBWRU_9Z5QabE5temhN-GiDA7AQ4uBkiWNhzNY7e04gO3pUBCqVt3bUaxdQdEuJvuwD4gGcvb4yP_9jU_HKioCUu9WVIGNcGQIJ1C5q6u1l3IUWJ3Ei7T4fZ0wq8Ja_fvetdaB82pc_4NDbAhfZSmhW5gZGVe_kpQm2RauK272AT3_dHSiw7O62mbUpTzGNKDep621sGJRwFVbtQ8hdTMW7yjBHSSfa4-QiU4Y7jtlfxgHdPOt3_XEozzMSnUH_7Xt9RXgJhEV1mwIhuMi9KRDC17OIfr01zOMPlF9ZDCTOnvpZeaN_TnKlopPfQyYM5lp10r42krmjx_oTKF9AVKj2zqpIeS6S5tr0qda4emboS2IknmYaC84E9joeUuoWzfmG-hJfXGwgyJ5Ri6gDJ-xskbJD1sw02OL4k3N3ZSFR-mE1yqHi3xHw05Px5HcQU2i8yi1xBZ-q8_-0RNQFJTY8JMveFUNnlFhd91wH8YBXWnN5WKEms8x-JK-oJmCCE7TAAeNSpOk-FqZvoiwC4XSRn7huHfYgGR25xUJ0o8DfyL6eHA0jMSabwAmiTuzA9-7izNABzFutLnhrS6XEzCEPzy3jpLPIIt6eENlbbykOaCB98Z26bnqLo5Lp3MvPmVe50yzVSTob5epw7EzOpXH_GjBmtHhsfT0QxO_T4RIx98DnuqSVKWgGilsmnHcDj0tPvV8VDGMAMeeyfnc8RUtyvXJm6y0LtBfGmv3Sa9xL4Eb5s7AhZ4mpEqc6BJRNXMf8lboKyqFu1bqcVYHqjTvImf0vtEZiPPYtXDINM1Dg49J-uh2PQ_KSCbEBK3UafqgyUsp2MTYdBhgcYyp7jS6iMqQoQJ2UDTsp8PMEmVcle3i1P1kcfB_Ad7BpdmPKfCUMusnxdgGleaovD2TmdCWhkvswxzlBQLkZlgHu1vWNYpHXTatyxAhQX4v4niNjG-mQafJh1drPgLTSLN3_P1OxJc_JSHzWOzS81PfDXOWNcIAzOljBpIIcaPv4hmIvic7qmjhqLm6spN4jwMDVDNaIbrPSXQdUrOL0q6UQ-jsYEPJO6jRep5iSbIztLXu1ktTL-H_Fy3PeWD2VEOvhKGB8p0uvy1fA_bYvXOKZ5LaYxkY/https://www.amazon.in/TCL-inches-Ultra-Google-55T8C/dp/B0F38M36TN/ref=sxin_15_sbv_search_btf?aref=L1s1InZkWs&content-id=amzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6%3Aamzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F38M36TN&pd_rd_r=1e75ff39-a56f-4255-9802-469291c882e2&pd_rd_w=ZSf0U&pd_rd_wg=PYSOf&pf_rd_p=7f127af2-01e9-4e9a-857b-f7f598682cc6&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews
+                      - text: (1.2K)
+                  - generic [ref=e1016]: 500+ bought in past month
+                - generic [ref=e1019]:
+                  - generic [ref=e1020]:
+                    - generic [ref=e1022]:
+                      - generic [ref=e1023]: Price, product page
+                      - 'link "₹42,990 M.R.P: ₹1,09,990 M.R.P: ₹1,09,990" [ref=e1024] [cursor=pointer]':
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JBLfA7eKpvFX2MK-qYujSsQAAAGe7kxjYAoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICAJPAZr/clv1c_ek-wBIP3FcbWznwnE78Zs2PkkBKfGpddNY7--X-ijwP_gm0klA4irIV-g89WEmufPmJ3mqOlHGe3qIKO7VrqaAlZ-0exw2Yd8Chj7rAixK26khzl2LQJay5558kclhL3cYcsUeDKUaZ3GBZl00EyudbSgr3clleCl9HMk79ijESZWljaXO0dooI1DI8OsiftJ3yUjtJFFDuUzUQuFkvFKaz5KEoHIGq7E_l-QntvHt3dmPi9ulewtDwHDfdZWESEt3tZGEneVFT92jhbijQCw5EqAowshzrx24yJbSFgF4u4dqKzeHwiEFddUWUQqLsyfbU8jUqmATvDaSmCEVb6D8sr_X46hv0Jy2Fm6ExS_Lh6jJnLvwA5F1spwmWotR3dIlS1jgUnP505ssfkO2BQt5Zck2n-zAp4eanJK3-_7D832FSBvfBgHr-TmbXZfi7tyt6k04wpqrM9pI1Qex2ujHfe_M4NOUFNfosVO3Z3UeTY34b7zy2k3ts-XTLdWayG0oaAxpADfSP-fiMDxkmuBvDkDZXLVsz03s7t8_G-jVhFmB3vNm3EGVxC3XBBrUBWRU_9Z5QabE5temhN-GiDA7AQ4uBkiWNhzNY7e04gO3pUBCqVt3bUaxdQdEuJvuwD4gGcvb4yP_9jU_HKioCUu9WVIGNcGQIJ1C5q6u1l3IUWJ3Ei7T4fZ0wq8Ja_fvetdaB82pc_4NDbAhfZSmhW5gZGVe_kpQm2RauK272AT3_dHSiw7O62mbUpTzGNKDep621sGJRwFVbtQ8hdTMW7yjBHSSfa4-QiU4Y7jtlfxgHdPOt3_XEozzMSnUH_7Xt9RXgJhEV1mwIhuMi9KRDC17OIfr01zOMPlF9ZDCTOnvpZeaN_TnKlopPfQyYM5lp10r42krmjx_oTKF9AVKj2zqpIeS6S5tr0qda4emboS2IknmYaC84E9joeUuoWzfmG-hJfXGwgyJ5Ri6gDJ-xskbJD1sw02OL4k3N3ZSFR-mE1yqHi3xHw05Px5HcQU2i8yi1xBZ-q8_-0RNQFJTY8JMveFUNnlFhd91wH8YBXWnN5WKEms8x-JK-oJmCCE7TAAeNSpOk-FqZvoiwC4XSRn7huHfYgGR25xUJ0o8DfyL6eHA0jMSabwAmiTuzA9-7izNABzFutLnhrS6XEzCEPzy3jpLPIIt6eENlbbykOaCB98Z26bnqLo5Lp3MvPmVe50yzVSTob5epw7EzOpXH_GjBmtHhsfT0QxO_T4RIx98DnuqSVKWgGilsmnHcDj0tPvV8VDGMAMeeyfnc8RUtyvXJm6y0LtBfGmv3Sa9xL4Eb5s7AhZ4mpEqc6BJRNXMf8lboKyqFu1bqcVYHqjTvImf0vtEZiPPYtXDINM1Dg49J-uh2PQ_KSCbEBK3UafqgyUsp2MTYdBhgcYyp7jS6iMqQoQJ2UDTsp8PMEmVcle3i1P1kcfB_Ad7BpdmPKfCUMusnxdgGleaovD2TmdCWhkvswxzlBQLkZlgHu1vWNYpHXTatyxAhQX4v4niNjG-mQafJh1drPgLTSLN3_P1OxJc_JSHzWOzS81PfDXOWNcIAzOljBpIIcaPv4hmIvic7qmjhqLm6spN4jwMDVDNaIbrPSXQdUrOL0q6UQ-jsYEPJO6jRep5iSbIztLXu1ktTL-H_Fy3PeWD2VEOvhKGB8p0uvy1fA_bYvXOKZ5LaYxkY/https://www.amazon.in/TCL-inches-Ultra-Google-55T8C/dp/B0F38M36TN/ref=sxin_15_sbv_search_btf?aref=L1s1InZkWs&content-id=amzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6%3Aamzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F38M36TN&pd_rd_r=1e75ff39-a56f-4255-9802-469291c882e2&pd_rd_w=ZSf0U&pd_rd_wg=PYSOf&pf_rd_p=7f127af2-01e9-4e9a-857b-f7f598682cc6&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81
+                        - generic [ref=e1025]:
+                          - generic [ref=e1026]: ₹42,990
+                          - generic [ref=e1027]: ₹42,990
+                        - generic [ref=e1028]: "M.R.P: ₹1,09,990"
+                        - generic [ref=e1029]:
+                          - text: "M.R.P:"
+                          - generic [ref=e1030]:
+                            - generic [ref=e1031]: ₹1,09,990
+                            - text: ₹1,09,990
+                      - text: (61% off)
+                    - generic [ref=e1035]:
+                      - generic [ref=e1036]: Save extra with No Cost EMI
+                      - generic [ref=e1037]: Save extra with No Cost EMI
+                  - generic [ref=e1042]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+          - generic [ref=e1044]:
+            - heading "More results" [level=2] [ref=e1048]
+            - generic:
+              - list:
+                - listitem [ref=e1049]:
+                  - generic [ref=e1055]:
+                    - generic [ref=e1057]:
+                      - group "Best sellerin Smart Televisions" [ref=e1063]:
+                        - generic "Best seller" [ref=e1065]
+                      - link [ref=e1069] [cursor=pointer]:
+                        - /url: /Samsung-inches-Crystal-Vision-UA50UE83AHULXL/dp/B0GYRQ79V4/ref=sr_1_6?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-6
+                        - img [ref=e1071]
+                    - generic [ref=e1074]:
+                      - generic [ref=e1075]:
+                        - heading "Samsung" [level=2] [ref=e1078]
+                        - link "50 inches Crystal UHD 4K Samsung Vision AI Smart TV UA50UE83AHULXL" [ref=e1079] [cursor=pointer]:
+                          - /url: /Samsung-inches-Crystal-Vision-UA50UE83AHULXL/dp/B0GYRQ79V4/ref=sr_1_6?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-6
+                          - heading "50 inches Crystal UHD 4K Samsung Vision AI Smart TV UA50UE83AHULXL" [level=2] [ref=e1080]
+                      - generic [ref=e1081]:
+                        - generic [ref=e1082]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=e1084] [cursor=pointer]:
+                            - generic [ref=e1086]: 4.0 out of 5 stars
+                          - link "128 ratings" [ref=e1088] [cursor=pointer]:
+                            - /url: /Samsung-inches-Crystal-Vision-UA50UE83AHULXL/dp/B0GYRQ79V4/ref=sr_1_6?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-6#customerReviews
+                            - text: (128)
+                        - generic [ref=e1089]: 500+ bought in past month
+                      - generic [ref=e1092]:
+                        - generic [ref=e1093]:
+                          - link "Limited time deal" [ref=e1095] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e1098]: Limited time deal
+                          - generic [ref=e1100]:
+                            - generic [ref=e1101]: Price, product page
+                            - 'link "₹37,490 M.R.P: ₹49,900 M.R.P: ₹49,900" [ref=e1102] [cursor=pointer]':
+                              - /url: /Samsung-inches-Crystal-Vision-UA50UE83AHULXL/dp/B0GYRQ79V4/ref=sr_1_6?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-6
+                              - generic [ref=e1103]:
+                                - generic [ref=e1104]: ₹37,490
+                                - generic [ref=e1105]: ₹37,490
+                              - generic [ref=e1106]: "M.R.P: ₹49,900"
+                              - generic [ref=e1107]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1108]:
+                                  - generic [ref=e1109]: ₹49,900
+                                  - text: ₹49,900
+                            - text: (25% off)
+                          - generic [ref=e1112]:
+                            - generic [ref=e1113]: Save ₹1,500
+                            - text: with coupon
+                        - generic [ref=e1118]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1120]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1135] [cursor=pointer]
+                - listitem [ref=e1138]:
+                  - generic [ref=e1144]:
+                    - link [ref=e1150] [cursor=pointer]:
+                      - /url: /Samsung-108-inches-Smart-UA43F5550FUXXL/dp/B0F84DKX8K/ref=sr_1_7?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-7
+                      - img [ref=e1152]
+                    - generic [ref=e1155]:
+                      - generic [ref=e1156]:
+                        - heading "Samsung" [level=2] [ref=e1159]
+                        - link "108 cm (43 inches) FHD Smart LED TV UA43F5550FUXXL" [ref=e1160] [cursor=pointer]:
+                          - /url: /Samsung-108-inches-Smart-UA43F5550FUXXL/dp/B0F84DKX8K/ref=sr_1_7?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-7
+                          - heading "108 cm (43 inches) FHD Smart LED TV UA43F5550FUXXL" [level=2] [ref=e1161]
+                      - generic [ref=e1162]:
+                        - generic [ref=e1163]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=e1165] [cursor=pointer]:
+                            - generic [ref=e1167]: 4.2 out of 5 stars
+                          - link "6,106 ratings" [ref=e1169] [cursor=pointer]:
+                            - /url: /Samsung-108-inches-Smart-UA43F5550FUXXL/dp/B0F84DKX8K/ref=sr_1_7?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-7#customerReviews
+                            - text: (6.1K)
+                        - generic [ref=e1170]: 1K+ bought in past month
+                      - generic [ref=e1173]:
+                        - generic [ref=e1174]:
+                          - generic [ref=e1176]:
+                            - generic [ref=e1177]: Price, product page
+                            - 'link "₹24,990 M.R.P: ₹27,500 M.R.P: ₹27,500" [ref=e1178] [cursor=pointer]':
+                              - /url: /Samsung-108-inches-Smart-UA43F5550FUXXL/dp/B0F84DKX8K/ref=sr_1_7?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-7
+                              - generic [ref=e1179]:
+                                - generic [ref=e1180]: ₹24,990
+                                - generic [ref=e1181]: ₹24,990
+                              - generic [ref=e1182]: "M.R.P: ₹27,500"
+                              - generic [ref=e1183]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1184]:
+                                  - generic [ref=e1185]: ₹27,500
+                                  - text: ₹27,500
+                            - text: (9% off)
+                          - generic [ref=e1188]:
+                            - generic [ref=e1189]: Save ₹1,000
+                            - text: with coupon
+                        - generic [ref=e1194]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1196]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1211] [cursor=pointer]
+                - listitem [ref=e1214]:
+                  - generic [ref=e1220]:
+                    - link [ref=e1226] [cursor=pointer]:
+                      - /url: /Samsung-inches-Vision-Smart-QA55QN2EHAULXL/dp/B0GYDZK595/ref=sr_1_8?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-8
+                      - img [ref=e1228]
+                    - generic [ref=e1231]:
+                      - generic [ref=e1232]:
+                        - heading "Samsung" [level=2] [ref=e1235]
+                        - link "55 inches Neo QLED 4K Samsung Vision AI Smart TV QA55QN2EHAULXL" [ref=e1236] [cursor=pointer]:
+                          - /url: /Samsung-inches-Vision-Smart-QA55QN2EHAULXL/dp/B0GYDZK595/ref=sr_1_8?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-8
+                          - heading "55 inches Neo QLED 4K Samsung Vision AI Smart TV QA55QN2EHAULXL" [level=2] [ref=e1237]
+                      - generic [ref=e1239]:
+                        - text: "3.9"
+                        - button "3.9 out of 5 stars, rating details" [ref=e1241] [cursor=pointer]:
+                          - generic [ref=e1243]: 3.9 out of 5 stars
+                        - link "6 ratings" [ref=e1245] [cursor=pointer]:
+                          - /url: /Samsung-inches-Vision-Smart-QA55QN2EHAULXL/dp/B0GYDZK595/ref=sr_1_8?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-8#customerReviews
+                          - text: (6)
+                      - generic [ref=e1248]:
+                        - generic [ref=e1249]:
+                          - link "Limited time deal" [ref=e1251] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e1254]: Limited time deal
+                          - generic [ref=e1256]:
+                            - generic [ref=e1257]: Price, product page
+                            - 'link "₹70,990 M.R.P: ₹99,900 M.R.P: ₹99,900" [ref=e1258] [cursor=pointer]':
+                              - /url: /Samsung-inches-Vision-Smart-QA55QN2EHAULXL/dp/B0GYDZK595/ref=sr_1_8?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-8
+                              - generic [ref=e1259]:
+                                - generic [ref=e1260]: ₹70,990
+                                - generic [ref=e1261]: ₹70,990
+                              - generic [ref=e1262]: "M.R.P: ₹99,900"
+                              - generic [ref=e1263]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1264]:
+                                  - generic [ref=e1265]: ₹99,900
+                                  - text: ₹99,900
+                            - text: (29% off)
+                          - generic [ref=e1268]:
+                            - generic [ref=e1269]: Save ₹1,500
+                            - text: with coupon
+                        - generic [ref=e1274]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1276]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1291] [cursor=pointer]
+                - listitem [ref=e1294]:
+                  - generic [ref=e1300]:
+                    - link [ref=e1306] [cursor=pointer]:
+                      - /url: /Samsung-inches-Vision-Smart-UA55M70HAULXL/dp/B0H2D74X1C/ref=sr_1_9?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-9
+                      - img [ref=e1308]
+                    - generic [ref=e1311]:
+                      - generic [ref=e1312]:
+                        - heading "Samsung" [level=2] [ref=e1315]
+                        - link "55 inches Mini LED 4K Samsung Vision AI Smart TV UA55M70HAULXL" [ref=e1316] [cursor=pointer]:
+                          - /url: /Samsung-inches-Vision-Smart-UA55M70HAULXL/dp/B0H2D74X1C/ref=sr_1_9?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-9
+                          - heading "55 inches Mini LED 4K Samsung Vision AI Smart TV UA55M70HAULXL" [level=2] [ref=e1317]
+                      - generic [ref=e1320]:
+                        - link "See options" [ref=e1329] [cursor=pointer]:
+                          - /url: /Samsung-inches-Vision-Smart-UA55M70HAULXL/dp/B0H2D74X1C/ref=sr_1_9_so_TELEVISION?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-9
+                        - generic [ref=e1331]:
+                          - text: No featured offers available
+                          - text: ₹55,980
+                          - link "(1 new offer)" [ref=e1333] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B0H2D74X1C/ref=sr_1_9_olp?keywords=samsung+tv+55+inch&dib_tag=se&dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&qid=1782114443&sr=8-9
+                - listitem [ref=e1336]:
+                  - generic [ref=e1342]:
+                    - link [ref=e1348] [cursor=pointer]:
+                      - /url: /Samsung-inches-Ultra-Smart-QA55Q7FAAULXL/dp/B0F6VHPZS6/ref=sr_1_10?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-10
+                      - img [ref=e1350]
+                    - generic [ref=e1353]:
+                      - generic [ref=e1354]:
+                        - heading "Samsung" [level=2] [ref=e1357]
+                        - link "138 cm (55 inches) 4K Ultra HD Smart QLED TV QA55Q7FAAULXL (Black)" [ref=e1358] [cursor=pointer]:
+                          - /url: /Samsung-inches-Ultra-Smart-QA55Q7FAAULXL/dp/B0F6VHPZS6/ref=sr_1_10?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-10
+                          - heading "138 cm (55 inches) 4K Ultra HD Smart QLED TV QA55Q7FAAULXL (Black)" [level=2] [ref=e1359]
+                      - generic [ref=e1361]:
+                        - text: "4.5"
+                        - button "4.5 out of 5 stars, rating details" [ref=e1363] [cursor=pointer]:
+                          - generic [ref=e1365]: 4.5 out of 5 stars
+                        - link "35 ratings" [ref=e1367] [cursor=pointer]:
+                          - /url: /Samsung-inches-Ultra-Smart-QA55Q7FAAULXL/dp/B0F6VHPZS6/ref=sr_1_10?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-10#customerReviews
+                          - text: (35)
+                      - generic [ref=e1370]:
+                        - generic [ref=e1371]:
+                          - generic [ref=e1373]:
+                            - generic [ref=e1374]: Price, product page
+                            - 'link "₹53,990 M.R.P: ₹81,000 M.R.P: ₹81,000" [ref=e1375] [cursor=pointer]':
+                              - /url: /Samsung-inches-Ultra-Smart-QA55Q7FAAULXL/dp/B0F6VHPZS6/ref=sr_1_10?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-10
+                              - generic [ref=e1376]:
+                                - generic [ref=e1377]: ₹53,990
+                                - generic [ref=e1378]: ₹53,990
+                              - generic [ref=e1379]: "M.R.P: ₹81,000"
+                              - generic [ref=e1380]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1381]:
+                                  - generic [ref=e1382]: ₹81,000
+                                  - text: ₹81,000
+                            - text: (33% off)
+                          - generic [ref=e1386]:
+                            - generic [ref=e1387]: Flat INR 750 Off on Select Bank Cards
+                            - generic [ref=e1388]: Flat INR 750 Off on Select Bank Cards
+                        - generic [ref=e1389]:
+                          - generic [ref=e1393]: FREE delivery Mon, 29 Jun
+                          - generic "Only 1 left in stock." [ref=e1395]
+                        - generic [ref=e1397]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1412] [cursor=pointer]
+                - listitem [ref=e1415]:
+                  - generic [ref=e1423]:
+                    - link [ref=e1429] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-11-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ
+                      - img [ref=e1431]
+                    - generic [ref=e1434]:
+                      - generic [ref=e1435]:
+                        - button "View Sponsored information or leave ad feedback" [ref=e1438] [cursor=pointer]:
+                          - generic [ref=e1439]: Sponsored
+                        - heading "XIAOMI" [level=2] [ref=e1443]
+                        - link "Sponsored Ad - 138 cm (55 inch) X Ultra HD 4K Smart Google LED TV L55MB-AIN" [ref=e1444] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-11-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ
+                          - heading "Sponsored Ad - 138 cm (55 inch) X Ultra HD 4K Smart Google LED TV L55MB-AIN" [level=2] [ref=e1445]: 138 cm (55 inch) X Ultra HD 4K Smart Google LED TV L55MB-AIN
+                      - generic [ref=e1446]:
+                        - generic [ref=e1447]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=e1449] [cursor=pointer]:
+                            - generic [ref=e1451]: 4.1 out of 5 stars
+                          - link "4,495 ratings" [ref=e1453] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-11-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ#customerReviews
+                            - text: (4.4K)
+                        - generic [ref=e1454]: 100+ bought in past month
+                      - generic [ref=e1457]:
+                        - generic [ref=e1458]:
+                          - generic [ref=e1460]:
+                            - generic [ref=e1461]: Price, product page
+                            - 'link "₹36,999 M.R.P: ₹48,999 M.R.P: ₹48,999" [ref=e1462] [cursor=pointer]':
+                              - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTEyNjk5NzAxMTYzMjo6MDo6&url=%2FXiaomi-Ultra-Smart-Google-L55MB-AIN%2Fdp%2FB0F6YVKDR2%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-11-spons%26aref%3DvkyRWc2LI8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=vkyRWc2LI8&sp_cr=ZAZ
+                              - generic [ref=e1463]:
+                                - generic [ref=e1464]: ₹36,999
+                                - generic [ref=e1465]: ₹36,999
+                              - generic [ref=e1466]: "M.R.P: ₹48,999"
+                              - generic [ref=e1467]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1468]:
+                                  - generic [ref=e1469]: ₹48,999
+                                  - text: ₹48,999
+                            - text: (24% off)
+                          - generic [ref=e1473]:
+                            - generic [ref=e1474]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=e1475]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=e1480]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                        - generic [ref=e1482]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e1497] [cursor=pointer]
+                - listitem [ref=e1500]:
+                  - generic [ref=e1508]:
+                    - link [ref=e1514] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTE1NzE5NTQ5NTkzMjo6MDo6&url=%2FHisense-inches-Hi-QLED-MiniLED-55E8S%2Fdp%2FB0GVNBSXLS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-12-spons%26aref%3DMgwSueDJI7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=MgwSueDJI7&sp_cr=ZAZ
+                      - img [ref=e1516]
+                    - generic [ref=e1519]:
+                      - generic [ref=e1520]:
+                        - button "View Sponsored information or leave ad feedback" [ref=e1523] [cursor=pointer]:
+                          - generic [ref=e1524]: Sponsored
+                        - heading "Hisense" [level=2] [ref=e1528]
+                        - link "Sponsored Ad - 139 cm (55 inches) E8S Series Hi-QLED MiniLED Smart TV 55E8S (Black)" [ref=e1529] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTE1NzE5NTQ5NTkzMjo6MDo6&url=%2FHisense-inches-Hi-QLED-MiniLED-55E8S%2Fdp%2FB0GVNBSXLS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-12-spons%26aref%3DMgwSueDJI7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=MgwSueDJI7&sp_cr=ZAZ
+                          - heading "Sponsored Ad - 139 cm (55 inches) E8S Series Hi-QLED MiniLED Smart TV 55E8S (Black)" [level=2] [ref=e1530]: 139 cm (55 inches) E8S Series Hi-QLED MiniLED Smart TV 55E8S (Black)
+                      - generic [ref=e1532]:
+                        - text: "1.0"
+                        - button "1.0 out of 5 stars, rating details" [ref=e1534] [cursor=pointer]:
+                          - generic [ref=e1536]: 1.0 out of 5 stars
+                        - link "2 ratings" [ref=e1538] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTE1NzE5NTQ5NTkzMjo6MDo6&url=%2FHisense-inches-Hi-QLED-MiniLED-55E8S%2Fdp%2FB0GVNBSXLS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-12-spons%26aref%3DMgwSueDJI7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=MgwSueDJI7&sp_cr=ZAZ#customerReviews
+                          - text: (2)
+                      - generic [ref=e1541]:
+                        - generic [ref=e1542]:
+                          - generic [ref=e1544]:
+                            - generic [ref=e1545]: Price, product page
+                            - 'link "₹57,990 M.R.P: ₹91,999 M.R.P: ₹91,999" [ref=e1546] [cursor=pointer]':
+                              - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfbXRmOjMwMTE1NzE5NTQ5NTkzMjo6MDo6&url=%2FHisense-inches-Hi-QLED-MiniLED-55E8S%2Fdp%2FB0GVNBSXLS%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-12-spons%26aref%3DMgwSueDJI7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=MgwSueDJI7&sp_cr=ZAZ
+                              - generic [ref=e1547]:
+                                - generic [ref=e1548]: ₹57,990
+                                - generic [ref=e1549]: ₹57,990
+                              - generic [ref=e1550]: "M.R.P: ₹91,999"
+                              - generic [ref=e1551]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1552]:
+                                  - generic [ref=e1553]: ₹91,999
+                                  - text: ₹91,999
+                            - text: (37% off)
+                          - generic [ref=e1557]:
+                            - generic [ref=e1558]: Flat INR 750 Off on Select Bank Cards
+                            - generic [ref=e1559]: Flat INR 750 Off on Select Bank Cards
+                        - generic [ref=e1564]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1566]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e1581] [cursor=pointer]
+                - listitem [ref=e1584]:
+                  - generic [ref=e1590]:
+                    - link [ref=e1596] [cursor=pointer]:
+                      - /url: /Philips-inches-Google-55PQT8100-94/dp/B0FDQVJQKB/ref=sr_1_13?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-13
+                      - img [ref=e1598]
+                    - generic [ref=e1601]:
+                      - generic [ref=e1602]:
+                        - heading "PHILIPS" [level=2] [ref=e1605]
+                        - link "139 cm (55 inches) 8100 Series 4K Ultra HD Smart QLED Google TV 55PQT8100/94" [ref=e1606] [cursor=pointer]:
+                          - /url: /Philips-inches-Google-55PQT8100-94/dp/B0FDQVJQKB/ref=sr_1_13?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-13
+                          - heading "139 cm (55 inches) 8100 Series 4K Ultra HD Smart QLED Google TV 55PQT8100/94" [level=2] [ref=e1607]
+                      - generic [ref=e1608]:
+                        - generic [ref=e1609]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=e1611] [cursor=pointer]:
+                            - generic [ref=e1613]: 4.2 out of 5 stars
+                          - link "1,511 ratings" [ref=e1615] [cursor=pointer]:
+                            - /url: /Philips-inches-Google-55PQT8100-94/dp/B0FDQVJQKB/ref=sr_1_13?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-13#customerReviews
+                            - text: (1.5K)
+                        - generic [ref=e1616]: 200+ bought in past month
+                      - generic [ref=e1619]:
+                        - generic [ref=e1620]:
+                          - generic [ref=e1622]:
+                            - generic [ref=e1623]: Price, product page
+                            - 'link "₹37,999 M.R.P: ₹49,999 M.R.P: ₹49,999" [ref=e1624] [cursor=pointer]':
+                              - /url: /Philips-inches-Google-55PQT8100-94/dp/B0FDQVJQKB/ref=sr_1_13?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-13
+                              - generic [ref=e1625]:
+                                - generic [ref=e1626]: ₹37,999
+                                - generic [ref=e1627]: ₹37,999
+                              - generic [ref=e1628]: "M.R.P: ₹49,999"
+                              - generic [ref=e1629]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1630]:
+                                  - generic [ref=e1631]: ₹49,999
+                                  - text: ₹49,999
+                            - text: (24% off)
+                          - generic [ref=e1635]:
+                            - generic [ref=e1636]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=e1637]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=e1642]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                        - generic [ref=e1644]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e1659] [cursor=pointer]
+                - listitem [ref=e1662]:
+                  - generic [ref=e1668]:
+                    - link [ref=e1674] [cursor=pointer]:
+                      - /url: /Samsung-inches-Ultra-Smart-UA55BU8570ULXL/dp/B09Y66HNT2/ref=sr_1_14?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-14
+                      - img [ref=e1676]
+                    - generic [ref=e1679]:
+                      - generic [ref=e1680]:
+                        - heading "Samsung" [level=2] [ref=e1683]
+                        - link "138 cm (55 inches) 4K Ultra HD Smart LED TV UA55BU8570ULXL (Black)" [ref=e1684] [cursor=pointer]:
+                          - /url: /Samsung-inches-Ultra-Smart-UA55BU8570ULXL/dp/B09Y66HNT2/ref=sr_1_14?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-14
+                          - heading "138 cm (55 inches) 4K Ultra HD Smart LED TV UA55BU8570ULXL (Black)" [level=2] [ref=e1685]
+                      - generic [ref=e1687]:
+                        - text: "3.8"
+                        - button "3.8 out of 5 stars, rating details" [ref=e1689] [cursor=pointer]:
+                          - generic [ref=e1691]: 3.8 out of 5 stars
+                        - link "31 ratings" [ref=e1693] [cursor=pointer]:
+                          - /url: /Samsung-inches-Ultra-Smart-UA55BU8570ULXL/dp/B09Y66HNT2/ref=sr_1_14?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-14#customerReviews
+                          - text: (31)
+                      - generic [ref=e1696]:
+                        - generic [ref=e1697]:
+                          - link "Limited time deal" [ref=e1699] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e1702]: Limited time deal
+                          - generic [ref=e1704]:
+                            - generic [ref=e1705]: Price, product page
+                            - 'link "₹45,990 M.R.P: ₹94,900 M.R.P: ₹94,900" [ref=e1706] [cursor=pointer]':
+                              - /url: /Samsung-inches-Ultra-Smart-UA55BU8570ULXL/dp/B09Y66HNT2/ref=sr_1_14?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-14
+                              - generic [ref=e1707]:
+                                - generic [ref=e1708]: ₹45,990
+                                - generic [ref=e1709]: ₹45,990
+                              - generic [ref=e1710]: "M.R.P: ₹94,900"
+                              - generic [ref=e1711]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1712]:
+                                  - generic [ref=e1713]: ₹94,900
+                                  - text: ₹94,900
+                            - text: (52% off)
+                          - generic [ref=e1717]:
+                            - generic [ref=e1718]: Flat INR 750 Off on Select Bank Cards
+                            - generic [ref=e1719]: Flat INR 750 Off on Select Bank Cards
+                        - generic [ref=e1724]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1726]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1741] [cursor=pointer]
+                - listitem [ref=e1744]:
+                  - generic [ref=e1750]:
+                    - link [ref=e1756] [cursor=pointer]:
+                      - /url: /Samsung-inches-Crystal-Ultra-UA55U8100FULXL/dp/B0F63GQB55/ref=sr_1_15?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-15
+                      - img [ref=e1758]
+                    - generic [ref=e1761]:
+                      - generic [ref=e1762]:
+                        - heading "Samsung" [level=2] [ref=e1765]
+                        - link "138 cm (55 inches) Crystal 4K Ultra HD Smart LED TV UA55U8100FULXL (Black)" [ref=e1766] [cursor=pointer]:
+                          - /url: /Samsung-inches-Crystal-Ultra-UA55U8100FULXL/dp/B0F63GQB55/ref=sr_1_15?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-15
+                          - heading "138 cm (55 inches) Crystal 4K Ultra HD Smart LED TV UA55U8100FULXL (Black)" [level=2] [ref=e1767]
+                      - generic [ref=e1769]:
+                        - text: "3.5"
+                        - button "3.5 out of 5 stars, rating details" [ref=e1771] [cursor=pointer]:
+                          - generic [ref=e1773]: 3.5 out of 5 stars
+                        - link "32 ratings" [ref=e1775] [cursor=pointer]:
+                          - /url: /Samsung-inches-Crystal-Ultra-UA55U8100FULXL/dp/B0F63GQB55/ref=sr_1_15?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-15#customerReviews
+                          - text: (32)
+                      - generic [ref=e1778]:
+                        - generic [ref=e1779]:
+                          - generic [ref=e1781]:
+                            - generic [ref=e1782]: Price, product page
+                            - 'link "₹45,490 M.R.P: ₹62,500 M.R.P: ₹62,500" [ref=e1783] [cursor=pointer]':
+                              - /url: /Samsung-inches-Crystal-Ultra-UA55U8100FULXL/dp/B0F63GQB55/ref=sr_1_15?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-15
+                              - generic [ref=e1784]:
+                                - generic [ref=e1785]: ₹45,490
+                                - generic [ref=e1786]: ₹45,490
+                              - generic [ref=e1787]: "M.R.P: ₹62,500"
+                              - generic [ref=e1788]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1789]:
+                                  - generic [ref=e1790]: ₹62,500
+                                  - text: ₹62,500
+                            - text: (27% off)
+                          - generic [ref=e1794]:
+                            - generic [ref=e1795]: Flat INR 750 Off on Select Bank Cards
+                            - generic [ref=e1796]: Flat INR 750 Off on Select Bank Cards
+                        - generic [ref=e1801]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1803]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1818] [cursor=pointer]
+                - listitem [ref=e1821]:
+                  - generic [ref=e1827]:
+                    - link [ref=e1833] [cursor=pointer]:
+                      - /url: /LG-inches-Ultra-Smart-55NU870BPLA/dp/B0GTZ8WM5W/ref=sr_1_16?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-16
+                      - img [ref=e1835]
+                    - generic [ref=e1838]:
+                      - generic [ref=e1839]:
+                        - heading "LG" [level=2] [ref=e1842]
+                        - link "139 cms (55 inches) NU87 AI Series Nano 4K Ultra HD Smart webOS LED TV 55NU870BPLA" [ref=e1843] [cursor=pointer]:
+                          - /url: /LG-inches-Ultra-Smart-55NU870BPLA/dp/B0GTZ8WM5W/ref=sr_1_16?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-16
+                          - heading "139 cms (55 inches) NU87 AI Series Nano 4K Ultra HD Smart webOS LED TV 55NU870BPLA" [level=2] [ref=e1844]
+                      - generic [ref=e1845]:
+                        - generic [ref=e1846]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=e1848] [cursor=pointer]:
+                            - generic [ref=e1850]: 4.0 out of 5 stars
+                          - link "9,098 ratings" [ref=e1852] [cursor=pointer]:
+                            - /url: /LG-inches-Ultra-Smart-55NU870BPLA/dp/B0GTZ8WM5W/ref=sr_1_16?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-16#customerReviews
+                            - text: (9K)
+                        - generic [ref=e1853]: 400+ bought in past month
+                      - generic [ref=e1856]:
+                        - generic [ref=e1857]:
+                          - generic [ref=e1859]:
+                            - generic [ref=e1860]: Price, product page
+                            - 'link "₹47,990 M.R.P: ₹85,990 M.R.P: ₹85,990" [ref=e1861] [cursor=pointer]':
+                              - /url: /LG-inches-Ultra-Smart-55NU870BPLA/dp/B0GTZ8WM5W/ref=sr_1_16?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-16
+                              - generic [ref=e1862]:
+                                - generic [ref=e1863]: ₹47,990
+                                - generic [ref=e1864]: ₹47,990
+                              - generic [ref=e1865]: "M.R.P: ₹85,990"
+                              - generic [ref=e1866]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1867]:
+                                  - generic [ref=e1868]: ₹85,990
+                                  - text: ₹85,990
+                            - text: (44% off)
+                          - generic [ref=e1872]:
+                            - generic [ref=e1873]: INR500 Discount on All banks transaction
+                            - generic [ref=e1874]: INR500 Discount on All banks transa...
+                        - generic [ref=e1879]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1881]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1896] [cursor=pointer]
+                - listitem [ref=e1899]:
+                  - generic [ref=e1905]:
+                    - link [ref=e1911] [cursor=pointer]:
+                      - /url: /Samsung-inches-QNX1D-QA55QNX1DAULXL-Graphite/dp/B0DCGG8BPY/ref=sr_1_17?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-17
+                      - img [ref=e1913]
+                    - generic [ref=e1916]:
+                      - generic [ref=e1917]:
+                        - heading "Samsung" [level=2] [ref=e1920]
+                        - link "138 cm (55 inches) Neo-QLED 4K Mini LED QNX1D Series AI Smart TV QA55QNX1DAULXL (Graphite Black)" [ref=e1921] [cursor=pointer]:
+                          - /url: /Samsung-inches-QNX1D-QA55QNX1DAULXL-Graphite/dp/B0DCGG8BPY/ref=sr_1_17?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-17
+                          - heading "138 cm (55 inches) Neo-QLED 4K Mini LED QNX1D Series AI Smart TV QA55QNX1DAULXL (Graphite Black)" [level=2] [ref=e1922]
+                      - generic [ref=e1924]:
+                        - text: "4.0"
+                        - button "4.0 out of 5 stars, rating details" [ref=e1926] [cursor=pointer]:
+                          - generic [ref=e1928]: 4.0 out of 5 stars
+                        - link "8 ratings" [ref=e1930] [cursor=pointer]:
+                          - /url: /Samsung-inches-QNX1D-QA55QNX1DAULXL-Graphite/dp/B0DCGG8BPY/ref=sr_1_17?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-17#customerReviews
+                          - text: (8)
+                      - generic [ref=e1933]:
+                        - generic [ref=e1934]:
+                          - generic [ref=e1936]:
+                            - generic [ref=e1937]: Price, product page
+                            - 'link "₹74,990 M.R.P: ₹78,290 M.R.P: ₹78,290" [ref=e1938] [cursor=pointer]':
+                              - /url: /Samsung-inches-QNX1D-QA55QNX1DAULXL-Graphite/dp/B0DCGG8BPY/ref=sr_1_17?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-17
+                              - generic [ref=e1939]:
+                                - generic [ref=e1940]: ₹74,990
+                                - generic [ref=e1941]: ₹74,990
+                              - generic [ref=e1942]: "M.R.P: ₹78,290"
+                              - generic [ref=e1943]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1944]:
+                                  - generic [ref=e1945]: ₹78,290
+                                  - text: ₹78,290
+                            - text: (4% off)
+                          - generic [ref=e1949]:
+                            - generic [ref=e1950]: Save extra with No Cost EMI
+                            - generic [ref=e1951]: Save extra with No Cost EMI
+                        - generic [ref=e1956]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e1958]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e1973] [cursor=pointer]
+                - listitem [ref=e1976]:
+                  - generic [ref=e1982]:
+                    - link [ref=e1988] [cursor=pointer]:
+                      - /url: /Sony-inches-BRAVIA-Google-K-55S25BM2/dp/B0F7X5FC43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-18
+                      - img [ref=e1990]
+                    - generic [ref=e1993]:
+                      - generic [ref=e1994]:
+                        - heading "Sony" [level=2] [ref=e1997]
+                        - link "139 cm (55 inches) BRAVIA 2M2 Series 4K Ultra HD Smart LED Google TV K-55S25BM2" [ref=e1998] [cursor=pointer]:
+                          - /url: /Sony-inches-BRAVIA-Google-K-55S25BM2/dp/B0F7X5FC43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-18
+                          - heading "139 cm (55 inches) BRAVIA 2M2 Series 4K Ultra HD Smart LED Google TV K-55S25BM2" [level=2] [ref=e1999]
+                      - generic [ref=e2000]:
+                        - generic [ref=e2001]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e2003] [cursor=pointer]:
+                            - generic [ref=e2005]: 4.6 out of 5 stars
+                          - link "1,419 ratings" [ref=e2007] [cursor=pointer]:
+                            - /url: /Sony-inches-BRAVIA-Google-K-55S25BM2/dp/B0F7X5FC43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-18#customerReviews
+                            - text: (1.4K)
+                        - generic [ref=e2008]: 300+ bought in past month
+                      - generic [ref=e2011]:
+                        - generic [ref=e2012]:
+                          - generic [ref=e2014]:
+                            - generic [ref=e2015]: Price, product page
+                            - 'link "₹63,990 M.R.P: ₹99,900 M.R.P: ₹99,900" [ref=e2016] [cursor=pointer]':
+                              - /url: /Sony-inches-BRAVIA-Google-K-55S25BM2/dp/B0F7X5FC43/ref=sr_1_18?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-18
+                              - generic [ref=e2017]:
+                                - generic [ref=e2018]: ₹63,990
+                                - generic [ref=e2019]: ₹63,990
+                              - generic [ref=e2020]: "M.R.P: ₹99,900"
+                              - generic [ref=e2021]:
+                                - text: "M.R.P:"
+                                - generic [ref=e2022]:
+                                  - generic [ref=e2023]: ₹99,900
+                                  - text: ₹99,900
+                            - text: (36% off)
+                          - generic [ref=e2026]:
+                            - generic [ref=e2027]: Save ₹1,500
+                            - text: with coupon
+                        - generic [ref=e2032]: FREE delivery as soon as Wed, 24 Jun, 7 am - 9 pm
+                        - generic [ref=e2034]: "Service: Brand Installation"
+                        - button "Add to cart" [ref=e2049] [cursor=pointer]
+                - listitem [ref=e2052]:
+                  - generic [ref=e2058]:
+                    - link [ref=e2064] [cursor=pointer]:
+                      - /url: /inches-Ultra-Smart-Google-VW55GQ2/dp/B0GGRDG6GG/ref=sr_1_19?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-19
+                      - img [ref=e2066]
+                    - generic [ref=e2069]:
+                      - link "VW 140 cm (55 inches) Pro Series 4K Ultra HD Smart QLED Google TV VW55GQ2" [ref=e2071] [cursor=pointer]:
+                        - /url: /inches-Ultra-Smart-Google-VW55GQ2/dp/B0GGRDG6GG/ref=sr_1_19?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-19
+                        - heading "VW 140 cm (55 inches) Pro Series 4K Ultra HD Smart QLED Google TV VW55GQ2" [level=2] [ref=e2072]
+                      - generic [ref=e2073]:
+                        - generic [ref=e2074]:
+                          - text: "4.2"
+                          - button "4.2 out of 5 stars, rating details" [ref=e2076] [cursor=pointer]:
+                            - generic [ref=e2078]: 4.2 out of 5 stars
+                          - link "426 ratings" [ref=e2080] [cursor=pointer]:
+                            - /url: /inches-Ultra-Smart-Google-VW55GQ2/dp/B0GGRDG6GG/ref=sr_1_19?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-19#customerReviews
+                            - text: (426)
+                        - generic [ref=e2081]: 300+ bought in past month
+                      - generic [ref=e2084]:
+                        - generic [ref=e2085]:
+                          - generic [ref=e2087]:
+                            - generic [ref=e2088]: Price, product page
+                            - 'link "₹29,999 M.R.P: ₹64,999 M.R.P: ₹64,999" [ref=e2089] [cursor=pointer]':
+                              - /url: /inches-Ultra-Smart-Google-VW55GQ2/dp/B0GGRDG6GG/ref=sr_1_19?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-19
+                              - generic [ref=e2090]:
+                                - generic [ref=e2091]: ₹29,999
+                                - generic [ref=e2092]: ₹29,999
+                              - generic [ref=e2093]: "M.R.P: ₹64,999"
+                              - generic [ref=e2094]:
+                                - text: "M.R.P:"
+                                - generic [ref=e2095]:
+                                  - generic [ref=e2096]: ₹64,999
+                                  - text: ₹64,999
+                            - text: (54% off)
+                          - generic [ref=e2100]:
+                            - generic [ref=e2101]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=e2102]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=e2107]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                        - generic [ref=e2109]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e2124] [cursor=pointer]
+                - listitem [ref=e2127]:
+                  - generic [ref=e2133]:
+                    - link [ref=e2139] [cursor=pointer]:
+                      - /url: /Xiaomi-inch-Ultra-Smart-L55MB-FPIN/dp/B0F3JL33DW/ref=sr_1_20?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-20
+                      - img [ref=e2141]
+                    - generic [ref=e2144]:
+                      - generic [ref=e2145]:
+                        - heading "XIAOMI" [level=2] [ref=e2148]
+                        - link "138 cm (55 inch) FX Pro QLED Ultra HD 4K Smart Fire TV L55MB-FPIN" [ref=e2149] [cursor=pointer]:
+                          - /url: /Xiaomi-inch-Ultra-Smart-L55MB-FPIN/dp/B0F3JL33DW/ref=sr_1_20?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-20
+                          - heading "138 cm (55 inch) FX Pro QLED Ultra HD 4K Smart Fire TV L55MB-FPIN" [level=2] [ref=e2150]
+                      - generic [ref=e2151]:
+                        - generic [ref=e2152]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=e2154] [cursor=pointer]:
+                            - generic [ref=e2156]: 4.3 out of 5 stars
+                          - link "1,805 ratings" [ref=e2158] [cursor=pointer]:
+                            - /url: /Xiaomi-inch-Ultra-Smart-L55MB-FPIN/dp/B0F3JL33DW/ref=sr_1_20?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-20#customerReviews
+                            - text: (1.8K)
+                        - generic [ref=e2159]: 500+ bought in past month
+                      - generic [ref=e2162]:
+                        - generic [ref=e2163]:
+                          - generic [ref=e2165]:
+                            - generic [ref=e2166]: Price, product page
+                            - 'link "₹37,999 M.R.P: ₹62,999 M.R.P: ₹62,999" [ref=e2167] [cursor=pointer]':
+                              - /url: /Xiaomi-inch-Ultra-Smart-L55MB-FPIN/dp/B0F3JL33DW/ref=sr_1_20?dib=eyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8&dib_tag=se&keywords=samsung+tv+55+inch&qid=1782114443&sr=8-20
+                              - generic [ref=e2168]:
+                                - generic [ref=e2169]: ₹37,999
+                                - generic [ref=e2170]: ₹37,999
+                              - generic [ref=e2171]: "M.R.P: ₹62,999"
+                              - generic [ref=e2172]:
+                                - text: "M.R.P:"
+                                - generic [ref=e2173]:
+                                  - generic [ref=e2174]: ₹62,999
+                                  - text: ₹62,999
+                            - text: (40% off)
+                          - generic [ref=e2178]:
+                            - generic [ref=e2179]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=e2180]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=e2185]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                        - generic [ref=e2187]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e2202] [cursor=pointer]
+                - listitem [ref=e2205]:
+                  - generic [ref=e2213]:
+                    - link [ref=e2219] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyODg2MTU5MzYzMjo6MDo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-21-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ
+                      - img [ref=e2221]
+                    - generic [ref=e2224]:
+                      - generic [ref=e2225]:
+                        - button "View Sponsored information or leave ad feedback" [ref=e2228] [cursor=pointer]:
+                          - generic [ref=e2229]: Sponsored
+                        - heading "Hisense" [level=2] [ref=e2233]
+                        - link "Sponsored Ad - 254 cm (100 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ Adaptive | 144 Hz Game Mode Pro | 2.1 CH 50W Speakers with Subwoofer | VIDAA OS | 100E7Q PRO (Charcoal Grey)" [ref=e2234] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyODg2MTU5MzYzMjo6MDo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-21-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ
+                          - heading "Sponsored Ad - 254 cm (100 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ Adaptive | 144 Hz Game Mode Pro | 2.1 CH 50W Speakers with Subwoofer | VIDAA OS | 100E7Q PRO (Charcoal Grey)" [level=2] [ref=e2235]: 254 cm (100 Inches) 4K Ultra HD Smart QLED TV | Dolby Vision Atmos, HDR10+ Adaptive | 144 Hz Game Mode Pro | 2.1 CH 50W Speakers with Subwoofer | VIDAA OS | 100E7Q PRO (Charcoal Grey)
+                      - generic [ref=e2237]:
+                        - text: "4.1"
+                        - button "4.1 out of 5 stars, rating details" [ref=e2239] [cursor=pointer]:
+                          - generic [ref=e2241]: 4.1 out of 5 stars
+                        - link "111 ratings" [ref=e2243] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyODg2MTU5MzYzMjo6MDo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-21-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ#customerReviews
+                          - text: (111)
+                      - link "See options" [ref=e2255] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyODg2MTU5MzYzMjo6MDo6&url=%2FHisense-inches-Ultra-100E7Q-Charcoal%2Fdp%2FB0F4X6RBFK%2Fref%3Dsr_1_21_so_TELEVISION%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-21-spons%26aref%3Di17DDAMQpY%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=i17DDAMQpY&sp_cr=ZAZ
+                - listitem [ref=e2258]:
+                  - generic [ref=e2266]:
+                    - link [ref=e2272] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyOTU3ODEwMjYzMjo6MDo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-22-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ
+                      - img [ref=e2274]
+                    - generic [ref=e2277]:
+                      - generic [ref=e2278]:
+                        - button "View Sponsored information or leave ad feedback" [ref=e2281] [cursor=pointer]:
+                          - generic [ref=e2282]: Sponsored
+                        - heading "Hisense" [level=2] [ref=e2286]
+                        - link "Sponsored Ad - 139 cm (55 Inches) 4K Ultra HD Smart QLED TV 55E75Q | E75Q Series | 48W Powerful Speakers | Dolby Atmos & HDR10+ | ALLM, VRR & Game Mode | Cricket Mode | AI 4K Upscaler | VIDAA OS (Black)" [ref=e2287] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyOTU3ODEwMjYzMjo6MDo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-22-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ
+                          - heading "Sponsored Ad - 139 cm (55 Inches) 4K Ultra HD Smart QLED TV 55E75Q | E75Q Series | 48W Powerful Speakers | Dolby Atmos & HDR10+ | ALLM, VRR & Game Mode | Cricket Mode | AI 4K Upscaler | VIDAA OS (Black)" [level=2] [ref=e2288]: 139 cm (55 Inches) 4K Ultra HD Smart QLED TV 55E75Q | E75Q Series | 48W Powerful Speakers | Dolby Atmos & HDR10+ | ALLM, VRR & Game Mode | Cricket Mode | AI 4K Upscaler | VIDAA OS (Black)
+                      - generic [ref=e2289]:
+                        - generic [ref=e2290]:
+                          - text: "4.0"
+                          - button "4.0 out of 5 stars, rating details" [ref=e2292] [cursor=pointer]:
+                            - generic [ref=e2294]: 4.0 out of 5 stars
+                          - link "116 ratings" [ref=e2296] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyOTU3ODEwMjYzMjo6MDo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-22-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ#customerReviews
+                            - text: (116)
+                        - generic [ref=e2297]: 50+ bought in past month
+                      - generic [ref=e2300]:
+                        - generic [ref=e2301]:
+                          - generic [ref=e2303]:
+                            - generic [ref=e2304]: Price, product page
+                            - 'link "₹37,999 M.R.P: ₹69,999 M.R.P: ₹69,999" [ref=e2305] [cursor=pointer]':
+                              - /url: /sspa/click?ie=UTF8&spc=MTozNjQ1NDc0Nzg5MTI3NDEyOjE3ODIxMTQ0NDQ6c3BfYnRmOjMwMDkyOTU3ODEwMjYzMjo6MDo6&url=%2FHisense-inches-Ultra-Speakers-55E75Q%2Fdp%2FB0FJLSNZBW%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.o7pFYxM5lqEyQV91r8HcbYQLoN8JyVMy32iZWOau8xdm20ELGjGZ1TLw3jxnIIq71M1Nvo4nhNDwmMsTrLc9HdiUFZ6VPu_UOvwnnfvRO1R4yBRj7etjCHvG7Am5hYiTASC3tzYLMha_G4yAfo6uiCMKwWEG2k-1RLt2S82Ee8zMpsTcNAtOJfFueKPXzYTtXppYoD1ViYsn-d_usOA44Ci8zupDI31dXJD3-4JN4YI.v8mnxIwcTvXoSyp5stT_A0TGZngnL_nDh6kdURjmEB8%26dib_tag%3Dse%26keywords%3Dsamsung%2Btv%2B55%2Binch%26qid%3D1782114443%26sr%3D8-22-spons%26aref%3D6K2bQD4GIp%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1&aref=6K2bQD4GIp&sp_cr=ZAZ
+                              - generic [ref=e2306]:
+                                - generic [ref=e2307]: ₹37,999
+                                - generic [ref=e2308]: ₹37,999
+                              - generic [ref=e2309]: "M.R.P: ₹69,999"
+                              - generic [ref=e2310]:
+                                - text: "M.R.P:"
+                                - generic [ref=e2311]:
+                                  - generic [ref=e2312]: ₹69,999
+                                  - text: ₹69,999
+                            - text: (46% off)
+                          - generic [ref=e2315]:
+                            - generic [ref=e2316]: Save ₹1,000
+                            - text: with coupon
+                        - generic [ref=e2321]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+                        - generic [ref=e2323]: "Service: Setup at delivery"
+                        - button "Add to cart" [ref=e2338] [cursor=pointer]
+          - generic [ref=e2348]:
+            - link "Sponsored video; click to navigate to featured product page. TCL 139 cm (55 inches) 4K UHD Smart QD-Mini LED Google TV 55Q6C" [ref=e2352] [cursor=pointer]:
+              - /url: https://aax-eu-zaz.amazon.in/x/c/JGpplbcM0YWIag5JQswI5xcAAAGe7kxjWwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOucaY/clv1c_ek-wBPHXLcTWnuOrE7vOusHh5BIy_tB0AYFLTkfGG3k3F_J-rulcQq0ugdz_Fx5JjKJ0yoA0bJZ47nAxARN1kaAOVJ9R7CSCtovBnFXz9You6FTqN92VYV1YIv1sipoB-4QlHrwCqxfsld6PN_gU80_Sig0cl1TiMt2kR4crjoMNT4MtghbxlygrzVO-dM_wc30NEG7TD2aL0n_0vXhw3jPNCE-vlRuKVcgXjoVZCxJKdDRDgwB6whLSKGq2YY7C6v6kQzppZAXR4eO0J2Ho9RoH0tyUF4_eZkrYziHf4FyZkOHDGRU14n3DXrI67bV82ZIEFjOKb5jImUzFZa-qkvgYKhcYITwcFyK1-G3FwOBApQ0ruUbIbyGMbx0iLVJQ9buzfvTYXnFI6wtOu27Pc752bEhZI2tTiqN8B5U_D87UgulVEn3aFSrQMyqw0LRd9GCiyxouEuCA82LSorGU-yb6rczmMZvCPMVH1q7dmyytiUiA-cOJFaoM4N1YhRcZ7CAFJk6PS4me3K-OLhGunEBgQo1hheIUZlIFNu1w7oNSVieDJ1GicFTB-CUpxBQpfW3Wuo_WcCUtRywkrkzcoTwqOmoLHkN38Ea8-2ynmTlKiPI-AXdIptr9Uh2mvcoVVX8HuWF72OMGGFu_PC5yGLAt3_fpSlNSMoXN83p_evrFiC0tZJyfJqU4iSocTP8IJh1z7wzjhmEc3adgUm4oAj9pPv07qQG9Ilxu6jXpd5zYReS7kptQPP2suJ9c45RmCk75Y3S84DdVOt8XrwfHYmdPITfyGUsD4sGoOw_5hUtSpaLhGeLM_sQR7ovAL1BQoYYgtmQtYdinOuP_Y2WxHorQTM8gT2A_VuhNzXZ53_J1rLFLXJjQkte6HER-dWq5dSW3gSv1R5uVMLvFeGo8Ao6esO-ebGWhfOl5jmYiWrFXKDQtCzqPSKFT8jMx4wSl5Kb2jWKdjKhFnh4wKQE0gV_i7IitmqwsyC5fd1C7rkIJVCKdwIyWhPsFJoc2UhdAl036qNx30SRzqsK6hKdgUTPGSa0v8jVo0At3Q_s-s4Path9nRhxk_cfaxWD4CEC9tDJUfyS2pqC1upSVgY8sahAZn79kaf8NO467CWoxa1-7T4RIKBJE_uVpd7nMXwTELVRx1IjJfZAGvuYWuXF2PLt0o3A2ww4kIqGWDJ2JWh_L6gdeGkLYz7jsZ1V9gLxgPEH7MssGdRiMQAJBpHASTSsGTVpDtb8vo_T1BFbYjjVYUbW-MZhAfxoUcjE9FVDjsWT87UtCVNs1DBCNCPuLCpqiEi0EC-G6M53zKArTyWZSHUv_3cQXC-J-5OlfTGaGmq65LlAk95B0iDE3OwXsEKh8QP-87qB7mzrjKOUtYOU6zgL03s4c493LXeYBVhQnSLRzC3xdA1EjWMSNFYQ8n5iWV6WOUEkLsUKOE8SVtSY2m-LC95A2DKpCWfMEePlZvoaifu73-WhUVj3kqVOTQPsuyfbTqVyeHRxx4q94-ToGLY-CvxXtzpy3OzA1OKVa2GvjGz3YRv2NKpTQwDiYhLZYR3uzA98Xi6DJBkGKMncQMxZLUNEtU1bxRzPRouo_-KE0IqObW2CFva3V9ay29CR8-rcgWgRZw_bA8kEcrQNU57I_NoGNRIi5KvjzTnApa7VyrqKGNKqMEPWKoB5WFrND3Jgdomp3OM138r24/https://www.amazon.in/dp/B0F3HWNTR1?aref=CWtrH6Z7nq&pd_rd_i=B0F3HWNTR1&pf_rd_p=fa654091-9aaa-43a3-ac17-a2ad95526fd2&pd_rd_wg=HFshR&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_w=4Ebnv&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff
+              - generic "Sponsored video; click to navigate to featured product page. TCL 139 cm (55 inches) 4K UHD Smart QD-Mini LED Google TV 55Q6C" [ref=e2353]
+            - generic [ref=e2361]:
+              - link [ref=e2367] [cursor=pointer]:
+                - /url: https://aax-eu-zaz.amazon.in/x/c/JGpplbcM0YWIag5JQswI5xcAAAGe7kxjWwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOucaY/clv1c_ek-wBPHXLcTWnuOrE7vOusHh5BIy_tB0AYFLTkfGG3k3F_J-rulcQq0ugdz_Fx5JjKJ0yoA0bJZ47nAxARN1kaAOVJ9R7CSCtovBnFXz9You6FTqN92VYV1YIv1sipoB-4QlHrwCqxfsld6PN_gU80_Sig0cl1TiMt2kR4crjoMNT4MtghbxlygrzVO-dM_wc30NEG7TD2aL0n_0vXhw3jPNCE-vlRuKVcgXjoVZCxJKdDRDgwB6whLSKGq2YY7C6v6kQzppZAXR4eO0J2Ho9RoH0tyUF4_eZkrYziHf4FyZkOHDGRU14n3DXrI67bV82ZIEFjOKb5jImUzFZa-qkvgYKhcYITwcFyK1-G3FwOBApQ0ruUbIbyGMbx0iLVJQ9buzfvTYXnFI6wtOu27Pc752bEhZI2tTiqN8B5U_D87UgulVEn3aFSrQMyqw0LRd9GCiyxouEuCA82LSorGU-yb6rczmMZvCPMVH1q7dmyytiUiA-cOJFaoM4N1YhRcZ7CAFJk6PS4me3K-OLhGunEBgQo1hheIUZlIFNu1w7oNSVieDJ1GicFTB-CUpxBQpfW3Wuo_WcCUtRywkrkzcoTwqOmoLHkN38Ea8-2ynmTlKiPI-AXdIptr9Uh2mvcoVVX8HuWF72OMGGFu_PC5yGLAt3_fpSlNSMoXN83p_evrFiC0tZJyfJqU4iSocTP8IJh1z7wzjhmEc3adgUm4oAj9pPv07qQG9Ilxu6jXpd5zYReS7kptQPP2suJ9c45RmCk75Y3S84DdVOt8XrwfHYmdPITfyGUsD4sGoOw_5hUtSpaLhGeLM_sQR7ovAL1BQoYYgtmQtYdinOuP_Y2WxHorQTM8gT2A_VuhNzXZ53_J1rLFLXJjQkte6HER-dWq5dSW3gSv1R5uVMLvFeGo8Ao6esO-ebGWhfOl5jmYiWrFXKDQtCzqPSKFT8jMx4wSl5Kb2jWKdjKhFnh4wKQE0gV_i7IitmqwsyC5fd1C7rkIJVCKdwIyWhPsFJoc2UhdAl036qNx30SRzqsK6hKdgUTPGSa0v8jVo0At3Q_s-s4Path9nRhxk_cfaxWD4CEC9tDJUfyS2pqC1upSVgY8sahAZn79kaf8NO467CWoxa1-7T4RIKBJE_uVpd7nMXwTELVRx1IjJfZAGvuYWuXF2PLt0o3A2ww4kIqGWDJ2JWh_L6gdeGkLYz7jsZ1V9gLxgPEH7MssGdRiMQAJBpHASTSsGTVpDtb8vo_T1BFbYjjVYUbW-MZhAfxoUcjE9FVDjsWT87UtCVNs1DBCNCPuLCpqiEi0EC-G6M53zKArTyWZSHUv_3cQXC-J-5OlfTGaGmq65LlAk95B0iDE3OwXsEKh8QP-87qB7mzrjKOUtYOU6zgL03s4c493LXeYBVhQnSLRzC3xdA1EjWMSNFYQ8n5iWV6WOUEkLsUKOE8SVtSY2m-LC95A2DKpCWfMEePlZvoaifu73-WhUVj3kqVOTQPsuyfbTqVyeHRxx4q94-ToGLY-CvxXtzpy3OzA1OKVa2GvjGz3YRv2NKpTQwDiYhLZYR3uzA98Xi6DJBkGKMncQMxZLUNEtU1bxRzPRouo_-KE0IqObW2CFva3V9ay29CR8-rcgWgRZw_bA8kEcrQNU57I_NoGNRIi5KvjzTnApa7VyrqKGNKqMEPWKoB5WFrND3Jgdomp3OM138r24/https://www.amazon.in/TCL-inches-QD-Mini-Google-55Q6C/dp/B0F3HWNTR1/ref=sxbs_sbv_search_btf?aref=CWtrH6Z7nq&content-id=amzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2%3Aamzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F3HWNTR1&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&pd_rd_w=4Ebnv&pd_rd_wg=HFshR&pf_rd_p=fa654091-9aaa-43a3-ac17-a2ad95526fd2&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                - img [ref=e2369]
+              - generic [ref=e2372]:
+                - generic [ref=e2373]:
+                  - generic [ref=e2376] [cursor=pointer]: Sponsored
+                  - link "TCL 139 cm (55 inches) 4K UHD Smart QD-Mini LED Google TV 55Q6C" [ref=e2378] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JGpplbcM0YWIag5JQswI5xcAAAGe7kxjWwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOucaY/clv1c_ek-wBPHXLcTWnuOrE7vOusHh5BIy_tB0AYFLTkfGG3k3F_J-rulcQq0ugdz_Fx5JjKJ0yoA0bJZ47nAxARN1kaAOVJ9R7CSCtovBnFXz9You6FTqN92VYV1YIv1sipoB-4QlHrwCqxfsld6PN_gU80_Sig0cl1TiMt2kR4crjoMNT4MtghbxlygrzVO-dM_wc30NEG7TD2aL0n_0vXhw3jPNCE-vlRuKVcgXjoVZCxJKdDRDgwB6whLSKGq2YY7C6v6kQzppZAXR4eO0J2Ho9RoH0tyUF4_eZkrYziHf4FyZkOHDGRU14n3DXrI67bV82ZIEFjOKb5jImUzFZa-qkvgYKhcYITwcFyK1-G3FwOBApQ0ruUbIbyGMbx0iLVJQ9buzfvTYXnFI6wtOu27Pc752bEhZI2tTiqN8B5U_D87UgulVEn3aFSrQMyqw0LRd9GCiyxouEuCA82LSorGU-yb6rczmMZvCPMVH1q7dmyytiUiA-cOJFaoM4N1YhRcZ7CAFJk6PS4me3K-OLhGunEBgQo1hheIUZlIFNu1w7oNSVieDJ1GicFTB-CUpxBQpfW3Wuo_WcCUtRywkrkzcoTwqOmoLHkN38Ea8-2ynmTlKiPI-AXdIptr9Uh2mvcoVVX8HuWF72OMGGFu_PC5yGLAt3_fpSlNSMoXN83p_evrFiC0tZJyfJqU4iSocTP8IJh1z7wzjhmEc3adgUm4oAj9pPv07qQG9Ilxu6jXpd5zYReS7kptQPP2suJ9c45RmCk75Y3S84DdVOt8XrwfHYmdPITfyGUsD4sGoOw_5hUtSpaLhGeLM_sQR7ovAL1BQoYYgtmQtYdinOuP_Y2WxHorQTM8gT2A_VuhNzXZ53_J1rLFLXJjQkte6HER-dWq5dSW3gSv1R5uVMLvFeGo8Ao6esO-ebGWhfOl5jmYiWrFXKDQtCzqPSKFT8jMx4wSl5Kb2jWKdjKhFnh4wKQE0gV_i7IitmqwsyC5fd1C7rkIJVCKdwIyWhPsFJoc2UhdAl036qNx30SRzqsK6hKdgUTPGSa0v8jVo0At3Q_s-s4Path9nRhxk_cfaxWD4CEC9tDJUfyS2pqC1upSVgY8sahAZn79kaf8NO467CWoxa1-7T4RIKBJE_uVpd7nMXwTELVRx1IjJfZAGvuYWuXF2PLt0o3A2ww4kIqGWDJ2JWh_L6gdeGkLYz7jsZ1V9gLxgPEH7MssGdRiMQAJBpHASTSsGTVpDtb8vo_T1BFbYjjVYUbW-MZhAfxoUcjE9FVDjsWT87UtCVNs1DBCNCPuLCpqiEi0EC-G6M53zKArTyWZSHUv_3cQXC-J-5OlfTGaGmq65LlAk95B0iDE3OwXsEKh8QP-87qB7mzrjKOUtYOU6zgL03s4c493LXeYBVhQnSLRzC3xdA1EjWMSNFYQ8n5iWV6WOUEkLsUKOE8SVtSY2m-LC95A2DKpCWfMEePlZvoaifu73-WhUVj3kqVOTQPsuyfbTqVyeHRxx4q94-ToGLY-CvxXtzpy3OzA1OKVa2GvjGz3YRv2NKpTQwDiYhLZYR3uzA98Xi6DJBkGKMncQMxZLUNEtU1bxRzPRouo_-KE0IqObW2CFva3V9ay29CR8-rcgWgRZw_bA8kEcrQNU57I_NoGNRIi5KvjzTnApa7VyrqKGNKqMEPWKoB5WFrND3Jgdomp3OM138r24/https://www.amazon.in/TCL-inches-QD-Mini-Google-55Q6C/dp/B0F3HWNTR1/ref=sxbs_sbv_search_btf?aref=CWtrH6Z7nq&content-id=amzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2%3Aamzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F3HWNTR1&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&pd_rd_w=4Ebnv&pd_rd_wg=HFshR&pf_rd_p=fa654091-9aaa-43a3-ac17-a2ad95526fd2&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                    - heading "TCL 139 cm (55 inches) 4K UHD Smart QD-Mini LED Google TV 55Q6C" [level=2] [ref=e2379]
+                - generic [ref=e2380]:
+                  - generic [ref=e2381]:
+                    - text: "4.1"
+                    - button "4.1 out of 5 stars, rating details" [ref=e2383] [cursor=pointer]:
+                      - generic [ref=e2385]: 4.1 out of 5 stars
+                    - link "1,397 ratings" [ref=e2387] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/JGpplbcM0YWIag5JQswI5xcAAAGe7kxjWwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOucaY/clv1c_ek-wBPHXLcTWnuOrE7vOusHh5BIy_tB0AYFLTkfGG3k3F_J-rulcQq0ugdz_Fx5JjKJ0yoA0bJZ47nAxARN1kaAOVJ9R7CSCtovBnFXz9You6FTqN92VYV1YIv1sipoB-4QlHrwCqxfsld6PN_gU80_Sig0cl1TiMt2kR4crjoMNT4MtghbxlygrzVO-dM_wc30NEG7TD2aL0n_0vXhw3jPNCE-vlRuKVcgXjoVZCxJKdDRDgwB6whLSKGq2YY7C6v6kQzppZAXR4eO0J2Ho9RoH0tyUF4_eZkrYziHf4FyZkOHDGRU14n3DXrI67bV82ZIEFjOKb5jImUzFZa-qkvgYKhcYITwcFyK1-G3FwOBApQ0ruUbIbyGMbx0iLVJQ9buzfvTYXnFI6wtOu27Pc752bEhZI2tTiqN8B5U_D87UgulVEn3aFSrQMyqw0LRd9GCiyxouEuCA82LSorGU-yb6rczmMZvCPMVH1q7dmyytiUiA-cOJFaoM4N1YhRcZ7CAFJk6PS4me3K-OLhGunEBgQo1hheIUZlIFNu1w7oNSVieDJ1GicFTB-CUpxBQpfW3Wuo_WcCUtRywkrkzcoTwqOmoLHkN38Ea8-2ynmTlKiPI-AXdIptr9Uh2mvcoVVX8HuWF72OMGGFu_PC5yGLAt3_fpSlNSMoXN83p_evrFiC0tZJyfJqU4iSocTP8IJh1z7wzjhmEc3adgUm4oAj9pPv07qQG9Ilxu6jXpd5zYReS7kptQPP2suJ9c45RmCk75Y3S84DdVOt8XrwfHYmdPITfyGUsD4sGoOw_5hUtSpaLhGeLM_sQR7ovAL1BQoYYgtmQtYdinOuP_Y2WxHorQTM8gT2A_VuhNzXZ53_J1rLFLXJjQkte6HER-dWq5dSW3gSv1R5uVMLvFeGo8Ao6esO-ebGWhfOl5jmYiWrFXKDQtCzqPSKFT8jMx4wSl5Kb2jWKdjKhFnh4wKQE0gV_i7IitmqwsyC5fd1C7rkIJVCKdwIyWhPsFJoc2UhdAl036qNx30SRzqsK6hKdgUTPGSa0v8jVo0At3Q_s-s4Path9nRhxk_cfaxWD4CEC9tDJUfyS2pqC1upSVgY8sahAZn79kaf8NO467CWoxa1-7T4RIKBJE_uVpd7nMXwTELVRx1IjJfZAGvuYWuXF2PLt0o3A2ww4kIqGWDJ2JWh_L6gdeGkLYz7jsZ1V9gLxgPEH7MssGdRiMQAJBpHASTSsGTVpDtb8vo_T1BFbYjjVYUbW-MZhAfxoUcjE9FVDjsWT87UtCVNs1DBCNCPuLCpqiEi0EC-G6M53zKArTyWZSHUv_3cQXC-J-5OlfTGaGmq65LlAk95B0iDE3OwXsEKh8QP-87qB7mzrjKOUtYOU6zgL03s4c493LXeYBVhQnSLRzC3xdA1EjWMSNFYQ8n5iWV6WOUEkLsUKOE8SVtSY2m-LC95A2DKpCWfMEePlZvoaifu73-WhUVj3kqVOTQPsuyfbTqVyeHRxx4q94-ToGLY-CvxXtzpy3OzA1OKVa2GvjGz3YRv2NKpTQwDiYhLZYR3uzA98Xi6DJBkGKMncQMxZLUNEtU1bxRzPRouo_-KE0IqObW2CFva3V9ay29CR8-rcgWgRZw_bA8kEcrQNU57I_NoGNRIi5KvjzTnApa7VyrqKGNKqMEPWKoB5WFrND3Jgdomp3OM138r24/https://www.amazon.in/TCL-inches-QD-Mini-Google-55Q6C/dp/B0F3HWNTR1/ref=sxbs_sbv_search_btf?aref=CWtrH6Z7nq&content-id=amzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2%3Aamzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F3HWNTR1&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&pd_rd_w=4Ebnv&pd_rd_wg=HFshR&pf_rd_p=fa654091-9aaa-43a3-ac17-a2ad95526fd2&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+                      - text: (1.3K)
+                  - generic [ref=e2388]: 500+ bought in past month
+                - generic [ref=e2391]:
+                  - generic [ref=e2392]:
+                    - generic [ref=e2394]:
+                      - generic [ref=e2395]: Price, product page
+                      - 'link "₹52,990 M.R.P: ₹1,19,990 M.R.P: ₹1,19,990" [ref=e2396] [cursor=pointer]':
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JGpplbcM0YWIag5JQswI5xcAAAGe7kxjWwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICDOucaY/clv1c_ek-wBPHXLcTWnuOrE7vOusHh5BIy_tB0AYFLTkfGG3k3F_J-rulcQq0ugdz_Fx5JjKJ0yoA0bJZ47nAxARN1kaAOVJ9R7CSCtovBnFXz9You6FTqN92VYV1YIv1sipoB-4QlHrwCqxfsld6PN_gU80_Sig0cl1TiMt2kR4crjoMNT4MtghbxlygrzVO-dM_wc30NEG7TD2aL0n_0vXhw3jPNCE-vlRuKVcgXjoVZCxJKdDRDgwB6whLSKGq2YY7C6v6kQzppZAXR4eO0J2Ho9RoH0tyUF4_eZkrYziHf4FyZkOHDGRU14n3DXrI67bV82ZIEFjOKb5jImUzFZa-qkvgYKhcYITwcFyK1-G3FwOBApQ0ruUbIbyGMbx0iLVJQ9buzfvTYXnFI6wtOu27Pc752bEhZI2tTiqN8B5U_D87UgulVEn3aFSrQMyqw0LRd9GCiyxouEuCA82LSorGU-yb6rczmMZvCPMVH1q7dmyytiUiA-cOJFaoM4N1YhRcZ7CAFJk6PS4me3K-OLhGunEBgQo1hheIUZlIFNu1w7oNSVieDJ1GicFTB-CUpxBQpfW3Wuo_WcCUtRywkrkzcoTwqOmoLHkN38Ea8-2ynmTlKiPI-AXdIptr9Uh2mvcoVVX8HuWF72OMGGFu_PC5yGLAt3_fpSlNSMoXN83p_evrFiC0tZJyfJqU4iSocTP8IJh1z7wzjhmEc3adgUm4oAj9pPv07qQG9Ilxu6jXpd5zYReS7kptQPP2suJ9c45RmCk75Y3S84DdVOt8XrwfHYmdPITfyGUsD4sGoOw_5hUtSpaLhGeLM_sQR7ovAL1BQoYYgtmQtYdinOuP_Y2WxHorQTM8gT2A_VuhNzXZ53_J1rLFLXJjQkte6HER-dWq5dSW3gSv1R5uVMLvFeGo8Ao6esO-ebGWhfOl5jmYiWrFXKDQtCzqPSKFT8jMx4wSl5Kb2jWKdjKhFnh4wKQE0gV_i7IitmqwsyC5fd1C7rkIJVCKdwIyWhPsFJoc2UhdAl036qNx30SRzqsK6hKdgUTPGSa0v8jVo0At3Q_s-s4Path9nRhxk_cfaxWD4CEC9tDJUfyS2pqC1upSVgY8sahAZn79kaf8NO467CWoxa1-7T4RIKBJE_uVpd7nMXwTELVRx1IjJfZAGvuYWuXF2PLt0o3A2ww4kIqGWDJ2JWh_L6gdeGkLYz7jsZ1V9gLxgPEH7MssGdRiMQAJBpHASTSsGTVpDtb8vo_T1BFbYjjVYUbW-MZhAfxoUcjE9FVDjsWT87UtCVNs1DBCNCPuLCpqiEi0EC-G6M53zKArTyWZSHUv_3cQXC-J-5OlfTGaGmq65LlAk95B0iDE3OwXsEKh8QP-87qB7mzrjKOUtYOU6zgL03s4c493LXeYBVhQnSLRzC3xdA1EjWMSNFYQ8n5iWV6WOUEkLsUKOE8SVtSY2m-LC95A2DKpCWfMEePlZvoaifu73-WhUVj3kqVOTQPsuyfbTqVyeHRxx4q94-ToGLY-CvxXtzpy3OzA1OKVa2GvjGz3YRv2NKpTQwDiYhLZYR3uzA98Xi6DJBkGKMncQMxZLUNEtU1bxRzPRouo_-KE0IqObW2CFva3V9ay29CR8-rcgWgRZw_bA8kEcrQNU57I_NoGNRIi5KvjzTnApa7VyrqKGNKqMEPWKoB5WFrND3Jgdomp3OM138r24/https://www.amazon.in/TCL-inches-QD-Mini-Google-55Q6C/dp/B0F3HWNTR1/ref=sxbs_sbv_search_btf?aref=CWtrH6Z7nq&content-id=amzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2%3Aamzn1.sym.fa654091-9aaa-43a3-ac17-a2ad95526fd2&cv_ct_cx=samsung+tv+55+inch&keywords=samsung+tv+55+inch&pd_rd_i=B0F3HWNTR1&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&pd_rd_w=4Ebnv&pd_rd_wg=HFshR&pf_rd_p=fa654091-9aaa-43a3-ac17-a2ad95526fd2&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&qid=1782114443&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                        - generic [ref=e2397]:
+                          - generic [ref=e2398]: ₹52,990
+                          - generic [ref=e2399]: ₹52,990
+                        - generic [ref=e2400]: "M.R.P: ₹1,19,990"
+                        - generic [ref=e2401]:
+                          - text: "M.R.P:"
+                          - generic [ref=e2402]:
+                            - generic [ref=e2403]: ₹1,19,990
+                            - text: ₹1,19,990
+                      - text: (56% off)
+                    - generic [ref=e2407]:
+                      - generic [ref=e2408]: INR500 Discount on All banks transaction
+                      - generic [ref=e2409]: INR500 Discount on All banks transa...
+                  - generic [ref=e2414]: FREE delivery as soon as Wed, 24 Jun, 7 am - 8 pm
+          - generic [ref=e2420]:
+            - generic "Related searches in samsung tv 55 inch" [ref=e2421]:
+              - heading "Related searches" [level=2] [ref=e2424]
+            - list [ref=e2426]:
+              - generic [ref=e2427]:
+                - listitem [ref=e2428]:
+                  - link "samsung tv" [ref=e2430] [cursor=pointer]:
+                    - /url: /s?k=samsung+tv&ref=rsl_sug_0_0&pd_rd_w=PBLwc&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=HFshR&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&qid=1782114443
+                    - generic [ref=e2435]: samsung tv
+                - listitem [ref=e2436]:
+                  - link "lg tv 55 inch" [ref=e2438] [cursor=pointer]:
+                    - /url: /s?k=lg+tv+55+inch&ref=rsl_sug_0_3&pd_rd_w=PBLwc&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=HFshR&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&qid=1782114443
+                    - generic [ref=e2443]: lg tv 55 inch
+              - generic [ref=e2444]:
+                - listitem [ref=e2445]:
+                  - link "sony tv 55 inch" [ref=e2447] [cursor=pointer]:
+                    - /url: /s?k=sony+tv+55+inch&ref=rsl_sug_0_1&pd_rd_w=PBLwc&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=HFshR&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&qid=1782114443
+                    - generic [ref=e2452]: sony tv 55 inch
+                - listitem [ref=e2453]:
+                  - link "samsung tv 65 inch" [ref=e2455] [cursor=pointer]:
+                    - /url: /s?k=samsung+tv+65+inch&ref=rsl_sug_0_4&pd_rd_w=PBLwc&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=HFshR&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&qid=1782114443
+                    - generic [ref=e2460]: samsung tv 65 inch
+              - generic [ref=e2461]:
+                - listitem [ref=e2462]:
+                  - link "samsung tv 50 inch" [ref=e2464] [cursor=pointer]:
+                    - /url: /s?k=samsung+tv+50+inch&ref=rsl_sug_0_2&pd_rd_w=PBLwc&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=HFshR&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&qid=1782114443
+                    - generic [ref=e2469]: samsung tv 50 inch
+                - listitem [ref=e2470]:
+                  - link "tv 55 inch" [ref=e2472] [cursor=pointer]:
+                    - /url: /s?k=tv+55+inch&ref=rsl_sug_0_5&pd_rd_w=PBLwc&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=HFshR&pd_rd_r=4d2f4f50-fa3b-4de9-801b-1f3ca81e8cff&qid=1782114443
+                    - generic [ref=e2477]: tv 55 inch
+          - navigation "pagination" [ref=e2480]:
+            - list [ref=e2482]:
+              - listitem [ref=e2483]:
+                - button "Previous" [disabled] [ref=e2485]:
+                  - img [ref=e2486]
+                  - text: Previous
+              - listitem [ref=e2488]:
+                - button "Page 1" [ref=e2490]: "1"
+              - listitem [ref=e2491]:
+                - button "Go to page 2" [ref=e2493] [cursor=pointer]: "2"
+              - listitem [ref=e2494]:
+                - button "Go to page 3" [ref=e2496] [cursor=pointer]: "3"
+              - button [disabled] [ref=e2497]:
+                - img [ref=e2498]: ...
+              - button "20" [disabled] [ref=e2500]
+              - listitem [ref=e2501]:
+                - button "Go to next page, page 2" [ref=e2503] [cursor=pointer]:
+                  - text: Next
+                  - img [ref=e2504]
+          - generic [ref=e2508]:
+            - separator [ref=e2509]
+            - generic [ref=e2510]:
+              - heading "Brands related to your search" [ref=e2511]
+              - button "Leave feedback on Sponsored ad" [ref=e2516] [cursor=pointer]: Sponsored
+              - generic [ref=e2520]:
+                - generic [ref=e2522]:
+                  - generic:
+                    - generic:
+                      - link:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JEL6Iq6ltHaI_No85UppCwEAAAGe7kxj0AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICAkYJAu/clv1c_ek-wxIH3FcbSDQHEC4dJvAyyP7YRGZpONOP9J4zoj4-_5BXiuApJSCsr9d6Hlweqpob3cLer0FdKS6VbJyKGqNAQ-wFoRPrStRg3HgnZ-qq2yhdjLbM4lLQ-Y_1nxkKQFJh5uxqIEYY44EB6Ki8c2-B8pPesFlTjmmTs59dLzAMTYUfFLtIBqCup3eWs6hMLXSvj_m8xHRT0yQyNXphAdA9Qr_W_jMYedjvDDFW7ng2cpLmTDix7CcshK6TT46ueg5JefI7IGxDPAp__w00pKYVBzVUXZYhPKjiT1Et4daR8fAs2X3XbWiYqX6JYuSph-N3RX6jsD3WpdKDSAOgtpWersyVyP32B80KioZVZa1O-4Yr1IHdquK5_nWIxJYHtdr-NIYXyJEl3hcB2252PQjJEk2N-zBa7WnsU5uVfvLSmv2XltMhfPKnczLU10ddvR0U9zfTq19djJEHTDVKrYEXMO4ItZYDHvQpynXfU9xr3owjN4_dCacysqG86ZB-vavKLWOonrkPu_dN2FPo8jM9v3yAkzPgttm0yQcsNW77HoAYsZvow7MLVxA_fVq3CaDMQk4TTIj8A_Yt5WTE38wDFMtS_KcfgbxUI3NNVcDesFMxUKRKUvlggJ-iYu7QgEahs0ag4OD-XqbXobDCPkhDcA1Mb16x0_cYymLh989GtHe1Jtdu9DLIuWysx2bLlbbW8EKMFsiUQLBcoo7rdicpsNjhrrOKD_mKvEFtX_gge7X3WU8glD53JGrOnCfHomZs-AQHkt-21Yuu2H3iSiQEHrQlyoea4aeiDsyCngMEzSfzCXO1pqfvgrXS3IkpKbkWRB9IP12dvUqMtFIQ5s1xzoqToKwEsRg1U1NpnieSqrMeFir7qJGfM8jx3g05mlF5Kc3pFEgWz9cTpGqIYf7YimGFVFf8Wa8d4XtVwScaTSIy-0IPxDKDRaOeo2k_lFsiQzOKlES17_khDUZA8NissE6hb3LOrqgG7T2XL686SGZL0HKRxqjJCjRHzGkX7VqbVdX9SuIxNF1i4H5tZn3o7vV9u7xrBAkhupQoFRETZVDeU_-DM0wsXKvCPNrkAcoIjZnVeOrjIkpsh7QQfv_lGxuIwaFHlA04tyM3QSrhxgeoVmilVCT-IifIjCxf_NJcjlDVzNJA2k3vsHFFgg_7DvzKCDRZ7SRkjivBbravjWxbNOBb_YvXNwTRUzJ7VP_Beh9K9juH9lqg-H05Z-4-14dLWUQB_BDBhjEfiJf0Fx2Hv0koQTX1f0Fqbb1wV2mRYVE2AM-JxBwrpNKTeIzawYUVMj6AoUwtjZr_-wRppcPoR0i9jYTuxE0dZHgjoLoviRN_DK6iapkRqEeiMJCs5mD6QAJXwzDDXsXbwITY0X2JVAQb2CZCS0coi_3GhqGe9kMG1nCs8xCophU3msDqJ9VN_ZDmNBzbZRoTYJAhvpL2vZDsXG_Z89MWr7Rk1a4gJBI2whkcHrxBlRFCmcHWsO-7sPALBdhEFMzr9Cl-oDr_LFwE7XJ6yQM-uAEzd2WthQxusf8Kk4uOdryf4pel1GA2Ay2fbAcAE6kK9JpnRB1hYARRspEmhykrtC2M3PyTlS_WdOWkE38MLVKXa8yGSxWKCUedsFo4AY5Tn31MSnBflMn6ORQVJ-9zhGHBqpTlXsKreqnwUXHW783DwVttND8O7YSQV4f2S/https://www.amazon.in/stores/page/6595A7DE-98AF-40CE-A788-8D0EBDD11CA8/?_encoding=UTF8&store_ref=SB_A01010382TS34LB6H3HZA-A0226557243TXW2ELH3CU&pd_rd_plhdr=t&aaxitk=b34d76374ec645a2ef441843d0bad815&hsa_cr_id=0&lp_asins=B0F3JLVHS9%2CB0F3JLSMSW&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=cAqtwWPmvG&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                      - link "TCL Colorful Quantum Crystal" [ref=e2523] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JEL6Iq6ltHaI_No85UppCwEAAAGe7kxj0AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICAkYJAu/clv1c_ek-wxIH3FcbSDQHEC4dJvAyyP7YRGZpONOP9J4zoj4-_5BXiuApJSCsr9d6Hlweqpob3cLer0FdKS6VbJyKGqNAQ-wFoRPrStRg3HgnZ-qq2yhdjLbM4lLQ-Y_1nxkKQFJh5uxqIEYY44EB6Ki8c2-B8pPesFlTjmmTs59dLzAMTYUfFLtIBqCup3eWs6hMLXSvj_m8xHRT0yQyNXphAdA9Qr_W_jMYedjvDDFW7ng2cpLmTDix7CcshK6TT46ueg5JefI7IGxDPAp__w00pKYVBzVUXZYhPKjiT1Et4daR8fAs2X3XbWiYqX6JYuSph-N3RX6jsD3WpdKDSAOgtpWersyVyP32B80KioZVZa1O-4Yr1IHdquK5_nWIxJYHtdr-NIYXyJEl3hcB2252PQjJEk2N-zBa7WnsU5uVfvLSmv2XltMhfPKnczLU10ddvR0U9zfTq19djJEHTDVKrYEXMO4ItZYDHvQpynXfU9xr3owjN4_dCacysqG86ZB-vavKLWOonrkPu_dN2FPo8jM9v3yAkzPgttm0yQcsNW77HoAYsZvow7MLVxA_fVq3CaDMQk4TTIj8A_Yt5WTE38wDFMtS_KcfgbxUI3NNVcDesFMxUKRKUvlggJ-iYu7QgEahs0ag4OD-XqbXobDCPkhDcA1Mb16x0_cYymLh989GtHe1Jtdu9DLIuWysx2bLlbbW8EKMFsiUQLBcoo7rdicpsNjhrrOKD_mKvEFtX_gge7X3WU8glD53JGrOnCfHomZs-AQHkt-21Yuu2H3iSiQEHrQlyoea4aeiDsyCngMEzSfzCXO1pqfvgrXS3IkpKbkWRB9IP12dvUqMtFIQ5s1xzoqToKwEsRg1U1NpnieSqrMeFir7qJGfM8jx3g05mlF5Kc3pFEgWz9cTpGqIYf7YimGFVFf8Wa8d4XtVwScaTSIy-0IPxDKDRaOeo2k_lFsiQzOKlES17_khDUZA8NissE6hb3LOrqgG7T2XL686SGZL0HKRxqjJCjRHzGkX7VqbVdX9SuIxNF1i4H5tZn3o7vV9u7xrBAkhupQoFRETZVDeU_-DM0wsXKvCPNrkAcoIjZnVeOrjIkpsh7QQfv_lGxuIwaFHlA04tyM3QSrhxgeoVmilVCT-IifIjCxf_NJcjlDVzNJA2k3vsHFFgg_7DvzKCDRZ7SRkjivBbravjWxbNOBb_YvXNwTRUzJ7VP_Beh9K9juH9lqg-H05Z-4-14dLWUQB_BDBhjEfiJf0Fx2Hv0koQTX1f0Fqbb1wV2mRYVE2AM-JxBwrpNKTeIzawYUVMj6AoUwtjZr_-wRppcPoR0i9jYTuxE0dZHgjoLoviRN_DK6iapkRqEeiMJCs5mD6QAJXwzDDXsXbwITY0X2JVAQb2CZCS0coi_3GhqGe9kMG1nCs8xCophU3msDqJ9VN_ZDmNBzbZRoTYJAhvpL2vZDsXG_Z89MWr7Rk1a4gJBI2whkcHrxBlRFCmcHWsO-7sPALBdhEFMzr9Cl-oDr_LFwE7XJ6yQM-uAEzd2WthQxusf8Kk4uOdryf4pel1GA2Ay2fbAcAE6kK9JpnRB1hYARRspEmhykrtC2M3PyTlS_WdOWkE38MLVKXa8yGSxWKCUedsFo4AY5Tn31MSnBflMn6ORQVJ-9zhGHBqpTlXsKreqnwUXHW783DwVttND8O7YSQV4f2S/https://www.amazon.in/stores/page/6595A7DE-98AF-40CE-A788-8D0EBDD11CA8/?_encoding=UTF8&store_ref=SB_A01010382TS34LB6H3HZA-A0226557243TXW2ELH3CU&pd_rd_plhdr=t&aaxitk=b34d76374ec645a2ef441843d0bad815&hsa_cr_id=0&lp_asins=B0F3JLVHS9%2CB0F3JLSMSW&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=cAqtwWPmvG&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                        - img "TCL Colorful Quantum Crystal" [ref=e2524]
+                      - generic [ref=e2526]:
+                        - generic [ref=e2527]:
+                          - link [ref=e2528] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JEL6Iq6ltHaI_No85UppCwEAAAGe7kxj0AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICAkYJAu/clv1c_ek-wxIH3FcbSDQHEC4dJvAyyP7YRGZpONOP9J4zoj4-_5BXiuApJSCsr9d6Hlweqpob3cLer0FdKS6VbJyKGqNAQ-wFoRPrStRg3HgnZ-qq2yhdjLbM4lLQ-Y_1nxkKQFJh5uxqIEYY44EB6Ki8c2-B8pPesFlTjmmTs59dLzAMTYUfFLtIBqCup3eWs6hMLXSvj_m8xHRT0yQyNXphAdA9Qr_W_jMYedjvDDFW7ng2cpLmTDix7CcshK6TT46ueg5JefI7IGxDPAp__w00pKYVBzVUXZYhPKjiT1Et4daR8fAs2X3XbWiYqX6JYuSph-N3RX6jsD3WpdKDSAOgtpWersyVyP32B80KioZVZa1O-4Yr1IHdquK5_nWIxJYHtdr-NIYXyJEl3hcB2252PQjJEk2N-zBa7WnsU5uVfvLSmv2XltMhfPKnczLU10ddvR0U9zfTq19djJEHTDVKrYEXMO4ItZYDHvQpynXfU9xr3owjN4_dCacysqG86ZB-vavKLWOonrkPu_dN2FPo8jM9v3yAkzPgttm0yQcsNW77HoAYsZvow7MLVxA_fVq3CaDMQk4TTIj8A_Yt5WTE38wDFMtS_KcfgbxUI3NNVcDesFMxUKRKUvlggJ-iYu7QgEahs0ag4OD-XqbXobDCPkhDcA1Mb16x0_cYymLh989GtHe1Jtdu9DLIuWysx2bLlbbW8EKMFsiUQLBcoo7rdicpsNjhrrOKD_mKvEFtX_gge7X3WU8glD53JGrOnCfHomZs-AQHkt-21Yuu2H3iSiQEHrQlyoea4aeiDsyCngMEzSfzCXO1pqfvgrXS3IkpKbkWRB9IP12dvUqMtFIQ5s1xzoqToKwEsRg1U1NpnieSqrMeFir7qJGfM8jx3g05mlF5Kc3pFEgWz9cTpGqIYf7YimGFVFf8Wa8d4XtVwScaTSIy-0IPxDKDRaOeo2k_lFsiQzOKlES17_khDUZA8NissE6hb3LOrqgG7T2XL686SGZL0HKRxqjJCjRHzGkX7VqbVdX9SuIxNF1i4H5tZn3o7vV9u7xrBAkhupQoFRETZVDeU_-DM0wsXKvCPNrkAcoIjZnVeOrjIkpsh7QQfv_lGxuIwaFHlA04tyM3QSrhxgeoVmilVCT-IifIjCxf_NJcjlDVzNJA2k3vsHFFgg_7DvzKCDRZ7SRkjivBbravjWxbNOBb_YvXNwTRUzJ7VP_Beh9K9juH9lqg-H05Z-4-14dLWUQB_BDBhjEfiJf0Fx2Hv0koQTX1f0Fqbb1wV2mRYVE2AM-JxBwrpNKTeIzawYUVMj6AoUwtjZr_-wRppcPoR0i9jYTuxE0dZHgjoLoviRN_DK6iapkRqEeiMJCs5mD6QAJXwzDDXsXbwITY0X2JVAQb2CZCS0coi_3GhqGe9kMG1nCs8xCophU3msDqJ9VN_ZDmNBzbZRoTYJAhvpL2vZDsXG_Z89MWr7Rk1a4gJBI2whkcHrxBlRFCmcHWsO-7sPALBdhEFMzr9Cl-oDr_LFwE7XJ6yQM-uAEzd2WthQxusf8Kk4uOdryf4pel1GA2Ay2fbAcAE6kK9JpnRB1hYARRspEmhykrtC2M3PyTlS_WdOWkE38MLVKXa8yGSxWKCUedsFo4AY5Tn31MSnBflMn6ORQVJ-9zhGHBqpTlXsKreqnwUXHW783DwVttND8O7YSQV4f2S/https://www.amazon.in/stores/page/6595A7DE-98AF-40CE-A788-8D0EBDD11CA8/?_encoding=UTF8&store_ref=SB_A01010382TS34LB6H3HZA-A0226557243TXW2ELH3CU&pd_rd_plhdr=t&aaxitk=b34d76374ec645a2ef441843d0bad815&hsa_cr_id=0&lp_asins=B0F3JLVHS9%2CB0F3JLSMSW&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=cAqtwWPmvG&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                          - link "TCL Colorful Quantum Crystal" [ref=e2529] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JEL6Iq6ltHaI_No85UppCwEAAAGe7kxj0AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICAkYJAu/clv1c_ek-wxIH3FcbSDQHEC4dJvAyyP7YRGZpONOP9J4zoj4-_5BXiuApJSCsr9d6Hlweqpob3cLer0FdKS6VbJyKGqNAQ-wFoRPrStRg3HgnZ-qq2yhdjLbM4lLQ-Y_1nxkKQFJh5uxqIEYY44EB6Ki8c2-B8pPesFlTjmmTs59dLzAMTYUfFLtIBqCup3eWs6hMLXSvj_m8xHRT0yQyNXphAdA9Qr_W_jMYedjvDDFW7ng2cpLmTDix7CcshK6TT46ueg5JefI7IGxDPAp__w00pKYVBzVUXZYhPKjiT1Et4daR8fAs2X3XbWiYqX6JYuSph-N3RX6jsD3WpdKDSAOgtpWersyVyP32B80KioZVZa1O-4Yr1IHdquK5_nWIxJYHtdr-NIYXyJEl3hcB2252PQjJEk2N-zBa7WnsU5uVfvLSmv2XltMhfPKnczLU10ddvR0U9zfTq19djJEHTDVKrYEXMO4ItZYDHvQpynXfU9xr3owjN4_dCacysqG86ZB-vavKLWOonrkPu_dN2FPo8jM9v3yAkzPgttm0yQcsNW77HoAYsZvow7MLVxA_fVq3CaDMQk4TTIj8A_Yt5WTE38wDFMtS_KcfgbxUI3NNVcDesFMxUKRKUvlggJ-iYu7QgEahs0ag4OD-XqbXobDCPkhDcA1Mb16x0_cYymLh989GtHe1Jtdu9DLIuWysx2bLlbbW8EKMFsiUQLBcoo7rdicpsNjhrrOKD_mKvEFtX_gge7X3WU8glD53JGrOnCfHomZs-AQHkt-21Yuu2H3iSiQEHrQlyoea4aeiDsyCngMEzSfzCXO1pqfvgrXS3IkpKbkWRB9IP12dvUqMtFIQ5s1xzoqToKwEsRg1U1NpnieSqrMeFir7qJGfM8jx3g05mlF5Kc3pFEgWz9cTpGqIYf7YimGFVFf8Wa8d4XtVwScaTSIy-0IPxDKDRaOeo2k_lFsiQzOKlES17_khDUZA8NissE6hb3LOrqgG7T2XL686SGZL0HKRxqjJCjRHzGkX7VqbVdX9SuIxNF1i4H5tZn3o7vV9u7xrBAkhupQoFRETZVDeU_-DM0wsXKvCPNrkAcoIjZnVeOrjIkpsh7QQfv_lGxuIwaFHlA04tyM3QSrhxgeoVmilVCT-IifIjCxf_NJcjlDVzNJA2k3vsHFFgg_7DvzKCDRZ7SRkjivBbravjWxbNOBb_YvXNwTRUzJ7VP_Beh9K9juH9lqg-H05Z-4-14dLWUQB_BDBhjEfiJf0Fx2Hv0koQTX1f0Fqbb1wV2mRYVE2AM-JxBwrpNKTeIzawYUVMj6AoUwtjZr_-wRppcPoR0i9jYTuxE0dZHgjoLoviRN_DK6iapkRqEeiMJCs5mD6QAJXwzDDXsXbwITY0X2JVAQb2CZCS0coi_3GhqGe9kMG1nCs8xCophU3msDqJ9VN_ZDmNBzbZRoTYJAhvpL2vZDsXG_Z89MWr7Rk1a4gJBI2whkcHrxBlRFCmcHWsO-7sPALBdhEFMzr9Cl-oDr_LFwE7XJ6yQM-uAEzd2WthQxusf8Kk4uOdryf4pel1GA2Ay2fbAcAE6kK9JpnRB1hYARRspEmhykrtC2M3PyTlS_WdOWkE38MLVKXa8yGSxWKCUedsFo4AY5Tn31MSnBflMn6ORQVJ-9zhGHBqpTlXsKreqnwUXHW783DwVttND8O7YSQV4f2S/https://www.amazon.in/stores/page/6595A7DE-98AF-40CE-A788-8D0EBDD11CA8/?_encoding=UTF8&store_ref=SB_A01010382TS34LB6H3HZA-A0226557243TXW2ELH3CU&pd_rd_plhdr=t&aaxitk=b34d76374ec645a2ef441843d0bad815&hsa_cr_id=0&lp_asins=B0F3JLVHS9%2CB0F3JLSMSW&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=cAqtwWPmvG&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                            - img "TCL Colorful Quantum Crystal" [ref=e2531]
+                        - generic [ref=e2532]:
+                          - link [ref=e2533] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JEL6Iq6ltHaI_No85UppCwEAAAGe7kxj0AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICAkYJAu/clv1c_ek-wxIH3FcbSDQHEC4dJvAyyP7YRGZpONOP9J4zoj4-_5BXiuApJSCsr9d6Hlweqpob3cLer0FdKS6VbJyKGqNAQ-wFoRPrStRg3HgnZ-qq2yhdjLbM4lLQ-Y_1nxkKQFJh5uxqIEYY44EB6Ki8c2-B8pPesFlTjmmTs59dLzAMTYUfFLtIBqCup3eWs6hMLXSvj_m8xHRT0yQyNXphAdA9Qr_W_jMYedjvDDFW7ng2cpLmTDix7CcshK6TT46ueg5JefI7IGxDPAp__w00pKYVBzVUXZYhPKjiT1Et4daR8fAs2X3XbWiYqX6JYuSph-N3RX6jsD3WpdKDSAOgtpWersyVyP32B80KioZVZa1O-4Yr1IHdquK5_nWIxJYHtdr-NIYXyJEl3hcB2252PQjJEk2N-zBa7WnsU5uVfvLSmv2XltMhfPKnczLU10ddvR0U9zfTq19djJEHTDVKrYEXMO4ItZYDHvQpynXfU9xr3owjN4_dCacysqG86ZB-vavKLWOonrkPu_dN2FPo8jM9v3yAkzPgttm0yQcsNW77HoAYsZvow7MLVxA_fVq3CaDMQk4TTIj8A_Yt5WTE38wDFMtS_KcfgbxUI3NNVcDesFMxUKRKUvlggJ-iYu7QgEahs0ag4OD-XqbXobDCPkhDcA1Mb16x0_cYymLh989GtHe1Jtdu9DLIuWysx2bLlbbW8EKMFsiUQLBcoo7rdicpsNjhrrOKD_mKvEFtX_gge7X3WU8glD53JGrOnCfHomZs-AQHkt-21Yuu2H3iSiQEHrQlyoea4aeiDsyCngMEzSfzCXO1pqfvgrXS3IkpKbkWRB9IP12dvUqMtFIQ5s1xzoqToKwEsRg1U1NpnieSqrMeFir7qJGfM8jx3g05mlF5Kc3pFEgWz9cTpGqIYf7YimGFVFf8Wa8d4XtVwScaTSIy-0IPxDKDRaOeo2k_lFsiQzOKlES17_khDUZA8NissE6hb3LOrqgG7T2XL686SGZL0HKRxqjJCjRHzGkX7VqbVdX9SuIxNF1i4H5tZn3o7vV9u7xrBAkhupQoFRETZVDeU_-DM0wsXKvCPNrkAcoIjZnVeOrjIkpsh7QQfv_lGxuIwaFHlA04tyM3QSrhxgeoVmilVCT-IifIjCxf_NJcjlDVzNJA2k3vsHFFgg_7DvzKCDRZ7SRkjivBbravjWxbNOBb_YvXNwTRUzJ7VP_Beh9K9juH9lqg-H05Z-4-14dLWUQB_BDBhjEfiJf0Fx2Hv0koQTX1f0Fqbb1wV2mRYVE2AM-JxBwrpNKTeIzawYUVMj6AoUwtjZr_-wRppcPoR0i9jYTuxE0dZHgjoLoviRN_DK6iapkRqEeiMJCs5mD6QAJXwzDDXsXbwITY0X2JVAQb2CZCS0coi_3GhqGe9kMG1nCs8xCophU3msDqJ9VN_ZDmNBzbZRoTYJAhvpL2vZDsXG_Z89MWr7Rk1a4gJBI2whkcHrxBlRFCmcHWsO-7sPALBdhEFMzr9Cl-oDr_LFwE7XJ6yQM-uAEzd2WthQxusf8Kk4uOdryf4pel1GA2Ay2fbAcAE6kK9JpnRB1hYARRspEmhykrtC2M3PyTlS_WdOWkE38MLVKXa8yGSxWKCUedsFo4AY5Tn31MSnBflMn6ORQVJ-9zhGHBqpTlXsKreqnwUXHW783DwVttND8O7YSQV4f2S/https://www.amazon.in/stores/page/6595A7DE-98AF-40CE-A788-8D0EBDD11CA8/?_encoding=UTF8&store_ref=SB_A01010382TS34LB6H3HZA-A0226557243TXW2ELH3CU&pd_rd_plhdr=t&aaxitk=b34d76374ec645a2ef441843d0bad815&hsa_cr_id=0&lp_asins=B0F3JLVHS9%2CB0F3JLSMSW&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=cAqtwWPmvG&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                          - link "Watch It Real. See The Thrill." [ref=e2534] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JEL6Iq6ltHaI_No85UppCwEAAAGe7kxj0AoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICAkYJAu/clv1c_ek-wxIH3FcbSDQHEC4dJvAyyP7YRGZpONOP9J4zoj4-_5BXiuApJSCsr9d6Hlweqpob3cLer0FdKS6VbJyKGqNAQ-wFoRPrStRg3HgnZ-qq2yhdjLbM4lLQ-Y_1nxkKQFJh5uxqIEYY44EB6Ki8c2-B8pPesFlTjmmTs59dLzAMTYUfFLtIBqCup3eWs6hMLXSvj_m8xHRT0yQyNXphAdA9Qr_W_jMYedjvDDFW7ng2cpLmTDix7CcshK6TT46ueg5JefI7IGxDPAp__w00pKYVBzVUXZYhPKjiT1Et4daR8fAs2X3XbWiYqX6JYuSph-N3RX6jsD3WpdKDSAOgtpWersyVyP32B80KioZVZa1O-4Yr1IHdquK5_nWIxJYHtdr-NIYXyJEl3hcB2252PQjJEk2N-zBa7WnsU5uVfvLSmv2XltMhfPKnczLU10ddvR0U9zfTq19djJEHTDVKrYEXMO4ItZYDHvQpynXfU9xr3owjN4_dCacysqG86ZB-vavKLWOonrkPu_dN2FPo8jM9v3yAkzPgttm0yQcsNW77HoAYsZvow7MLVxA_fVq3CaDMQk4TTIj8A_Yt5WTE38wDFMtS_KcfgbxUI3NNVcDesFMxUKRKUvlggJ-iYu7QgEahs0ag4OD-XqbXobDCPkhDcA1Mb16x0_cYymLh989GtHe1Jtdu9DLIuWysx2bLlbbW8EKMFsiUQLBcoo7rdicpsNjhrrOKD_mKvEFtX_gge7X3WU8glD53JGrOnCfHomZs-AQHkt-21Yuu2H3iSiQEHrQlyoea4aeiDsyCngMEzSfzCXO1pqfvgrXS3IkpKbkWRB9IP12dvUqMtFIQ5s1xzoqToKwEsRg1U1NpnieSqrMeFir7qJGfM8jx3g05mlF5Kc3pFEgWz9cTpGqIYf7YimGFVFf8Wa8d4XtVwScaTSIy-0IPxDKDRaOeo2k_lFsiQzOKlES17_khDUZA8NissE6hb3LOrqgG7T2XL686SGZL0HKRxqjJCjRHzGkX7VqbVdX9SuIxNF1i4H5tZn3o7vV9u7xrBAkhupQoFRETZVDeU_-DM0wsXKvCPNrkAcoIjZnVeOrjIkpsh7QQfv_lGxuIwaFHlA04tyM3QSrhxgeoVmilVCT-IifIjCxf_NJcjlDVzNJA2k3vsHFFgg_7DvzKCDRZ7SRkjivBbravjWxbNOBb_YvXNwTRUzJ7VP_Beh9K9juH9lqg-H05Z-4-14dLWUQB_BDBhjEfiJf0Fx2Hv0koQTX1f0Fqbb1wV2mRYVE2AM-JxBwrpNKTeIzawYUVMj6AoUwtjZr_-wRppcPoR0i9jYTuxE0dZHgjoLoviRN_DK6iapkRqEeiMJCs5mD6QAJXwzDDXsXbwITY0X2JVAQb2CZCS0coi_3GhqGe9kMG1nCs8xCophU3msDqJ9VN_ZDmNBzbZRoTYJAhvpL2vZDsXG_Z89MWr7Rk1a4gJBI2whkcHrxBlRFCmcHWsO-7sPALBdhEFMzr9Cl-oDr_LFwE7XJ6yQM-uAEzd2WthQxusf8Kk4uOdryf4pel1GA2Ay2fbAcAE6kK9JpnRB1hYARRspEmhykrtC2M3PyTlS_WdOWkE38MLVKXa8yGSxWKCUedsFo4AY5Tn31MSnBflMn6ORQVJ-9zhGHBqpTlXsKreqnwUXHW783DwVttND8O7YSQV4f2S/https://www.amazon.in/stores/page/6595A7DE-98AF-40CE-A788-8D0EBDD11CA8/?_encoding=UTF8&store_ref=SB_A01010382TS34LB6H3HZA-A0226557243TXW2ELH3CU&pd_rd_plhdr=t&aaxitk=b34d76374ec645a2ef441843d0bad815&hsa_cr_id=0&lp_asins=B0F3JLVHS9%2CB0F3JLSMSW&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=cAqtwWPmvG&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                            - generic [ref=e2536]:
+                              - generic [ref=e2537]: Watch It Real. See The Thrill.
+                              - generic [ref=e2538]: Watch It Real. See The Thrill.
+                - generic [ref=e2540]:
+                  - generic:
+                    - generic:
+                      - link:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JHTKTs37zEA1NxJXWXGAVUIAAAGe7kxj0QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDUFJpd/clv1c_ek-wBPHXUsbWHn2mJtYb8xPAyU13fwsZ4fyqrSKlFSnzJj3mf_Lu0KMxWyvgV9Oa7B1vRuVkjTfrMFksFp8PkaMn7YHD1EyCotvHKm2EiUjX4yWH5pUQwOr88bmkB7GxdST52dG6KsvVAvMCIL1KETSaps-MVlToKkLy0Tm6VAbd22Z-O9IkjwgP9-GrY2fZT_C8ZENYIxsgpU0tN8pl-ei_H9CxKm-kgwguivCpbBL88FYtGipnknmwEucb0udhnuwZk3PhjOCJWw3qmGWRWIShzPb2FN9xWuSLYo4ca43WhTc_axH9kdN38ePwxU0HqVE5qD-YFv_6DDm_rjSBiA68BButL5t-kckocUYVzf7fLDG7O6i5_2RMAyg24xXM6Ss4Mh-cRcPUS3ovU-JOz9cehWupJjyn1N9IaXU2udHIkOlbIWSAmDnwDTOVATLOOZpzH5U_7hXRpEDUkB3tdBHJghhSmHaxT5olg35OJvJB2p3iv7-9WTcRf9Fj2iFzbZNBSdwFAKJPpZBu-AXifs3gp4-imokuWDAvwiXSNUcESAADWVWktZuVfbz0O46ckQqDOrvIEKFa9LTISKgy2ewAKMEmxlA9C5HvhkLLclLXt55drJ4DZRvHlEt4ap7epv45OkA2jixDzJaamYHuhs6pk7vw2ssrqCWZkazO2dLE8olzpsfihUlpiQJGu4HrJZhkMlO3YkFgXbAVV22VcDEMCplZexNSCvKfKG9UVkmxmHQ8K6ooS-Xh-sST-eh2tJApN-NoJ67YiTKiWDNOMo58iHEnGmKyEUW09LXOnycVj6tBiZUbb0qh3LgKoWlA1ixy89ePRyFTUny7QnGBTqmuVf4T4WtGamLJ6kylASC1srNkDC0m5ySWHIa_HzqljRBWx8VjkMrf1dWE3qRG5rccLE7Nps2ARPnZyFX18prhRjcrR76CYPt7CUboXGpAN1eBl7-WoecU-wlho9HO1NlyzKWJi9H2RRC8KS67ELUF0FoJvyQksFpDvS-SpzSRyfC6zbnEz6RNQMXT2qGhKDcKTXnHzZLai6zHRuO7OAEO8PLBI9eqLJ7-pzhFgppYfsB30a53x8Le0keoST1pkujnNqcjtNsIPdRn2xzNwJor0JB_LyxZ8FvKLZIRXeSK-eAg5xiojqX7ZBjhotnuHbJc8cqF4ZDxy-_-6IugNe42AiuSTJchVDRE78ybHGTHVbMxjDxY0497HEXW8yYkl_leDvQDrj3Sv9t5FAOgBVeNPt4KjQkHbWX6nPowG67Pjpd0AxOVFp5x0jkq16tZARCfY7MbQP6Uq1u4kMK_Hm55NBrJepiN1GqYvnxsKnCj7y5mahqhP4Xsst7K5tVNYDGicGmdEahkWx7rweNG4VrbtCeD8ZZddutmSjgnu35PDxtlOW29SRa1c4LMjufFKGiAzCvzUufHUL1B2heyvx0IcYTPpVuWXW51UhXcMx_wwwlDl2sw5vztV7Cml96H6EJerr0QEbG3n7evCI7RMrgNEMIULZY35l4BBmVnXK0KjDeb133-NBHd4NaiXDqpG4FpHMB9o12kmVqW3moTT3Dhbx48JxXKQySRZauIjyz_bUNyKLGRWHI9LPuSsTwd58woqjAH9KK2YP5xjVVB0UAxtBBfwl4_Eq_FMidvB-uOl5MICo8-rXgemflWu1I/https://www.amazon.in/stores/page/E044B40E-C558-434A-B3BD-626F4CE12761/?_encoding=UTF8&store_ref=SB_A088372021544M80ZT5E9-A02358661TUM1T5KA1IYL&pd_rd_plhdr=t&aaxitk=69bc48cdf40c0b41af05145c2e60c58e&hsa_cr_id=0&lp_asins=B0FGTSTZMY%2CB0D22XX5Q3%2CB0DP9YC246&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=KDDPA65qWC&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                      - link "FEDUS" [ref=e2541] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JHTKTs37zEA1NxJXWXGAVUIAAAGe7kxj0QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDUFJpd/clv1c_ek-wBPHXUsbWHn2mJtYb8xPAyU13fwsZ4fyqrSKlFSnzJj3mf_Lu0KMxWyvgV9Oa7B1vRuVkjTfrMFksFp8PkaMn7YHD1EyCotvHKm2EiUjX4yWH5pUQwOr88bmkB7GxdST52dG6KsvVAvMCIL1KETSaps-MVlToKkLy0Tm6VAbd22Z-O9IkjwgP9-GrY2fZT_C8ZENYIxsgpU0tN8pl-ei_H9CxKm-kgwguivCpbBL88FYtGipnknmwEucb0udhnuwZk3PhjOCJWw3qmGWRWIShzPb2FN9xWuSLYo4ca43WhTc_axH9kdN38ePwxU0HqVE5qD-YFv_6DDm_rjSBiA68BButL5t-kckocUYVzf7fLDG7O6i5_2RMAyg24xXM6Ss4Mh-cRcPUS3ovU-JOz9cehWupJjyn1N9IaXU2udHIkOlbIWSAmDnwDTOVATLOOZpzH5U_7hXRpEDUkB3tdBHJghhSmHaxT5olg35OJvJB2p3iv7-9WTcRf9Fj2iFzbZNBSdwFAKJPpZBu-AXifs3gp4-imokuWDAvwiXSNUcESAADWVWktZuVfbz0O46ckQqDOrvIEKFa9LTISKgy2ewAKMEmxlA9C5HvhkLLclLXt55drJ4DZRvHlEt4ap7epv45OkA2jixDzJaamYHuhs6pk7vw2ssrqCWZkazO2dLE8olzpsfihUlpiQJGu4HrJZhkMlO3YkFgXbAVV22VcDEMCplZexNSCvKfKG9UVkmxmHQ8K6ooS-Xh-sST-eh2tJApN-NoJ67YiTKiWDNOMo58iHEnGmKyEUW09LXOnycVj6tBiZUbb0qh3LgKoWlA1ixy89ePRyFTUny7QnGBTqmuVf4T4WtGamLJ6kylASC1srNkDC0m5ySWHIa_HzqljRBWx8VjkMrf1dWE3qRG5rccLE7Nps2ARPnZyFX18prhRjcrR76CYPt7CUboXGpAN1eBl7-WoecU-wlho9HO1NlyzKWJi9H2RRC8KS67ELUF0FoJvyQksFpDvS-SpzSRyfC6zbnEz6RNQMXT2qGhKDcKTXnHzZLai6zHRuO7OAEO8PLBI9eqLJ7-pzhFgppYfsB30a53x8Le0keoST1pkujnNqcjtNsIPdRn2xzNwJor0JB_LyxZ8FvKLZIRXeSK-eAg5xiojqX7ZBjhotnuHbJc8cqF4ZDxy-_-6IugNe42AiuSTJchVDRE78ybHGTHVbMxjDxY0497HEXW8yYkl_leDvQDrj3Sv9t5FAOgBVeNPt4KjQkHbWX6nPowG67Pjpd0AxOVFp5x0jkq16tZARCfY7MbQP6Uq1u4kMK_Hm55NBrJepiN1GqYvnxsKnCj7y5mahqhP4Xsst7K5tVNYDGicGmdEahkWx7rweNG4VrbtCeD8ZZddutmSjgnu35PDxtlOW29SRa1c4LMjufFKGiAzCvzUufHUL1B2heyvx0IcYTPpVuWXW51UhXcMx_wwwlDl2sw5vztV7Cml96H6EJerr0QEbG3n7evCI7RMrgNEMIULZY35l4BBmVnXK0KjDeb133-NBHd4NaiXDqpG4FpHMB9o12kmVqW3moTT3Dhbx48JxXKQySRZauIjyz_bUNyKLGRWHI9LPuSsTwd58woqjAH9KK2YP5xjVVB0UAxtBBfwl4_Eq_FMidvB-uOl5MICo8-rXgemflWu1I/https://www.amazon.in/stores/page/E044B40E-C558-434A-B3BD-626F4CE12761/?_encoding=UTF8&store_ref=SB_A088372021544M80ZT5E9-A02358661TUM1T5KA1IYL&pd_rd_plhdr=t&aaxitk=69bc48cdf40c0b41af05145c2e60c58e&hsa_cr_id=0&lp_asins=B0FGTSTZMY%2CB0D22XX5Q3%2CB0DP9YC246&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=KDDPA65qWC&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                        - img "FEDUS" [ref=e2542]
+                      - generic [ref=e2544]:
+                        - generic [ref=e2545]:
+                          - link [ref=e2546] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JHTKTs37zEA1NxJXWXGAVUIAAAGe7kxj0QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDUFJpd/clv1c_ek-wBPHXUsbWHn2mJtYb8xPAyU13fwsZ4fyqrSKlFSnzJj3mf_Lu0KMxWyvgV9Oa7B1vRuVkjTfrMFksFp8PkaMn7YHD1EyCotvHKm2EiUjX4yWH5pUQwOr88bmkB7GxdST52dG6KsvVAvMCIL1KETSaps-MVlToKkLy0Tm6VAbd22Z-O9IkjwgP9-GrY2fZT_C8ZENYIxsgpU0tN8pl-ei_H9CxKm-kgwguivCpbBL88FYtGipnknmwEucb0udhnuwZk3PhjOCJWw3qmGWRWIShzPb2FN9xWuSLYo4ca43WhTc_axH9kdN38ePwxU0HqVE5qD-YFv_6DDm_rjSBiA68BButL5t-kckocUYVzf7fLDG7O6i5_2RMAyg24xXM6Ss4Mh-cRcPUS3ovU-JOz9cehWupJjyn1N9IaXU2udHIkOlbIWSAmDnwDTOVATLOOZpzH5U_7hXRpEDUkB3tdBHJghhSmHaxT5olg35OJvJB2p3iv7-9WTcRf9Fj2iFzbZNBSdwFAKJPpZBu-AXifs3gp4-imokuWDAvwiXSNUcESAADWVWktZuVfbz0O46ckQqDOrvIEKFa9LTISKgy2ewAKMEmxlA9C5HvhkLLclLXt55drJ4DZRvHlEt4ap7epv45OkA2jixDzJaamYHuhs6pk7vw2ssrqCWZkazO2dLE8olzpsfihUlpiQJGu4HrJZhkMlO3YkFgXbAVV22VcDEMCplZexNSCvKfKG9UVkmxmHQ8K6ooS-Xh-sST-eh2tJApN-NoJ67YiTKiWDNOMo58iHEnGmKyEUW09LXOnycVj6tBiZUbb0qh3LgKoWlA1ixy89ePRyFTUny7QnGBTqmuVf4T4WtGamLJ6kylASC1srNkDC0m5ySWHIa_HzqljRBWx8VjkMrf1dWE3qRG5rccLE7Nps2ARPnZyFX18prhRjcrR76CYPt7CUboXGpAN1eBl7-WoecU-wlho9HO1NlyzKWJi9H2RRC8KS67ELUF0FoJvyQksFpDvS-SpzSRyfC6zbnEz6RNQMXT2qGhKDcKTXnHzZLai6zHRuO7OAEO8PLBI9eqLJ7-pzhFgppYfsB30a53x8Le0keoST1pkujnNqcjtNsIPdRn2xzNwJor0JB_LyxZ8FvKLZIRXeSK-eAg5xiojqX7ZBjhotnuHbJc8cqF4ZDxy-_-6IugNe42AiuSTJchVDRE78ybHGTHVbMxjDxY0497HEXW8yYkl_leDvQDrj3Sv9t5FAOgBVeNPt4KjQkHbWX6nPowG67Pjpd0AxOVFp5x0jkq16tZARCfY7MbQP6Uq1u4kMK_Hm55NBrJepiN1GqYvnxsKnCj7y5mahqhP4Xsst7K5tVNYDGicGmdEahkWx7rweNG4VrbtCeD8ZZddutmSjgnu35PDxtlOW29SRa1c4LMjufFKGiAzCvzUufHUL1B2heyvx0IcYTPpVuWXW51UhXcMx_wwwlDl2sw5vztV7Cml96H6EJerr0QEbG3n7evCI7RMrgNEMIULZY35l4BBmVnXK0KjDeb133-NBHd4NaiXDqpG4FpHMB9o12kmVqW3moTT3Dhbx48JxXKQySRZauIjyz_bUNyKLGRWHI9LPuSsTwd58woqjAH9KK2YP5xjVVB0UAxtBBfwl4_Eq_FMidvB-uOl5MICo8-rXgemflWu1I/https://www.amazon.in/stores/page/E044B40E-C558-434A-B3BD-626F4CE12761/?_encoding=UTF8&store_ref=SB_A088372021544M80ZT5E9-A02358661TUM1T5KA1IYL&pd_rd_plhdr=t&aaxitk=69bc48cdf40c0b41af05145c2e60c58e&hsa_cr_id=0&lp_asins=B0FGTSTZMY%2CB0D22XX5Q3%2CB0DP9YC246&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=KDDPA65qWC&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                          - link "FEDUS" [ref=e2547] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JHTKTs37zEA1NxJXWXGAVUIAAAGe7kxj0QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDUFJpd/clv1c_ek-wBPHXUsbWHn2mJtYb8xPAyU13fwsZ4fyqrSKlFSnzJj3mf_Lu0KMxWyvgV9Oa7B1vRuVkjTfrMFksFp8PkaMn7YHD1EyCotvHKm2EiUjX4yWH5pUQwOr88bmkB7GxdST52dG6KsvVAvMCIL1KETSaps-MVlToKkLy0Tm6VAbd22Z-O9IkjwgP9-GrY2fZT_C8ZENYIxsgpU0tN8pl-ei_H9CxKm-kgwguivCpbBL88FYtGipnknmwEucb0udhnuwZk3PhjOCJWw3qmGWRWIShzPb2FN9xWuSLYo4ca43WhTc_axH9kdN38ePwxU0HqVE5qD-YFv_6DDm_rjSBiA68BButL5t-kckocUYVzf7fLDG7O6i5_2RMAyg24xXM6Ss4Mh-cRcPUS3ovU-JOz9cehWupJjyn1N9IaXU2udHIkOlbIWSAmDnwDTOVATLOOZpzH5U_7hXRpEDUkB3tdBHJghhSmHaxT5olg35OJvJB2p3iv7-9WTcRf9Fj2iFzbZNBSdwFAKJPpZBu-AXifs3gp4-imokuWDAvwiXSNUcESAADWVWktZuVfbz0O46ckQqDOrvIEKFa9LTISKgy2ewAKMEmxlA9C5HvhkLLclLXt55drJ4DZRvHlEt4ap7epv45OkA2jixDzJaamYHuhs6pk7vw2ssrqCWZkazO2dLE8olzpsfihUlpiQJGu4HrJZhkMlO3YkFgXbAVV22VcDEMCplZexNSCvKfKG9UVkmxmHQ8K6ooS-Xh-sST-eh2tJApN-NoJ67YiTKiWDNOMo58iHEnGmKyEUW09LXOnycVj6tBiZUbb0qh3LgKoWlA1ixy89ePRyFTUny7QnGBTqmuVf4T4WtGamLJ6kylASC1srNkDC0m5ySWHIa_HzqljRBWx8VjkMrf1dWE3qRG5rccLE7Nps2ARPnZyFX18prhRjcrR76CYPt7CUboXGpAN1eBl7-WoecU-wlho9HO1NlyzKWJi9H2RRC8KS67ELUF0FoJvyQksFpDvS-SpzSRyfC6zbnEz6RNQMXT2qGhKDcKTXnHzZLai6zHRuO7OAEO8PLBI9eqLJ7-pzhFgppYfsB30a53x8Le0keoST1pkujnNqcjtNsIPdRn2xzNwJor0JB_LyxZ8FvKLZIRXeSK-eAg5xiojqX7ZBjhotnuHbJc8cqF4ZDxy-_-6IugNe42AiuSTJchVDRE78ybHGTHVbMxjDxY0497HEXW8yYkl_leDvQDrj3Sv9t5FAOgBVeNPt4KjQkHbWX6nPowG67Pjpd0AxOVFp5x0jkq16tZARCfY7MbQP6Uq1u4kMK_Hm55NBrJepiN1GqYvnxsKnCj7y5mahqhP4Xsst7K5tVNYDGicGmdEahkWx7rweNG4VrbtCeD8ZZddutmSjgnu35PDxtlOW29SRa1c4LMjufFKGiAzCvzUufHUL1B2heyvx0IcYTPpVuWXW51UhXcMx_wwwlDl2sw5vztV7Cml96H6EJerr0QEbG3n7evCI7RMrgNEMIULZY35l4BBmVnXK0KjDeb133-NBHd4NaiXDqpG4FpHMB9o12kmVqW3moTT3Dhbx48JxXKQySRZauIjyz_bUNyKLGRWHI9LPuSsTwd58woqjAH9KK2YP5xjVVB0UAxtBBfwl4_Eq_FMidvB-uOl5MICo8-rXgemflWu1I/https://www.amazon.in/stores/page/E044B40E-C558-434A-B3BD-626F4CE12761/?_encoding=UTF8&store_ref=SB_A088372021544M80ZT5E9-A02358661TUM1T5KA1IYL&pd_rd_plhdr=t&aaxitk=69bc48cdf40c0b41af05145c2e60c58e&hsa_cr_id=0&lp_asins=B0FGTSTZMY%2CB0D22XX5Q3%2CB0DP9YC246&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=KDDPA65qWC&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                            - img "FEDUS" [ref=e2549]
+                        - generic [ref=e2550]:
+                          - link [ref=e2551] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JHTKTs37zEA1NxJXWXGAVUIAAAGe7kxj0QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDUFJpd/clv1c_ek-wBPHXUsbWHn2mJtYb8xPAyU13fwsZ4fyqrSKlFSnzJj3mf_Lu0KMxWyvgV9Oa7B1vRuVkjTfrMFksFp8PkaMn7YHD1EyCotvHKm2EiUjX4yWH5pUQwOr88bmkB7GxdST52dG6KsvVAvMCIL1KETSaps-MVlToKkLy0Tm6VAbd22Z-O9IkjwgP9-GrY2fZT_C8ZENYIxsgpU0tN8pl-ei_H9CxKm-kgwguivCpbBL88FYtGipnknmwEucb0udhnuwZk3PhjOCJWw3qmGWRWIShzPb2FN9xWuSLYo4ca43WhTc_axH9kdN38ePwxU0HqVE5qD-YFv_6DDm_rjSBiA68BButL5t-kckocUYVzf7fLDG7O6i5_2RMAyg24xXM6Ss4Mh-cRcPUS3ovU-JOz9cehWupJjyn1N9IaXU2udHIkOlbIWSAmDnwDTOVATLOOZpzH5U_7hXRpEDUkB3tdBHJghhSmHaxT5olg35OJvJB2p3iv7-9WTcRf9Fj2iFzbZNBSdwFAKJPpZBu-AXifs3gp4-imokuWDAvwiXSNUcESAADWVWktZuVfbz0O46ckQqDOrvIEKFa9LTISKgy2ewAKMEmxlA9C5HvhkLLclLXt55drJ4DZRvHlEt4ap7epv45OkA2jixDzJaamYHuhs6pk7vw2ssrqCWZkazO2dLE8olzpsfihUlpiQJGu4HrJZhkMlO3YkFgXbAVV22VcDEMCplZexNSCvKfKG9UVkmxmHQ8K6ooS-Xh-sST-eh2tJApN-NoJ67YiTKiWDNOMo58iHEnGmKyEUW09LXOnycVj6tBiZUbb0qh3LgKoWlA1ixy89ePRyFTUny7QnGBTqmuVf4T4WtGamLJ6kylASC1srNkDC0m5ySWHIa_HzqljRBWx8VjkMrf1dWE3qRG5rccLE7Nps2ARPnZyFX18prhRjcrR76CYPt7CUboXGpAN1eBl7-WoecU-wlho9HO1NlyzKWJi9H2RRC8KS67ELUF0FoJvyQksFpDvS-SpzSRyfC6zbnEz6RNQMXT2qGhKDcKTXnHzZLai6zHRuO7OAEO8PLBI9eqLJ7-pzhFgppYfsB30a53x8Le0keoST1pkujnNqcjtNsIPdRn2xzNwJor0JB_LyxZ8FvKLZIRXeSK-eAg5xiojqX7ZBjhotnuHbJc8cqF4ZDxy-_-6IugNe42AiuSTJchVDRE78ybHGTHVbMxjDxY0497HEXW8yYkl_leDvQDrj3Sv9t5FAOgBVeNPt4KjQkHbWX6nPowG67Pjpd0AxOVFp5x0jkq16tZARCfY7MbQP6Uq1u4kMK_Hm55NBrJepiN1GqYvnxsKnCj7y5mahqhP4Xsst7K5tVNYDGicGmdEahkWx7rweNG4VrbtCeD8ZZddutmSjgnu35PDxtlOW29SRa1c4LMjufFKGiAzCvzUufHUL1B2heyvx0IcYTPpVuWXW51UhXcMx_wwwlDl2sw5vztV7Cml96H6EJerr0QEbG3n7evCI7RMrgNEMIULZY35l4BBmVnXK0KjDeb133-NBHd4NaiXDqpG4FpHMB9o12kmVqW3moTT3Dhbx48JxXKQySRZauIjyz_bUNyKLGRWHI9LPuSsTwd58woqjAH9KK2YP5xjVVB0UAxtBBfwl4_Eq_FMidvB-uOl5MICo8-rXgemflWu1I/https://www.amazon.in/stores/page/E044B40E-C558-434A-B3BD-626F4CE12761/?_encoding=UTF8&store_ref=SB_A088372021544M80ZT5E9-A02358661TUM1T5KA1IYL&pd_rd_plhdr=t&aaxitk=69bc48cdf40c0b41af05145c2e60c58e&hsa_cr_id=0&lp_asins=B0FGTSTZMY%2CB0D22XX5Q3%2CB0DP9YC246&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=KDDPA65qWC&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                          - link "Computer/Laptop/LED TV 3 Pin 2 Pin Power Cord" [ref=e2552] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JHTKTs37zEA1NxJXWXGAVUIAAAGe7kxj0QoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICDUFJpd/clv1c_ek-wBPHXUsbWHn2mJtYb8xPAyU13fwsZ4fyqrSKlFSnzJj3mf_Lu0KMxWyvgV9Oa7B1vRuVkjTfrMFksFp8PkaMn7YHD1EyCotvHKm2EiUjX4yWH5pUQwOr88bmkB7GxdST52dG6KsvVAvMCIL1KETSaps-MVlToKkLy0Tm6VAbd22Z-O9IkjwgP9-GrY2fZT_C8ZENYIxsgpU0tN8pl-ei_H9CxKm-kgwguivCpbBL88FYtGipnknmwEucb0udhnuwZk3PhjOCJWw3qmGWRWIShzPb2FN9xWuSLYo4ca43WhTc_axH9kdN38ePwxU0HqVE5qD-YFv_6DDm_rjSBiA68BButL5t-kckocUYVzf7fLDG7O6i5_2RMAyg24xXM6Ss4Mh-cRcPUS3ovU-JOz9cehWupJjyn1N9IaXU2udHIkOlbIWSAmDnwDTOVATLOOZpzH5U_7hXRpEDUkB3tdBHJghhSmHaxT5olg35OJvJB2p3iv7-9WTcRf9Fj2iFzbZNBSdwFAKJPpZBu-AXifs3gp4-imokuWDAvwiXSNUcESAADWVWktZuVfbz0O46ckQqDOrvIEKFa9LTISKgy2ewAKMEmxlA9C5HvhkLLclLXt55drJ4DZRvHlEt4ap7epv45OkA2jixDzJaamYHuhs6pk7vw2ssrqCWZkazO2dLE8olzpsfihUlpiQJGu4HrJZhkMlO3YkFgXbAVV22VcDEMCplZexNSCvKfKG9UVkmxmHQ8K6ooS-Xh-sST-eh2tJApN-NoJ67YiTKiWDNOMo58iHEnGmKyEUW09LXOnycVj6tBiZUbb0qh3LgKoWlA1ixy89ePRyFTUny7QnGBTqmuVf4T4WtGamLJ6kylASC1srNkDC0m5ySWHIa_HzqljRBWx8VjkMrf1dWE3qRG5rccLE7Nps2ARPnZyFX18prhRjcrR76CYPt7CUboXGpAN1eBl7-WoecU-wlho9HO1NlyzKWJi9H2RRC8KS67ELUF0FoJvyQksFpDvS-SpzSRyfC6zbnEz6RNQMXT2qGhKDcKTXnHzZLai6zHRuO7OAEO8PLBI9eqLJ7-pzhFgppYfsB30a53x8Le0keoST1pkujnNqcjtNsIPdRn2xzNwJor0JB_LyxZ8FvKLZIRXeSK-eAg5xiojqX7ZBjhotnuHbJc8cqF4ZDxy-_-6IugNe42AiuSTJchVDRE78ybHGTHVbMxjDxY0497HEXW8yYkl_leDvQDrj3Sv9t5FAOgBVeNPt4KjQkHbWX6nPowG67Pjpd0AxOVFp5x0jkq16tZARCfY7MbQP6Uq1u4kMK_Hm55NBrJepiN1GqYvnxsKnCj7y5mahqhP4Xsst7K5tVNYDGicGmdEahkWx7rweNG4VrbtCeD8ZZddutmSjgnu35PDxtlOW29SRa1c4LMjufFKGiAzCvzUufHUL1B2heyvx0IcYTPpVuWXW51UhXcMx_wwwlDl2sw5vztV7Cml96H6EJerr0QEbG3n7evCI7RMrgNEMIULZY35l4BBmVnXK0KjDeb133-NBHd4NaiXDqpG4FpHMB9o12kmVqW3moTT3Dhbx48JxXKQySRZauIjyz_bUNyKLGRWHI9LPuSsTwd58woqjAH9KK2YP5xjVVB0UAxtBBfwl4_Eq_FMidvB-uOl5MICo8-rXgemflWu1I/https://www.amazon.in/stores/page/E044B40E-C558-434A-B3BD-626F4CE12761/?_encoding=UTF8&store_ref=SB_A088372021544M80ZT5E9-A02358661TUM1T5KA1IYL&pd_rd_plhdr=t&aaxitk=69bc48cdf40c0b41af05145c2e60c58e&hsa_cr_id=0&lp_asins=B0FGTSTZMY%2CB0D22XX5Q3%2CB0DP9YC246&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=KDDPA65qWC&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                            - generic [ref=e2554]:
+                              - generic [ref=e2555]: Computer/Laptop/LED TV 3 Pin 2 Pin Power Cord
+                              - generic [ref=e2556]: Computer/Laptop/LED TV 3 Pin 2 Pin Power Cord
+                - generic [ref=e2558]:
+                  - generic:
+                    - generic:
+                      - link:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JJM6TToRopwivpXqTYVh4xwAAAGe7kxj0goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCronv3/clv1c_ek-wBPHXFbbWzjO3YoscrxfcuU0CLg9JRm4H9kb1t4GiiBTbrU6jgfmctyOO86xcypvFTufY_GM5gkA9EpcPlqMl5aFD7k9af3R1Hu1qWvzwg2Zur5Las_Log_lwoEbZR5W8YYDiZ_-PADmSZpxO26XKtH2ck1eK0hxgDvas3pMvwdu9BXzfh7xBzzwefdWWQ9rvdYfLHgn-4dTk58lGmyEJP9y_iOKmQQ9kEzElZFL6Cqn3HPZF_L8UA6zywZuKcrsCLSyYFeP-xDnwtjZKwvEPkHz2GcM9n0CBe-JRRM7rx9fcVY0pkUpZkH5d3JxmOMt5ZDimoKmcKpz88dwRDdBblsJY_X9Xd7z5-G2H3ORArXUtzfO81Bu2q1AANd9C-8GVAlmFZBgjZyhXscBfsrawn4oLFyDnlgaZn3p3Z-LfSBDm-eAEVs-MmUSeIKQQoaRbhelXFfVvvMaduvcu1zYhiu4trwOKxnR-DodSI-21ZywrL2ftxiCV2nBu2f8ErAn2NRH-Jn7WJNHLoSLV7HP8wto6qlitKJM92P-vja0wLXZkytlWD7UyV0xqnTGxA54H9kWjnnO2GywenU4ohc-9C4oYq90kcdM0jL9YLAsjUXvrYgxqvqs5kJtqHDJ0BwDf7HuCn--vdkzh0Do_OArmjMGKZMxpCIdHbQAawDTgJNi-1vnstnqVEQi0oRyMFq-6AFcWuwsnn-PKkagob2JNOdtfRAXZmx_jkjUtj1e7VjOqw72IaPnM9-S5RQ1fyzPC2XIBjiNUg1OHvDapyu9V3W3dAYbRAs0rPK71VnKhSSctUebT7QpaZlPkFHB_yaMllBEFCbZXh1j402cvrnWSoonErU7qFCxpSWF4r50BzbL_HuSeKbvRqDtsy1avDXrGFizdEINEO1-sW5sU95J-nL-09B3FkDqrqhlllPe-QgLrmO0YEUF7I58Xk5n76yyki8p_XDnPbb2vTGITdXtGKQXdy7ImWaa_xEc0Y2nv1tbEHlEjW3xH2DFql9EEIdyewrOEUYFosfN98PPpUruf_NlEMsb-iNqwrfAHzL7FQhfVq_C91ZA0TprhwqtbY4mPnBYbhXKwZlxT4Ne6TfDVhQeYI2oq3SY9lcpf6KjMlYycNH6RQahQ918q34HaJsqTxbI-z6DjXO7j74SdmJxcz6oL9Ds-ROPbfuGd5kU1gt1Gfq8vjoFjIMCmytE5h3-Z6AKTAq30QUzoSHJqEKfx3swVOAm-DiD9Bg_1aTiavebVPiTRurn2YHKC4dItssJ1AcKdnHGLiMnrg_-HyCoRwXUafmCbh-OQjqFugv7xPOlGClFUQAfLCaPyEt6CNHqGXgQfLfSkJrTzbQyR-c3XBuryRWVmQTdlLrVmCTeC1vtzq2GImlFJ4Z3NQGUk4EOYQy4eYbtMairnuwXq9C_fBuLTJzowYdaXFvXgFMLbTxhw4zSPNDdMaAWXFTzGVolvTlVGx4f6W56YrLypoxdk1e0eR3CHMtuPUNX965japC-xWTvhC4aEZ6rFP4W2G-pNWSgMMhkEALJUSuTUH0NhXgN086PtlX9Vm3uBrfVKbAv1TAeIyRrRpQYpZA6tpz3Pc56IDgzKBqER99ERMWDtjPk4XTH5745p4toiugOfLeFZs4EnFdDYrGlz3g4_09c0iA4uGIi88U4skB5_JKLGnqzmXk1rgQ/https://www.amazon.in/stores/page/5B6A2C91-C552-497C-9B0E-559EC54AA101/?_encoding=UTF8&store_ref=SB_A0166323VJSKIN4Q2K23-A055607833YYJH1TC176D&pd_rd_plhdr=t&aaxitk=d04dbd52aa36419a9de66803c7ed6483&hsa_cr_id=0&lp_asins=B094QXVT7Q%2CB094QXFLTF&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=Cewf2Y6U2E&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                      - link "Seagate" [ref=e2559] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JJM6TToRopwivpXqTYVh4xwAAAGe7kxj0goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCronv3/clv1c_ek-wBPHXFbbWzjO3YoscrxfcuU0CLg9JRm4H9kb1t4GiiBTbrU6jgfmctyOO86xcypvFTufY_GM5gkA9EpcPlqMl5aFD7k9af3R1Hu1qWvzwg2Zur5Las_Log_lwoEbZR5W8YYDiZ_-PADmSZpxO26XKtH2ck1eK0hxgDvas3pMvwdu9BXzfh7xBzzwefdWWQ9rvdYfLHgn-4dTk58lGmyEJP9y_iOKmQQ9kEzElZFL6Cqn3HPZF_L8UA6zywZuKcrsCLSyYFeP-xDnwtjZKwvEPkHz2GcM9n0CBe-JRRM7rx9fcVY0pkUpZkH5d3JxmOMt5ZDimoKmcKpz88dwRDdBblsJY_X9Xd7z5-G2H3ORArXUtzfO81Bu2q1AANd9C-8GVAlmFZBgjZyhXscBfsrawn4oLFyDnlgaZn3p3Z-LfSBDm-eAEVs-MmUSeIKQQoaRbhelXFfVvvMaduvcu1zYhiu4trwOKxnR-DodSI-21ZywrL2ftxiCV2nBu2f8ErAn2NRH-Jn7WJNHLoSLV7HP8wto6qlitKJM92P-vja0wLXZkytlWD7UyV0xqnTGxA54H9kWjnnO2GywenU4ohc-9C4oYq90kcdM0jL9YLAsjUXvrYgxqvqs5kJtqHDJ0BwDf7HuCn--vdkzh0Do_OArmjMGKZMxpCIdHbQAawDTgJNi-1vnstnqVEQi0oRyMFq-6AFcWuwsnn-PKkagob2JNOdtfRAXZmx_jkjUtj1e7VjOqw72IaPnM9-S5RQ1fyzPC2XIBjiNUg1OHvDapyu9V3W3dAYbRAs0rPK71VnKhSSctUebT7QpaZlPkFHB_yaMllBEFCbZXh1j402cvrnWSoonErU7qFCxpSWF4r50BzbL_HuSeKbvRqDtsy1avDXrGFizdEINEO1-sW5sU95J-nL-09B3FkDqrqhlllPe-QgLrmO0YEUF7I58Xk5n76yyki8p_XDnPbb2vTGITdXtGKQXdy7ImWaa_xEc0Y2nv1tbEHlEjW3xH2DFql9EEIdyewrOEUYFosfN98PPpUruf_NlEMsb-iNqwrfAHzL7FQhfVq_C91ZA0TprhwqtbY4mPnBYbhXKwZlxT4Ne6TfDVhQeYI2oq3SY9lcpf6KjMlYycNH6RQahQ918q34HaJsqTxbI-z6DjXO7j74SdmJxcz6oL9Ds-ROPbfuGd5kU1gt1Gfq8vjoFjIMCmytE5h3-Z6AKTAq30QUzoSHJqEKfx3swVOAm-DiD9Bg_1aTiavebVPiTRurn2YHKC4dItssJ1AcKdnHGLiMnrg_-HyCoRwXUafmCbh-OQjqFugv7xPOlGClFUQAfLCaPyEt6CNHqGXgQfLfSkJrTzbQyR-c3XBuryRWVmQTdlLrVmCTeC1vtzq2GImlFJ4Z3NQGUk4EOYQy4eYbtMairnuwXq9C_fBuLTJzowYdaXFvXgFMLbTxhw4zSPNDdMaAWXFTzGVolvTlVGx4f6W56YrLypoxdk1e0eR3CHMtuPUNX965japC-xWTvhC4aEZ6rFP4W2G-pNWSgMMhkEALJUSuTUH0NhXgN086PtlX9Vm3uBrfVKbAv1TAeIyRrRpQYpZA6tpz3Pc56IDgzKBqER99ERMWDtjPk4XTH5745p4toiugOfLeFZs4EnFdDYrGlz3g4_09c0iA4uGIi88U4skB5_JKLGnqzmXk1rgQ/https://www.amazon.in/stores/page/5B6A2C91-C552-497C-9B0E-559EC54AA101/?_encoding=UTF8&store_ref=SB_A0166323VJSKIN4Q2K23-A055607833YYJH1TC176D&pd_rd_plhdr=t&aaxitk=d04dbd52aa36419a9de66803c7ed6483&hsa_cr_id=0&lp_asins=B094QXVT7Q%2CB094QXFLTF&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=Cewf2Y6U2E&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                        - img "Seagate" [ref=e2560]
+                      - generic [ref=e2562]:
+                        - generic [ref=e2563]:
+                          - link [ref=e2564] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJM6TToRopwivpXqTYVh4xwAAAGe7kxj0goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCronv3/clv1c_ek-wBPHXFbbWzjO3YoscrxfcuU0CLg9JRm4H9kb1t4GiiBTbrU6jgfmctyOO86xcypvFTufY_GM5gkA9EpcPlqMl5aFD7k9af3R1Hu1qWvzwg2Zur5Las_Log_lwoEbZR5W8YYDiZ_-PADmSZpxO26XKtH2ck1eK0hxgDvas3pMvwdu9BXzfh7xBzzwefdWWQ9rvdYfLHgn-4dTk58lGmyEJP9y_iOKmQQ9kEzElZFL6Cqn3HPZF_L8UA6zywZuKcrsCLSyYFeP-xDnwtjZKwvEPkHz2GcM9n0CBe-JRRM7rx9fcVY0pkUpZkH5d3JxmOMt5ZDimoKmcKpz88dwRDdBblsJY_X9Xd7z5-G2H3ORArXUtzfO81Bu2q1AANd9C-8GVAlmFZBgjZyhXscBfsrawn4oLFyDnlgaZn3p3Z-LfSBDm-eAEVs-MmUSeIKQQoaRbhelXFfVvvMaduvcu1zYhiu4trwOKxnR-DodSI-21ZywrL2ftxiCV2nBu2f8ErAn2NRH-Jn7WJNHLoSLV7HP8wto6qlitKJM92P-vja0wLXZkytlWD7UyV0xqnTGxA54H9kWjnnO2GywenU4ohc-9C4oYq90kcdM0jL9YLAsjUXvrYgxqvqs5kJtqHDJ0BwDf7HuCn--vdkzh0Do_OArmjMGKZMxpCIdHbQAawDTgJNi-1vnstnqVEQi0oRyMFq-6AFcWuwsnn-PKkagob2JNOdtfRAXZmx_jkjUtj1e7VjOqw72IaPnM9-S5RQ1fyzPC2XIBjiNUg1OHvDapyu9V3W3dAYbRAs0rPK71VnKhSSctUebT7QpaZlPkFHB_yaMllBEFCbZXh1j402cvrnWSoonErU7qFCxpSWF4r50BzbL_HuSeKbvRqDtsy1avDXrGFizdEINEO1-sW5sU95J-nL-09B3FkDqrqhlllPe-QgLrmO0YEUF7I58Xk5n76yyki8p_XDnPbb2vTGITdXtGKQXdy7ImWaa_xEc0Y2nv1tbEHlEjW3xH2DFql9EEIdyewrOEUYFosfN98PPpUruf_NlEMsb-iNqwrfAHzL7FQhfVq_C91ZA0TprhwqtbY4mPnBYbhXKwZlxT4Ne6TfDVhQeYI2oq3SY9lcpf6KjMlYycNH6RQahQ918q34HaJsqTxbI-z6DjXO7j74SdmJxcz6oL9Ds-ROPbfuGd5kU1gt1Gfq8vjoFjIMCmytE5h3-Z6AKTAq30QUzoSHJqEKfx3swVOAm-DiD9Bg_1aTiavebVPiTRurn2YHKC4dItssJ1AcKdnHGLiMnrg_-HyCoRwXUafmCbh-OQjqFugv7xPOlGClFUQAfLCaPyEt6CNHqGXgQfLfSkJrTzbQyR-c3XBuryRWVmQTdlLrVmCTeC1vtzq2GImlFJ4Z3NQGUk4EOYQy4eYbtMairnuwXq9C_fBuLTJzowYdaXFvXgFMLbTxhw4zSPNDdMaAWXFTzGVolvTlVGx4f6W56YrLypoxdk1e0eR3CHMtuPUNX965japC-xWTvhC4aEZ6rFP4W2G-pNWSgMMhkEALJUSuTUH0NhXgN086PtlX9Vm3uBrfVKbAv1TAeIyRrRpQYpZA6tpz3Pc56IDgzKBqER99ERMWDtjPk4XTH5745p4toiugOfLeFZs4EnFdDYrGlz3g4_09c0iA4uGIi88U4skB5_JKLGnqzmXk1rgQ/https://www.amazon.in/stores/page/5B6A2C91-C552-497C-9B0E-559EC54AA101/?_encoding=UTF8&store_ref=SB_A0166323VJSKIN4Q2K23-A055607833YYJH1TC176D&pd_rd_plhdr=t&aaxitk=d04dbd52aa36419a9de66803c7ed6483&hsa_cr_id=0&lp_asins=B094QXVT7Q%2CB094QXFLTF&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=Cewf2Y6U2E&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                          - link "Seagate" [ref=e2565] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJM6TToRopwivpXqTYVh4xwAAAGe7kxj0goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCronv3/clv1c_ek-wBPHXFbbWzjO3YoscrxfcuU0CLg9JRm4H9kb1t4GiiBTbrU6jgfmctyOO86xcypvFTufY_GM5gkA9EpcPlqMl5aFD7k9af3R1Hu1qWvzwg2Zur5Las_Log_lwoEbZR5W8YYDiZ_-PADmSZpxO26XKtH2ck1eK0hxgDvas3pMvwdu9BXzfh7xBzzwefdWWQ9rvdYfLHgn-4dTk58lGmyEJP9y_iOKmQQ9kEzElZFL6Cqn3HPZF_L8UA6zywZuKcrsCLSyYFeP-xDnwtjZKwvEPkHz2GcM9n0CBe-JRRM7rx9fcVY0pkUpZkH5d3JxmOMt5ZDimoKmcKpz88dwRDdBblsJY_X9Xd7z5-G2H3ORArXUtzfO81Bu2q1AANd9C-8GVAlmFZBgjZyhXscBfsrawn4oLFyDnlgaZn3p3Z-LfSBDm-eAEVs-MmUSeIKQQoaRbhelXFfVvvMaduvcu1zYhiu4trwOKxnR-DodSI-21ZywrL2ftxiCV2nBu2f8ErAn2NRH-Jn7WJNHLoSLV7HP8wto6qlitKJM92P-vja0wLXZkytlWD7UyV0xqnTGxA54H9kWjnnO2GywenU4ohc-9C4oYq90kcdM0jL9YLAsjUXvrYgxqvqs5kJtqHDJ0BwDf7HuCn--vdkzh0Do_OArmjMGKZMxpCIdHbQAawDTgJNi-1vnstnqVEQi0oRyMFq-6AFcWuwsnn-PKkagob2JNOdtfRAXZmx_jkjUtj1e7VjOqw72IaPnM9-S5RQ1fyzPC2XIBjiNUg1OHvDapyu9V3W3dAYbRAs0rPK71VnKhSSctUebT7QpaZlPkFHB_yaMllBEFCbZXh1j402cvrnWSoonErU7qFCxpSWF4r50BzbL_HuSeKbvRqDtsy1avDXrGFizdEINEO1-sW5sU95J-nL-09B3FkDqrqhlllPe-QgLrmO0YEUF7I58Xk5n76yyki8p_XDnPbb2vTGITdXtGKQXdy7ImWaa_xEc0Y2nv1tbEHlEjW3xH2DFql9EEIdyewrOEUYFosfN98PPpUruf_NlEMsb-iNqwrfAHzL7FQhfVq_C91ZA0TprhwqtbY4mPnBYbhXKwZlxT4Ne6TfDVhQeYI2oq3SY9lcpf6KjMlYycNH6RQahQ918q34HaJsqTxbI-z6DjXO7j74SdmJxcz6oL9Ds-ROPbfuGd5kU1gt1Gfq8vjoFjIMCmytE5h3-Z6AKTAq30QUzoSHJqEKfx3swVOAm-DiD9Bg_1aTiavebVPiTRurn2YHKC4dItssJ1AcKdnHGLiMnrg_-HyCoRwXUafmCbh-OQjqFugv7xPOlGClFUQAfLCaPyEt6CNHqGXgQfLfSkJrTzbQyR-c3XBuryRWVmQTdlLrVmCTeC1vtzq2GImlFJ4Z3NQGUk4EOYQy4eYbtMairnuwXq9C_fBuLTJzowYdaXFvXgFMLbTxhw4zSPNDdMaAWXFTzGVolvTlVGx4f6W56YrLypoxdk1e0eR3CHMtuPUNX965japC-xWTvhC4aEZ6rFP4W2G-pNWSgMMhkEALJUSuTUH0NhXgN086PtlX9Vm3uBrfVKbAv1TAeIyRrRpQYpZA6tpz3Pc56IDgzKBqER99ERMWDtjPk4XTH5745p4toiugOfLeFZs4EnFdDYrGlz3g4_09c0iA4uGIi88U4skB5_JKLGnqzmXk1rgQ/https://www.amazon.in/stores/page/5B6A2C91-C552-497C-9B0E-559EC54AA101/?_encoding=UTF8&store_ref=SB_A0166323VJSKIN4Q2K23-A055607833YYJH1TC176D&pd_rd_plhdr=t&aaxitk=d04dbd52aa36419a9de66803c7ed6483&hsa_cr_id=0&lp_asins=B094QXVT7Q%2CB094QXFLTF&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=Cewf2Y6U2E&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                            - img "Seagate" [ref=e2567]
+                        - generic [ref=e2568]:
+                          - link [ref=e2569] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJM6TToRopwivpXqTYVh4xwAAAGe7kxj0goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCronv3/clv1c_ek-wBPHXFbbWzjO3YoscrxfcuU0CLg9JRm4H9kb1t4GiiBTbrU6jgfmctyOO86xcypvFTufY_GM5gkA9EpcPlqMl5aFD7k9af3R1Hu1qWvzwg2Zur5Las_Log_lwoEbZR5W8YYDiZ_-PADmSZpxO26XKtH2ck1eK0hxgDvas3pMvwdu9BXzfh7xBzzwefdWWQ9rvdYfLHgn-4dTk58lGmyEJP9y_iOKmQQ9kEzElZFL6Cqn3HPZF_L8UA6zywZuKcrsCLSyYFeP-xDnwtjZKwvEPkHz2GcM9n0CBe-JRRM7rx9fcVY0pkUpZkH5d3JxmOMt5ZDimoKmcKpz88dwRDdBblsJY_X9Xd7z5-G2H3ORArXUtzfO81Bu2q1AANd9C-8GVAlmFZBgjZyhXscBfsrawn4oLFyDnlgaZn3p3Z-LfSBDm-eAEVs-MmUSeIKQQoaRbhelXFfVvvMaduvcu1zYhiu4trwOKxnR-DodSI-21ZywrL2ftxiCV2nBu2f8ErAn2NRH-Jn7WJNHLoSLV7HP8wto6qlitKJM92P-vja0wLXZkytlWD7UyV0xqnTGxA54H9kWjnnO2GywenU4ohc-9C4oYq90kcdM0jL9YLAsjUXvrYgxqvqs5kJtqHDJ0BwDf7HuCn--vdkzh0Do_OArmjMGKZMxpCIdHbQAawDTgJNi-1vnstnqVEQi0oRyMFq-6AFcWuwsnn-PKkagob2JNOdtfRAXZmx_jkjUtj1e7VjOqw72IaPnM9-S5RQ1fyzPC2XIBjiNUg1OHvDapyu9V3W3dAYbRAs0rPK71VnKhSSctUebT7QpaZlPkFHB_yaMllBEFCbZXh1j402cvrnWSoonErU7qFCxpSWF4r50BzbL_HuSeKbvRqDtsy1avDXrGFizdEINEO1-sW5sU95J-nL-09B3FkDqrqhlllPe-QgLrmO0YEUF7I58Xk5n76yyki8p_XDnPbb2vTGITdXtGKQXdy7ImWaa_xEc0Y2nv1tbEHlEjW3xH2DFql9EEIdyewrOEUYFosfN98PPpUruf_NlEMsb-iNqwrfAHzL7FQhfVq_C91ZA0TprhwqtbY4mPnBYbhXKwZlxT4Ne6TfDVhQeYI2oq3SY9lcpf6KjMlYycNH6RQahQ918q34HaJsqTxbI-z6DjXO7j74SdmJxcz6oL9Ds-ROPbfuGd5kU1gt1Gfq8vjoFjIMCmytE5h3-Z6AKTAq30QUzoSHJqEKfx3swVOAm-DiD9Bg_1aTiavebVPiTRurn2YHKC4dItssJ1AcKdnHGLiMnrg_-HyCoRwXUafmCbh-OQjqFugv7xPOlGClFUQAfLCaPyEt6CNHqGXgQfLfSkJrTzbQyR-c3XBuryRWVmQTdlLrVmCTeC1vtzq2GImlFJ4Z3NQGUk4EOYQy4eYbtMairnuwXq9C_fBuLTJzowYdaXFvXgFMLbTxhw4zSPNDdMaAWXFTzGVolvTlVGx4f6W56YrLypoxdk1e0eR3CHMtuPUNX965japC-xWTvhC4aEZ6rFP4W2G-pNWSgMMhkEALJUSuTUH0NhXgN086PtlX9Vm3uBrfVKbAv1TAeIyRrRpQYpZA6tpz3Pc56IDgzKBqER99ERMWDtjPk4XTH5745p4toiugOfLeFZs4EnFdDYrGlz3g4_09c0iA4uGIi88U4skB5_JKLGnqzmXk1rgQ/https://www.amazon.in/stores/page/5B6A2C91-C552-497C-9B0E-559EC54AA101/?_encoding=UTF8&store_ref=SB_A0166323VJSKIN4Q2K23-A055607833YYJH1TC176D&pd_rd_plhdr=t&aaxitk=d04dbd52aa36419a9de66803c7ed6483&hsa_cr_id=0&lp_asins=B094QXVT7Q%2CB094QXFLTF&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=Cewf2Y6U2E&ref_=sbx_be_s_3psl_mbd_mb2_bkgd&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                          - link "4TB HDD With Password & 3 yr Data Recovery Service" [ref=e2570] [cursor=pointer]:
+                            - /url: https://aax-eu-zaz.amazon.in/x/c/JJM6TToRopwivpXqTYVh4xwAAAGe7kxj0goAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICCronv3/clv1c_ek-wBPHXFbbWzjO3YoscrxfcuU0CLg9JRm4H9kb1t4GiiBTbrU6jgfmctyOO86xcypvFTufY_GM5gkA9EpcPlqMl5aFD7k9af3R1Hu1qWvzwg2Zur5Las_Log_lwoEbZR5W8YYDiZ_-PADmSZpxO26XKtH2ck1eK0hxgDvas3pMvwdu9BXzfh7xBzzwefdWWQ9rvdYfLHgn-4dTk58lGmyEJP9y_iOKmQQ9kEzElZFL6Cqn3HPZF_L8UA6zywZuKcrsCLSyYFeP-xDnwtjZKwvEPkHz2GcM9n0CBe-JRRM7rx9fcVY0pkUpZkH5d3JxmOMt5ZDimoKmcKpz88dwRDdBblsJY_X9Xd7z5-G2H3ORArXUtzfO81Bu2q1AANd9C-8GVAlmFZBgjZyhXscBfsrawn4oLFyDnlgaZn3p3Z-LfSBDm-eAEVs-MmUSeIKQQoaRbhelXFfVvvMaduvcu1zYhiu4trwOKxnR-DodSI-21ZywrL2ftxiCV2nBu2f8ErAn2NRH-Jn7WJNHLoSLV7HP8wto6qlitKJM92P-vja0wLXZkytlWD7UyV0xqnTGxA54H9kWjnnO2GywenU4ohc-9C4oYq90kcdM0jL9YLAsjUXvrYgxqvqs5kJtqHDJ0BwDf7HuCn--vdkzh0Do_OArmjMGKZMxpCIdHbQAawDTgJNi-1vnstnqVEQi0oRyMFq-6AFcWuwsnn-PKkagob2JNOdtfRAXZmx_jkjUtj1e7VjOqw72IaPnM9-S5RQ1fyzPC2XIBjiNUg1OHvDapyu9V3W3dAYbRAs0rPK71VnKhSSctUebT7QpaZlPkFHB_yaMllBEFCbZXh1j402cvrnWSoonErU7qFCxpSWF4r50BzbL_HuSeKbvRqDtsy1avDXrGFizdEINEO1-sW5sU95J-nL-09B3FkDqrqhlllPe-QgLrmO0YEUF7I58Xk5n76yyki8p_XDnPbb2vTGITdXtGKQXdy7ImWaa_xEc0Y2nv1tbEHlEjW3xH2DFql9EEIdyewrOEUYFosfN98PPpUruf_NlEMsb-iNqwrfAHzL7FQhfVq_C91ZA0TprhwqtbY4mPnBYbhXKwZlxT4Ne6TfDVhQeYI2oq3SY9lcpf6KjMlYycNH6RQahQ918q34HaJsqTxbI-z6DjXO7j74SdmJxcz6oL9Ds-ROPbfuGd5kU1gt1Gfq8vjoFjIMCmytE5h3-Z6AKTAq30QUzoSHJqEKfx3swVOAm-DiD9Bg_1aTiavebVPiTRurn2YHKC4dItssJ1AcKdnHGLiMnrg_-HyCoRwXUafmCbh-OQjqFugv7xPOlGClFUQAfLCaPyEt6CNHqGXgQfLfSkJrTzbQyR-c3XBuryRWVmQTdlLrVmCTeC1vtzq2GImlFJ4Z3NQGUk4EOYQy4eYbtMairnuwXq9C_fBuLTJzowYdaXFvXgFMLbTxhw4zSPNDdMaAWXFTzGVolvTlVGx4f6W56YrLypoxdk1e0eR3CHMtuPUNX965japC-xWTvhC4aEZ6rFP4W2G-pNWSgMMhkEALJUSuTUH0NhXgN086PtlX9Vm3uBrfVKbAv1TAeIyRrRpQYpZA6tpz3Pc56IDgzKBqER99ERMWDtjPk4XTH5745p4toiugOfLeFZs4EnFdDYrGlz3g4_09c0iA4uGIi88U4skB5_JKLGnqzmXk1rgQ/https://www.amazon.in/stores/page/5B6A2C91-C552-497C-9B0E-559EC54AA101/?_encoding=UTF8&store_ref=SB_A0166323VJSKIN4Q2K23-A055607833YYJH1TC176D&pd_rd_plhdr=t&aaxitk=d04dbd52aa36419a9de66803c7ed6483&hsa_cr_id=0&lp_asins=B094QXVT7Q%2CB094QXFLTF&lp_query=samsung%20tv%2055%20inch&lp_slot=desktop-hsa-3psl&aref=Cewf2Y6U2E&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=Xru5j&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=DVP0ZQQ5G4NR5SN95PV4&pd_rd_wg=jT2mv&pd_rd_r=1e2cdc8e-2571-4a8e-8b4a-aba10949194c
+                            - generic [ref=e2572]:
+                              - generic [ref=e2573]: 4TB HDD With Password & 3 yr Data Recovery Service
+                              - generic [ref=e2574]: 4TB HDD With Password & 3 yr Data Recovery Service
+          - generic [ref=e2580]:
+            - heading "Need help?" [level=2] [ref=e2583]
+            - generic [ref=e2584]:
+              - link "Visit the help section" [ref=e2585] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=201889520
+              - text: or
+              - link "contact us" [ref=e2586] [cursor=pointer]:
+                - /url: /gp/help/customer/contact-us
+          - generic [ref=e2589]:
+            - iframe [ref=e2590]
+            - button "Leave feedback on Sponsored advertisement" [ref=e2592] [cursor=pointer]:
+              - generic [ref=e2593]: Sponsored
+        - link "Go back to filtering menu" [ref=e2595] [cursor=pointer]:
+          - /url: "#s-skipLinkTargetForFilterOptions"
+      - dialog "Filters" [ref=e2596]:
+        - generic [ref=e2597]:
+          - link "Skip to main search results" [ref=e2598] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForMainSearchResults"
+          - generic [ref=e2600]:
+            - generic [ref=e2604]:
+              - group [ref=e2605]:
+                - heading "Popular Shopping Ideas" [level=2] [ref=e2606]
+                - list [ref=e2607]:
+                  - listitem [ref=e2608]:
+                    - link "Smart" [ref=e2610] [cursor=pointer]:
+                      - /url: /s?k=smart+samsung+tv+55+inch&ref=sr_nr_p_rag_integrated_qb_0
+                  - listitem [ref=e2611]:
+                    - link "4k Ultra Hd" [ref=e2613] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch+4k+ultra+hd+smart+tv&ref=sr_nr_p_rag_integrated_qb_1
+                  - listitem [ref=e2614]:
+                    - link "Neo Qled" [ref=e2616] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch+neo+qled&ref=sr_nr_p_rag_integrated_qb_2
+                  - listitem [ref=e2617]:
+                    - link "Curved" [ref=e2619] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch+curved&ref=sr_nr_p_rag_integrated_qb_3
+                  - listitem [ref=e2620]:
+                    - button "See more" [ref=e2623] [cursor=pointer]: See more
+              - separator [ref=e2625]
+              - group "Eligible for Free Delivery" [ref=e2626]:
+                - heading "Eligible for Free Delivery" [level=2] [ref=e2627]
+                - list "Eligible for Free Delivery" [ref=e2628]:
+                  - listitem "Popular Shopping Ideas" [ref=e2629]:
+                    - link "Apply the filter Free Shipping to narrow results" [ref=e2631] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_free_shipping_eligible%3A205563695031&dc&qid=1782114443&rnid=205563694031&ref=sr_nr_p_n_free_shipping_eligible_1&ds=v1%3AHhXfSoRfauNnGF3J9uQNlgtWM5Gy8Rb%2BC5%2F6S0NPz1Y
+                      - checkbox [ref=e2634]
+                      - text: Free Shipping
+                      - generic [ref=e2636]: Get FREE Shipping on eligible orders shipped by Amazon
+              - group "Brands" [ref=e2637]:
+                - heading "Brands" [level=2] [ref=e2638]
+                - list "Brands" [ref=e2639]:
+                  - listitem "Popular Shopping Ideas" [ref=e2640]:
+                    - link "Apply the filter Samsung to narrow results" [ref=e2642] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_123%3A46655&dc&qid=1782114443&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AXTN3A3rUttzUOT6N1BbEGR46RCU130yBN5xyM8GGax4
+                      - checkbox [ref=e2645]
+                      - text: Samsung
+                  - listitem "Popular Shopping Ideas" [ref=e2647]:
+                    - link "Apply the filter XIAOMI to narrow results" [ref=e2649] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_123%3A338933&dc&qid=1782114443&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3AOxDKJMo2LYBMFb0HWTsVXE1ypzlzCc9ZffUiG7gG66E
+                      - checkbox [ref=e2652]
+                      - text: XIAOMI
+                  - listitem "Popular Shopping Ideas" [ref=e2654]:
+                    - link "Apply the filter PHILIPS to narrow results" [ref=e2656] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_123%3A195698&dc&qid=1782114443&rnid=91049095031&ref=sr_nr_p_123_3&ds=v1%3AsEat21CA7tZziCo6p5JLr92SExTlthvA7pob4xANKH4
+                      - checkbox [ref=e2659]
+                      - text: PHILIPS
+              - group "Screen Size" [ref=e2661]:
+                - heading "Screen Size" [level=2] [ref=e2662]
+                - list "Screen Size" [ref=e2663]:
+                  - listitem "Popular Shopping Ideas" [ref=e2664]:
+                    - link "Apply the filter Up to 25.9 in to narrow results" [ref=e2666] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_five_browse-bin%3A213268013031&dc&qid=1782114443&rnid=213268009031&ref=sr_nr_p_n_feature_five_browse-bin_1&ds=v1%3Af%2FkXGBNHyWXO4mgirmn82Q6mJs2YL3w1FQ2ESAwmbD4
+                      - checkbox [ref=e2669]
+                      - text: Up to 25.9 in
+                  - listitem "Popular Shopping Ideas" [ref=e2671]:
+                    - link "Apply the filter 35.0 to 43.9 in to narrow results" [ref=e2673] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_five_browse-bin%3A213268016031&dc&qid=1782114443&rnid=213268009031&ref=sr_nr_p_n_feature_five_browse-bin_2&ds=v1%3APfnkeEphPLZN%2BqxnWmzm7lH002x1yo2L8hn39%2B9w8YE
+                      - checkbox [ref=e2676]
+                      - text: 35.0 to 43.9 in
+                  - listitem "Popular Shopping Ideas" [ref=e2678]:
+                    - link "Apply the filter 53.0 to 61.9 in to narrow results" [ref=e2680] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_five_browse-bin%3A213268012031&dc&qid=1782114443&rnid=213268009031&ref=sr_nr_p_n_feature_five_browse-bin_3&ds=v1%3As4Kilzb%2FSgbV9WndUNJD3hIfGW%2BqavRRqthBffcdkBk
+                      - checkbox [ref=e2683]
+                      - text: 53.0 to 61.9 in
+                  - listitem "Popular Shopping Ideas" [ref=e2685]:
+                    - link "Apply the filter 62.0 to 70.9 in to narrow results" [ref=e2687] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_five_browse-bin%3A213268014031&dc&qid=1782114443&rnid=213268009031&ref=sr_nr_p_n_feature_five_browse-bin_4&ds=v1%3AdjOcHbFIYPrIM%2B9kSOt1bCZ2O1zWJzeOF8wrbmWKcmA
+                      - checkbox [ref=e2690]
+                      - text: 62.0 to 70.9 in
+                  - listitem "Popular Shopping Ideas" [ref=e2692]:
+                    - link "Apply the filter 71.0 in & above to narrow results" [ref=e2694] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_five_browse-bin%3A213268010031&dc&qid=1782114443&rnid=213268009031&ref=sr_nr_p_n_feature_five_browse-bin_5&ds=v1%3AWPb67iUI481Uv3gmiqZUU0GUru%2F6wIqPm9jjGJ8eWKc
+                      - checkbox [ref=e2697]
+                      - text: 71.0 in & above
+              - group "Customer Reviews" [ref=e2699]:
+                - heading "Customer Reviews" [level=2] [ref=e2700]
+                - list "Customer Reviews" [ref=e2701]:
+                  - listitem [ref=e2702]:
+                    - link "Apply the filter 4 Stars & Up to narrow results" [ref=e2705] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_72%3A1318476031&dc&qid=1782114443&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3ABvEUVKev%2FdixgpJaaf3K65p29avqRPefUSqjwaQHSEM
+                      - generic [ref=e2707]: 4 Stars
+                      - text: "& Up"
+              - group "Display Resolution" [ref=e2708]:
+                - heading "Display Resolution" [level=2] [ref=e2709]
+                - list "Display Resolution" [ref=e2710]:
+                  - listitem "Popular Shopping Ideas" [ref=e2711]:
+                    - link "Apply the filter 4K to narrow results" [ref=e2713] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003296671111%3A28239715031&dc&qid=1782114443&rnid=28239708031&ref=sr_nr_p_n_g-1003296671111_1&ds=v1%3AE76XJYUIuVu15Epz4JXG%2FDgDTcQQSG7N0T9isO6u194
+                      - checkbox [ref=e2716]
+                      - text: 4K
+              - group "Display Technology" [ref=e2718]:
+                - heading "Display Technology" [level=2] [ref=e2719]
+                - list "Display Technology" [ref=e2720]:
+                  - listitem "Popular Shopping Ideas" [ref=e2721]:
+                    - link "Apply the filter LED to narrow results" [ref=e2723] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_browse-bin%3A1485062031&dc&qid=1782114443&rnid=1485060031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3AMHzgD%2BQV9oClNiLRJRVBjrM68%2FqDeF120WX%2BWXfC1qQ
+                      - checkbox [ref=e2726]
+                      - text: LED
+                  - listitem "Popular Shopping Ideas" [ref=e2728]:
+                    - link "Apply the filter QLED to narrow results" [ref=e2730] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_browse-bin%3A13466811031&dc&qid=1782114443&rnid=1485060031&ref=sr_nr_p_n_feature_browse-bin_2&ds=v1%3AcbV%2BGURpQF7ctJ9Jd0P77MOlyQy2iBnJBKN8TA9OIP4
+                      - checkbox [ref=e2733]
+                      - text: QLED
+              - group [ref=e2735]:
+                - generic [ref=e2736]:
+                  - generic [ref=e2737]: Price
+                  - generic [ref=e2740]:
+                    - generic [ref=e2741]:
+                      - generic [ref=e2742]: ₹690
+                      - generic [ref=e2743]: –
+                      - generic [ref=e2744]: ₹47,500+
+                    - generic [ref=e2746]:
+                      - generic:
+                        - slider "Minimum price": "0"
+                      - generic [ref=e2747]:
+                        - slider "Maximum price": "181"
+                - heading "Deals & Discounts" [level=2] [ref=e2748]
+                - list "Deals & Discounts" [ref=e2749]:
+                  - listitem [ref=e2750]:
+                    - link "All Discounts" [ref=e2752] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_deal_type%3A26921226031&dc&qid=1782114443&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AF1B8NRcXQWnW4xofq7eg4AuZwn7j26ssUjGVm%2BIQTxc
+                  - listitem [ref=e2753]:
+                    - link "Coupons" [ref=e2755] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_deal_type%3A210770212031&dc&qid=1782114443&rnid=26921223031&ref=sr_nr_p_n_deal_type_2&ds=v1%3Auk8yAV7Edgbes%2B1xazDIMN5OzAlAFHxlfbydIitOhEA
+                  - listitem [ref=e2756]:
+                    - link "Today's Deals" [ref=e2758] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_deal_type%3A26921224031&dc&qid=1782114443&rnid=26921223031&ref=sr_nr_p_n_deal_type_3&ds=v1%3ANRjyPCq13JrdASl5tKZw2tTBHrbI2hjqVM%2BLNij%2BneE
+              - group "Operating System" [ref=e2759]:
+                - heading "Operating System" [level=2] [ref=e2760]
+                - list "Operating System" [ref=e2761]:
+                  - listitem "Popular Shopping Ideas" [ref=e2762]:
+                    - link "Apply the filter Google TV to narrow results" [ref=e2764] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101016028402111%3A205632783031&dc&qid=1782114443&rnid=205632772031&ref=sr_nr_p_n_g-101016028402111_1&ds=v1%3AtlRjiBM1I8L7JJDognvynemiC7vLW1vUYL4xXJBwolU
+                      - checkbox [ref=e2767]
+                      - text: Google TV
+                  - listitem "Popular Shopping Ideas" [ref=e2769]:
+                    - link "Apply the filter Tizen to narrow results" [ref=e2771] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101016028402111%3A205632784031&dc&qid=1782114443&rnid=205632772031&ref=sr_nr_p_n_g-101016028402111_2&ds=v1%3A1%2Bf78Jvnmp2W1kdw9v8FL%2BxbDP9nOckiIS4wlwz71L0
+                      - checkbox [ref=e2774]
+                      - text: Tizen
+              - group "Connectivity" [ref=e2776]:
+                - heading "Connectivity" [level=2] [ref=e2777]
+                - list "Connectivity" [ref=e2778]:
+                  - listitem "Popular Shopping Ideas" [ref=e2779]:
+                    - link "Apply the filter Ethernet to narrow results" [ref=e2781] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003207971111%3A27961048031&dc&qid=1782114443&rnid=27961041031&ref=sr_nr_p_n_g-1003207971111_1&ds=v1%3Ap6uLjdg1X3szpd4hETF4G4H8bkF1ve4JVNBH5Ystb6k
+                      - checkbox [ref=e2784]
+                      - text: Ethernet
+                  - listitem "Popular Shopping Ideas" [ref=e2786]:
+                    - link "Apply the filter HDMI to narrow results" [ref=e2788] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003207971111%3A27961045031&dc&qid=1782114443&rnid=27961041031&ref=sr_nr_p_n_g-1003207971111_2&ds=v1%3AELBm0MUQbxnLcVRVGJ50qKU8RpXf5G6Q8tQ1oGJXxyQ
+                      - checkbox [ref=e2791]
+                      - text: HDMI
+                  - listitem "Popular Shopping Ideas" [ref=e2793]:
+                    - link "Apply the filter USB to narrow results" [ref=e2795] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003207971111%3A27961047031&dc&qid=1782114443&rnid=27961041031&ref=sr_nr_p_n_g-1003207971111_3&ds=v1%3AoND%2FEhG%2FKQlck4ubP0I7iSKsldPvEXrG3v%2Bo6lVhRZ0
+                      - checkbox [ref=e2798]
+                      - text: USB
+                  - listitem "Popular Shopping Ideas" [ref=e2800]:
+                    - link "Apply the filter Wi-Fi to narrow results" [ref=e2802] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003207971111%3A56613348031&dc&qid=1782114443&rnid=27961041031&ref=sr_nr_p_n_g-1003207971111_4&ds=v1%3AGfB9CNtPvnf3CMJwztcxWkEaWor25NSB7H1Vh0ErkP0
+                      - checkbox [ref=e2805]
+                      - text: Wi-Fi
+                  - listitem "Popular Shopping Ideas" [ref=e2807]:
+                    - link "Apply the filter Bluetooth to narrow results" [ref=e2809] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003207971111%3A27961042031&dc&qid=1782114443&rnid=27961041031&ref=sr_nr_p_n_g-1003207971111_5&ds=v1%3AndyMzM3%2F2INuZQWYDEkeoyuExSPoEBvEHDNSpq6Vl3Q
+                      - checkbox [ref=e2812]
+                      - text: Bluetooth
+              - group "Item Condition" [ref=e2814]:
+                - heading "Item Condition" [level=2] [ref=e2815]
+                - list "Item Condition" [ref=e2816]:
+                  - listitem "Popular Shopping Ideas" [ref=e2817]:
+                    - link "Apply the filter New to narrow results" [ref=e2819] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_condition-type%3A8609960031&dc&qid=1782114443&rnid=8609959031&ref=sr_nr_p_n_condition-type_1&ds=v1%3AL3%2FjNU0iCqDxkVco%2FSBC5DVWx5ZbHTiwZsL7if1ypLo
+                      - checkbox [ref=e2822]
+                      - text: New
+              - group "Discount" [ref=e2824]:
+                - heading "Discount" [level=2] [ref=e2825]
+                - list "Discount" [ref=e2826]:
+                  - listitem [ref=e2827]:
+                    - link "10% Off or more" [ref=e2829] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_pct-off-with-tax%3A2665399031&dc&qid=1782114443&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3AeIC1fZAkPlzvs3R%2BUsLzRsjpaBhOJznnDQB6xFDU7ds
+                  - listitem [ref=e2830]:
+                    - link "25% Off or more" [ref=e2832] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_pct-off-with-tax%3A2665400031&dc&qid=1782114443&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3AunynonLf8OuLRQWJ91a0N60ydJixlpnJQsK7V5jtS4U
+                  - listitem [ref=e2833]:
+                    - link "35% Off or more" [ref=e2835] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_pct-off-with-tax%3A2665402031&dc&qid=1782114443&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_3&ds=v1%3ALEZvzb0h0WGPReG4RjNkOfLB4TKI9aLvLYKpaJq3kaY
+                  - listitem [ref=e2836]:
+                    - link "50% Off or more" [ref=e2838] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_pct-off-with-tax%3A2665401031&dc&qid=1782114443&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_4&ds=v1%3AFcl%2Fp4vDTEkkSmUR3YAVr%2Fl7SSMCXGyapQEX5Ch8XxY
+                  - listitem [ref=e2839]:
+                    - generic [ref=e2840]: 60% Off or more
+                  - listitem [ref=e2841]:
+                    - generic [ref=e2842]: 70% Off or more
+              - group "Supported Internet Services" [ref=e2843]:
+                - heading "Supported Internet Services" [level=2] [ref=e2844]
+                - list "Supported Internet Services" [ref=e2845]:
+                  - listitem "Popular Shopping Ideas" [ref=e2846]:
+                    - link "Apply the filter Netflix to narrow results" [ref=e2848] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003330408111%3A28265045031&dc&qid=1782114443&rnid=28265031031&ref=sr_nr_p_n_g-1003330408111_1&ds=v1%3An9vv8s2iMdZ%2FNZ5AdNQe5S1YHNJ3Dlj4aDTsAZQCGR0
+                      - checkbox [ref=e2851]
+                      - text: Netflix
+                  - listitem "Popular Shopping Ideas" [ref=e2853]:
+                    - link "Apply the filter Prime Video to narrow results" [ref=e2855] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003330408111%3A28265043031&dc&qid=1782114443&rnid=28265031031&ref=sr_nr_p_n_g-1003330408111_2&ds=v1%3Axcu%2F0tnNf8Z6219nTflMVihEU7LWuwy24nxiBup%2BtE8
+                      - checkbox [ref=e2858]
+                      - text: Prime Video
+                  - listitem "Popular Shopping Ideas" [ref=e2860]:
+                    - link "Apply the filter YouTube to narrow results" [ref=e2862] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003330408111%3A28265036031&dc&qid=1782114443&rnid=28265031031&ref=sr_nr_p_n_g-1003330408111_3&ds=v1%3ASRAp7Z6oBSBOGiaB7wV0ZkXAvb4gN%2FJX60t7BFk9sU4
+                      - checkbox [ref=e2865]
+                      - text: YouTube
+                  - listitem "Popular Shopping Ideas" [ref=e2867]:
+                    - link "Apply the filter Apple TV to narrow results" [ref=e2869] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003330408111%3A28265051031&dc&qid=1782114443&rnid=28265031031&ref=sr_nr_p_n_g-1003330408111_4&ds=v1%3AO%2BVSmWUE3J1BLJXC5VMAg1BN3%2BN0tzebDqSEMYKGrq4
+                      - checkbox [ref=e2872]
+                      - text: Apple TV
+                  - listitem "Popular Shopping Ideas" [ref=e2874]:
+                    - link "Apply the filter Disney Plus to narrow results" [ref=e2876] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003330408111%3A28265035031&dc&qid=1782114443&rnid=28265031031&ref=sr_nr_p_n_g-1003330408111_5&ds=v1%3AZcK0LYjjYzT%2B1oKzN5YcfmipnLxuHPFD1Icor4uzbJ4
+                      - checkbox [ref=e2879]
+                      - text: Disney Plus
+                  - listitem "Popular Shopping Ideas" [ref=e2881]:
+                    - link "Apply the filter Google TV to narrow results" [ref=e2883] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003330408111%3A28265032031&dc&qid=1782114443&rnid=28265031031&ref=sr_nr_p_n_g-1003330408111_6&ds=v1%3ABuFE9zM47sA1KL9QSA5XCyT24XJS9v%2BP%2Fabpt49%2Bg8s
+                      - checkbox [ref=e2886]
+                      - text: Google TV
+              - group "Ideal Viewing Distance" [ref=e2888]:
+                - heading "Ideal Viewing Distance" [level=2] [ref=e2889]
+                - list "Ideal Viewing Distance" [ref=e2890]:
+                  - listitem "Popular Shopping Ideas" [ref=e2891]:
+                    - link "Apply the filter 8.1 to 10ft to narrow results" [ref=e2893] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_twelve_browse-bin%3A15747879031&dc&qid=1782114443&rnid=15747875031&ref=sr_nr_p_n_feature_twelve_browse-bin_1&ds=v1%3AfnQVJaEivfq58r5wQ%2F6cMW%2B0hyXBr0mCdGHlk%2Bq1AFM
+                      - checkbox [ref=e2896]
+                      - text: 8.1 to 10ft
+                  - listitem "Popular Shopping Ideas" [ref=e2898]:
+                    - link "Apply the filter 10.1 to 12ft to narrow results" [ref=e2900] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_twelve_browse-bin%3A15747880031&dc&qid=1782114443&rnid=15747875031&ref=sr_nr_p_n_feature_twelve_browse-bin_2&ds=v1%3AEr8XNUUo7AoaZqZ%2BddOgYIdQusuqKkx1Tlmzfb1dpMY
+                      - checkbox [ref=e2903]
+                      - text: 10.1 to 12ft
+                  - listitem "Popular Shopping Ideas" [ref=e2905]:
+                    - link "Apply the filter 12.1 to 15ft to narrow results" [ref=e2907] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_feature_twelve_browse-bin%3A15747881031&dc&qid=1782114443&rnid=15747875031&ref=sr_nr_p_n_feature_twelve_browse-bin_3&ds=v1%3A455XRo0qTznqbuJw9wCJr4Weheh5hdkD4nmCLrUWu6M
+                      - checkbox [ref=e2910]
+                      - text: 12.1 to 15ft
+              - group "Control Method" [ref=e2912]:
+                - heading "Control Method" [level=2] [ref=e2913]
+                - list "Control Method" [ref=e2914]:
+                  - listitem "Popular Shopping Ideas" [ref=e2915]:
+                    - link "Apply the filter App to narrow results" [ref=e2917] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1002085548111%3A27179563031&dc&qid=1782114443&rnid=27179527031&ref=sr_nr_p_n_g-1002085548111_1&ds=v1%3AwGMLmitSbs5aNobosi9%2FFYycXY%2FPvSvFlbSoK7DXI8I
+                      - checkbox [ref=e2920]
+                      - text: App
+                  - listitem "Popular Shopping Ideas" [ref=e2922]:
+                    - link "Apply the filter Remote to narrow results" [ref=e2924] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1002085548111%3A27179560031&dc&qid=1782114443&rnid=27179527031&ref=sr_nr_p_n_g-1002085548111_2&ds=v1%3AnJ0reEG2kledifIdk6dJeOuSWbNhhf6U%2FiOoflGdI9Q
+                      - checkbox [ref=e2927]
+                      - text: Remote
+                  - listitem "Popular Shopping Ideas" [ref=e2929]:
+                    - link "Apply the filter Voice to narrow results" [ref=e2931] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1002085548111%3A27179562031&dc&qid=1782114443&rnid=27179527031&ref=sr_nr_p_n_g-1002085548111_3&ds=v1%3AOWcORmqj7siFW5OQAZu0se2pmPOFW%2BJi29UzzP6dnmQ
+                      - checkbox [ref=e2934]
+                      - text: Voice
+              - group "New Arrivals" [ref=e2936]:
+                - heading "New Arrivals" [level=2] [ref=e2937]
+                - list "New Arrivals" [ref=e2938]:
+                  - listitem [ref=e2939]:
+                    - link "Last 30 days" [ref=e2941] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_date_first_available_absolute%3A1318487031&dc&qid=1782114443&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3A2yZSRo1RufoYD24QJHbeUqB5u%2FW6Y52MzBy8qLonjoc
+                  - listitem [ref=e2942]:
+                    - link "Last 90 days" [ref=e2944] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_date_first_available_absolute%3A1318488031&dc&qid=1782114443&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3AjdADzvvjk9P%2BG1SebCh%2FM2KjG0jiqqwnwYM3lCrPkbI
+              - group "Pay On Delivery" [ref=e2945]:
+                - heading "Pay On Delivery" [level=2] [ref=e2946]
+                - list "Pay On Delivery" [ref=e2947]:
+                  - listitem "Popular Shopping Ideas" [ref=e2948]:
+                    - link "Apply the filter Eligible for Pay On Delivery to narrow results" [ref=e2950] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1782114443&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3AGqGat1ND777IO2IoRzMxOsRLUT53Z5VvaPn4mfYvyoA
+                      - checkbox [ref=e2953]
+                      - text: Eligible for Pay On Delivery
+              - group "Availability" [ref=e2955]:
+                - heading "Availability" [level=2] [ref=e2956]
+                - list "Availability" [ref=e2957]:
+                  - listitem "Popular Shopping Ideas" [ref=e2958]:
+                    - link "Apply the filter Include Out of Stock to narrow results" [ref=e2960] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_availability%3A1318485031&dc&qid=1782114443&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3Abssodzsqrvp8I7kJkTQifCX9MmtC0NIlCue4yn481Pw
+                      - checkbox [ref=e2963]
+                      - text: Include Out of Stock
+              - group "HDR Format Supported" [ref=e2965]:
+                - heading "HDR Format Supported" [level=2] [ref=e2966]
+                - list "HDR Format Supported" [ref=e2967]:
+                  - listitem "Popular Shopping Ideas" [ref=e2968]:
+                    - link "Apply the filter HDR10+ to narrow results" [ref=e2970] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101014793910111%3A85886133031&dc&qid=1782114443&rnid=85886089031&ref=sr_nr_p_n_g-101014793910111_1&ds=v1%3Atpk6D7cmYCC27TEKUg5b%2FG%2ByoCoZKOZynyr5FeLTxi0
+                      - checkbox [ref=e2973]
+                      - text: HDR10+
+                  - listitem "Popular Shopping Ideas" [ref=e2975]:
+                    - link "Apply the filter Dolby Vision to narrow results" [ref=e2977] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101014793910111%3A85886134031&dc&qid=1782114443&rnid=85886089031&ref=sr_nr_p_n_g-101014793910111_2&ds=v1%3ADzIJIbvJeYW7KuuPHn4vv%2BSmfsH0H0%2BzK8ITvof6eDg
+                      - checkbox [ref=e2980]
+                      - text: Dolby Vision
+                  - listitem "Popular Shopping Ideas" [ref=e2982]:
+                    - link "Apply the filter HDR10 to narrow results" [ref=e2984] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101014793910111%3A85886136031&dc&qid=1782114443&rnid=85886089031&ref=sr_nr_p_n_g-101014793910111_3&ds=v1%3AQkYdx1Hrjk6LfrD7f94%2F1l3agxx0hRC9pTt%2BfuPiPKA
+                      - checkbox [ref=e2987]
+                      - text: HDR10
+                  - listitem "Popular Shopping Ideas" [ref=e2989]:
+                    - link "Apply the filter HLG to narrow results" [ref=e2991] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101014793910111%3A85886137031&dc&qid=1782114443&rnid=85886089031&ref=sr_nr_p_n_g-101014793910111_4&ds=v1%3AfQLh9Z%2FGbgwVLbNXEhdQvyiZ%2By80UO4dDG7raDI%2Fz%2B8
+                      - checkbox [ref=e2994]
+                      - text: HLG
+              - group "Screen Type" [ref=e2996]:
+                - heading "Screen Type" [level=2] [ref=e2997]
+                - list "Screen Type" [ref=e2998]:
+                  - listitem "Popular Shopping Ideas" [ref=e2999]:
+                    - link "Apply the filter Glossy to narrow results" [ref=e3001] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015680631111%3A205120336031&dc&qid=1782114443&rnid=205120335031&ref=sr_nr_p_n_g-101015680631111_1&ds=v1%3ArIK1phN%2FnF8wPq2S7Uvz7GdXQluohRCldpAkG5MzAFs
+                      - checkbox [ref=e3004]
+                      - text: Glossy
+              - group "Wireless Technology" [ref=e3006]:
+                - heading "Wireless Technology" [level=2] [ref=e3007]
+                - list "Wireless Technology" [ref=e3008]:
+                  - listitem "Popular Shopping Ideas" [ref=e3009]:
+                    - link "Apply the filter Bluetooth to narrow results" [ref=e3011] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015502298111%3A100436315031&dc&qid=1782114443&rnid=100436146031&ref=sr_nr_p_n_g-101015502298111_1&ds=v1%3ANQKJA2MzndHxGfK3sArhP8NHdq9V%2FDWdl6BGrsHilKU
+                      - checkbox [ref=e3014]
+                      - text: Bluetooth
+                  - listitem "Popular Shopping Ideas" [ref=e3016]:
+                    - link "Apply the filter Radio Frequency to narrow results" [ref=e3018] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015502298111%3A100436314031&dc&qid=1782114443&rnid=100436146031&ref=sr_nr_p_n_g-101015502298111_2&ds=v1%3AfR4ZURLqUy3fqmGTS58gs%2FlSFk%2BJ16POOtsi9Zv5%2F5s
+                      - checkbox [ref=e3021]
+                      - text: Radio Frequency
+                  - listitem "Popular Shopping Ideas" [ref=e3023]:
+                    - link "Apply the filter Wi-Fi to narrow results" [ref=e3025] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015502298111%3A100436317031&dc&qid=1782114443&rnid=100436146031&ref=sr_nr_p_n_g-101015502298111_3&ds=v1%3Ag8Nf1HukyAOeCR96%2BE6VC2EKU3QJH3xQFXQEVoE631I
+                      - checkbox [ref=e3028]
+                      - text: Wi-Fi
+              - group "HDMI Ports" [ref=e3030]:
+                - heading "HDMI Ports" [level=2] [ref=e3031]
+                - list "HDMI Ports" [ref=e3032]:
+                  - listitem "Popular Shopping Ideas" [ref=e3033]:
+                    - link "Apply the filter 3 to narrow results" [ref=e3035] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003293678111%3A28239868031&dc&qid=1782114443&rnid=28239860031&ref=sr_nr_p_n_g-1003293678111_1&ds=v1%3ADhpjqfqKeOit0pJwM4%2Fa6MxuowrWSvMn1NYBsrobQ6M
+                      - checkbox [ref=e3038]
+                      - text: "3"
+              - group "Tuner Technology" [ref=e3040]:
+                - heading "Tuner Technology" [level=2] [ref=e3041]
+                - list "Tuner Technology" [ref=e3042]:
+                  - listitem "Popular Shopping Ideas" [ref=e3043]:
+                    - link "Apply the filter DVB-T2 to narrow results" [ref=e3045] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015678274111%3A203782426031&dc&qid=1782114443&rnid=203782418031&ref=sr_nr_p_n_g-101015678274111_1&ds=v1%3AYPOy1CmcBeOeW7ndE0I13XjBBYAix%2F5qmNOI5Bd01k8
+                      - checkbox [ref=e3048]
+                      - text: DVB-T2
+                  - listitem "Popular Shopping Ideas" [ref=e3050]:
+                    - link "Apply the filter NTSC to narrow results" [ref=e3052] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015678274111%3A203782432031&dc&qid=1782114443&rnid=203782418031&ref=sr_nr_p_n_g-101015678274111_2&ds=v1%3AJl1hlfTVHDsHYPLMjV0L4U72WEJ6WRoBb4D6JlV4m14
+                      - checkbox [ref=e3055]
+                      - text: NTSC
+              - group "Line Voltage" [ref=e3057]:
+                - heading "Line Voltage" [level=2] [ref=e3058]
+                - list "Line Voltage" [ref=e3059]:
+                  - listitem "Popular Shopping Ideas" [ref=e3060]:
+                    - link "Apply the filter 100-240 VAC 50-60 Hz to narrow results" [ref=e3062] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015503550111%3A100430800031&dc&qid=1782114443&rnid=100430799031&ref=sr_nr_p_n_g-101015503550111_1&ds=v1%3AWkF3qxsnFfLZE%2Bj%2FsbnNpSD51PmDps2tuhpQzdBXhq0
+                      - checkbox [ref=e3065]
+                      - text: 100-240 VAC 50-60 Hz
+              - group "Max Power Output" [ref=e3067]:
+                - heading "Max Power Output" [level=2] [ref=e3068]
+                - list "Max Power Output" [ref=e3069]:
+                  - listitem "Popular Shopping Ideas" [ref=e3070]:
+                    - link "Apply the filter 18 to 20 W to narrow results" [ref=e3072] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003523554111%3A56164441031&dc&qid=1782114443&rnid=56162820031&ref=sr_nr_p_n_g-1003523554111_1&ds=v1%3AAb5y2rqqkuS1OqlSd3%2FP%2F5qqnPCJl1KLVU6pyQqJEMk
+                      - checkbox [ref=e3075]
+                      - text: 18 to 20 W
+                  - listitem "Popular Shopping Ideas" [ref=e3077]:
+                    - link "Apply the filter 21 W & above to narrow results" [ref=e3079] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003523554111%3A56164439031&dc&qid=1782114443&rnid=56162820031&ref=sr_nr_p_n_g-1003523554111_2&ds=v1%3AWDGPcQpEqVyfonpFWkFOtweWuQCytqEQRV8KZlUyM5w
+                      - checkbox [ref=e3082]
+                      - text: 21 W & above
+              - group "Aspect Ratio" [ref=e3084]:
+                - heading "Aspect Ratio" [level=2] [ref=e3085]
+                - list "Aspect Ratio" [ref=e3086]:
+                  - listitem "Popular Shopping Ideas" [ref=e3087]:
+                    - link "Apply the filter 16:9 to narrow results" [ref=e3089] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015503032111%3A100436345031&dc&qid=1782114443&rnid=100436147031&ref=sr_nr_p_n_g-101015503032111_1&ds=v1%3ALMqvN2viKlW%2BZO0pT86OU7HUFcEh%2Fboce2KIJj3uJV4
+                      - checkbox [ref=e3092]
+                      - text: 16:9
+                  - listitem "Popular Shopping Ideas" [ref=e3094]:
+                    - link "Apply the filter 4:3 to narrow results" [ref=e3096] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015503032111%3A100436344031&dc&qid=1782114443&rnid=100436147031&ref=sr_nr_p_n_g-101015503032111_2&ds=v1%3AuCxQ6jSlSHufTRA7i0bSgJeVEVU6bgZ58lcls%2BnWMkY
+                      - checkbox [ref=e3099]
+                      - text: 4:3
+              - group "Screen Mirroring Technology" [ref=e3101]:
+                - heading "Screen Mirroring Technology" [level=2] [ref=e3102]
+                - list "Screen Mirroring Technology" [ref=e3103]:
+                  - listitem "Popular Shopping Ideas" [ref=e3104]:
+                    - link "Apply the filter Miracast to narrow results" [ref=e3106] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015501903111%3A100436385031&dc&qid=1782114443&rnid=100436148031&ref=sr_nr_p_n_g-101015501903111_1&ds=v1%3AJ8U9bnEPiXo4eHPMEMg7qHdGk2Xh1%2BaO%2FiygSHVKlhE
+                      - checkbox [ref=e3109]
+                      - text: Miracast
+                  - listitem "Popular Shopping Ideas" [ref=e3111]:
+                    - link "Apply the filter AirPlay to narrow results" [ref=e3113] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015501903111%3A100436384031&dc&qid=1782114443&rnid=100436148031&ref=sr_nr_p_n_g-101015501903111_2&ds=v1%3A%2BG4djlux8lcWXGi%2FRzfuqdn5kpes5kCU0L0BrLdVurE
+                      - checkbox [ref=e3116]
+                      - text: AirPlay
+                  - listitem "Popular Shopping Ideas" [ref=e3118]:
+                    - link "Apply the filter AirPlay 2 to narrow results" [ref=e3120] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015501903111%3A100436383031&dc&qid=1782114443&rnid=100436148031&ref=sr_nr_p_n_g-101015501903111_3&ds=v1%3AsLwwUc4hpJuNJYlaCKhzbXBWNIQX1X0YiAYa0bdkN%2B4
+                      - checkbox [ref=e3123]
+                      - text: AirPlay 2
+                  - listitem "Popular Shopping Ideas" [ref=e3125]:
+                    - link "Apply the filter Google Cast to narrow results" [ref=e3127] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015501903111%3A100436382031&dc&qid=1782114443&rnid=100436148031&ref=sr_nr_p_n_g-101015501903111_4&ds=v1%3AYoYfCFkWjVitfJpGw4jU6bHvK%2F0HZt8qLfC6LoEuZFk
+                      - checkbox [ref=e3130]
+                      - text: Google Cast
+                  - listitem "Popular Shopping Ideas" [ref=e3132]:
+                    - link "Apply the filter Smart View to narrow results" [ref=e3134] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015501903111%3A100436381031&dc&qid=1782114443&rnid=100436148031&ref=sr_nr_p_n_g-101015501903111_5&ds=v1%3Aw65%2BGTgEfCPYhN38%2F4iVuyGUT9I1VAa1KfA5C%2BWN%2FTY
+                      - checkbox [ref=e3137]
+                      - text: Smart View
+              - group "Display Backlight Configuration" [ref=e3139]:
+                - heading "Display Backlight Configuration" [level=2] [ref=e3140]
+                - list "Display Backlight Configuration" [ref=e3141]:
+                  - listitem "Popular Shopping Ideas" [ref=e3142]:
+                    - link "Apply the filter Direct LED to narrow results" [ref=e3144] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101017394918111%3A214884398031&dc&qid=1782114443&rnid=214884396031&ref=sr_nr_p_n_g-101017394918111_1&ds=v1%3A6mKx%2FMB50IEp4oHgeA9xTRJVIf9gZ6E2bGnBz8gHxfc
+                      - checkbox [ref=e3147]
+                      - text: Direct LED
+                  - listitem "Popular Shopping Ideas" [ref=e3149]:
+                    - link "Apply the filter Mini LED to narrow results" [ref=e3151] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101017394918111%3A214884399031&dc&qid=1782114443&rnid=214884396031&ref=sr_nr_p_n_g-101017394918111_2&ds=v1%3A%2B85Z1QjNCAxuu8a%2BxUqtYZFI2XJLdFqzA22w09nEhTM
+                      - checkbox [ref=e3154]
+                      - text: Mini LED
+              - group "Smart Home Compatibility" [ref=e3156]:
+                - heading "Smart Home Compatibility" [level=2] [ref=e3157]
+                - list "Smart Home Compatibility" [ref=e3158]:
+                  - listitem "Popular Shopping Ideas" [ref=e3159]:
+                    - link "Apply the filter Smart Home Compatible to narrow results" [ref=e3161] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101017806282111%3A219570189031&dc&qid=1782114443&rnid=219570188031&ref=sr_nr_p_n_g-101017806282111_1&ds=v1%3AuYRmFx347YZuE3gJ0QdKTvqPR%2FTdQLfETa9MFSG%2FxKU
+                      - checkbox [ref=e3164]
+                      - text: Smart Home Compatible
+              - group "Water Resistance Level" [ref=e3166]:
+                - heading "Water Resistance Level" [level=2] [ref=e3167]
+                - list "Water Resistance Level" [ref=e3168]:
+                  - listitem "Popular Shopping Ideas" [ref=e3169]:
+                    - link "Apply the filter Not Water Resistant to narrow results" [ref=e3171] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015502249111%3A100428917031&dc&qid=1782114443&rnid=100428895031&ref=sr_nr_p_n_g-101015502249111_1&ds=v1%3A0tWOx0C8WygFnAMrjigFtwgej7mfbTEnF%2BrXriL97is
+                      - checkbox [ref=e3174]
+                      - text: Not Water Resistant
+              - group "Voltage" [ref=e3176]:
+                - heading "Voltage" [level=2] [ref=e3177]
+                - list "Voltage" [ref=e3178]:
+                  - listitem "Popular Shopping Ideas" [ref=e3179]:
+                    - link "Apply the filter Up to 118 V to narrow results" [ref=e3181] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015502188111%3A100428912031&dc&qid=1782114443&rnid=100428894031&ref=sr_nr_p_n_g-101015502188111_1&ds=v1%3Ap7UC2twrfLH6zFc2X1HpiLk7sCHLyZgMMt50006a4M8
+                      - checkbox [ref=e3184]
+                      - text: Up to 118 V
+                  - listitem "Popular Shopping Ideas" [ref=e3186]:
+                    - link "Apply the filter 121 V & above to narrow results" [ref=e3188] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015502188111%3A100428914031&dc&qid=1782114443&rnid=100428894031&ref=sr_nr_p_n_g-101015502188111_2&ds=v1%3AkErl8MKVrWB9MII4AcqRJh0qC6ZD6lcAcCJzLqr7fy8
+                      - checkbox [ref=e3191]
+                      - text: 121 V & above
+              - group "Audio Output Mode" [ref=e3193]:
+                - heading "Audio Output Mode" [level=2] [ref=e3194]
+                - list "Audio Output Mode" [ref=e3195]:
+                  - listitem "Popular Shopping Ideas" [ref=e3196]:
+                    - link "Apply the filter Surround to narrow results" [ref=e3198] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015503279111%3A100430208031&dc&qid=1782114443&rnid=100430205031&ref=sr_nr_p_n_g-101015503279111_1&ds=v1%3AZQ%2F8Mu0XTswHRflbEtp9Borogm6VhdTypF9N%2BgBr1rw
+                      - checkbox [ref=e3201]
+                      - text: Surround
+              - group "Display Refresh Rate in Hertz" [ref=e3203]:
+                - heading "Display Refresh Rate in Hertz" [level=2] [ref=e3204]
+                - list "Display Refresh Rate in Hertz" [ref=e3205]:
+                  - listitem "Popular Shopping Ideas" [ref=e3206]:
+                    - link "Apply the filter 60 to narrow results" [ref=e3208] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101017397150111%3A214852212031&dc&qid=1782114443&rnid=214852198031&ref=sr_nr_p_n_g-101017397150111_1&ds=v1%3A3w0NBHwsmS2C%2FyVM2n2gGvl%2BIs0qcuu8W%2FUjeIVpeAI
+                      - checkbox [ref=e3211]
+                      - text: "60"
+                  - listitem "Popular Shopping Ideas" [ref=e3213]:
+                    - link "Apply the filter 120 to narrow results" [ref=e3215] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101017397150111%3A214852205031&dc&qid=1782114443&rnid=214852198031&ref=sr_nr_p_n_g-101017397150111_2&ds=v1%3AVSRLDMTqIQqIV2ZZYxuvB65aPWoXRKsNp7oo6AIgxOE
+                      - checkbox [ref=e3218]
+                      - text: "120"
+              - group "Purpose" [ref=e3220]:
+                - heading "Purpose" [level=2] [ref=e3221]
+                - list "Purpose" [ref=e3222]:
+                  - listitem "Popular Shopping Ideas" [ref=e3223]:
+                    - link "Apply the filter Streaming to narrow results" [ref=e3225] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101016695292111%3A207250417031&dc&qid=1782114443&rnid=207250416031&ref=sr_nr_p_n_g-101016695292111_1&ds=v1%3AlzZiKCW7VhUea%2BmlxsLuvpdIv2HJDCpNMNk0ePkG6Is
+                      - checkbox [ref=e3228]
+                      - text: Streaming
+                  - listitem "Popular Shopping Ideas" [ref=e3230]:
+                    - link "Apply the filter Video Gaming to narrow results" [ref=e3232] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101016695292111%3A210762002031&dc&qid=1782114443&rnid=207250416031&ref=sr_nr_p_n_g-101016695292111_2&ds=v1%3A6xl3rqCPBFld97xYNQQs4Q30RoY4nGyyAxxiQTBURi8
+                      - checkbox [ref=e3235]
+                      - text: Video Gaming
+                  - listitem "Popular Shopping Ideas" [ref=e3237]:
+                    - link "Apply the filter Video Conferencing to narrow results" [ref=e3239] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101016695292111%3A214313822031&dc&qid=1782114443&rnid=207250416031&ref=sr_nr_p_n_g-101016695292111_3&ds=v1%3AssTyCk4ZiffsVOTcZxMqu5NQTDqIai9VKNI9nXMessg
+                      - checkbox [ref=e3242]
+                      - text: Video Conferencing
+              - group "Width" [ref=e3244]:
+                - heading "Width" [level=2] [ref=e3245]
+                - list "Width" [ref=e3246]:
+                  - listitem "Popular Shopping Ideas" [ref=e3247]:
+                    - link "Apply the filter Up to 99 cm to narrow results" [ref=e3249] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506805111%3A100445442031&dc&qid=1782114443&rnid=100445371031&ref=sr_nr_p_n_g-101015506805111_1&ds=v1%3Agi%2F5VWxl46yyHIYy4BGD%2Bos%2BjqzTM1bKsZc7K9jicL4
+                      - checkbox [ref=e3252]
+                      - text: Up to 99 cm
+                  - listitem "Popular Shopping Ideas" [ref=e3254]:
+                    - link "Apply the filter 100 to 149 cm to narrow results" [ref=e3256] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506805111%3A100445441031&dc&qid=1782114443&rnid=100445371031&ref=sr_nr_p_n_g-101015506805111_2&ds=v1%3AStqcX8cf9K3z7OIwLsF%2FocpTLJ2Qhxlb8wR1fWAxD4A
+                      - checkbox [ref=e3259]
+                      - text: 100 to 149 cm
+                  - listitem "Popular Shopping Ideas" [ref=e3261]:
+                    - link "Apply the filter 150 cm & above to narrow results" [ref=e3263] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506805111%3A100445443031&dc&qid=1782114443&rnid=100445371031&ref=sr_nr_p_n_g-101015506805111_3&ds=v1%3AuLgDiNgY%2FWRuuxIefOU8dXYSoYEC5DmwSl5BjlU%2BQ%2BY
+                      - checkbox [ref=e3266]
+                      - text: 150 cm & above
+              - group "Depth" [ref=e3268]:
+                - heading "Depth" [level=2] [ref=e3269]
+                - list "Depth" [ref=e3270]:
+                  - listitem "Popular Shopping Ideas" [ref=e3271]:
+                    - link "Apply the filter Up to 24 cm to narrow results" [ref=e3273] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506708111%3A100445449031&dc&qid=1782114443&rnid=100445373031&ref=sr_nr_p_n_g-101015506708111_1&ds=v1%3A8S0znipXRd6WLRhZCxsgE68zB9a9Safm1jU7rAVMI4g
+                      - checkbox [ref=e3276]
+                      - text: Up to 24 cm
+                  - listitem "Popular Shopping Ideas" [ref=e3278]:
+                    - link "Apply the filter 25 to 29 cm to narrow results" [ref=e3280] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506708111%3A100445448031&dc&qid=1782114443&rnid=100445373031&ref=sr_nr_p_n_g-101015506708111_2&ds=v1%3AASPbV%2BlqolE34r2ElXQfe2fL12bc3PIHFLxbUg1q8lM
+                      - checkbox [ref=e3283]
+                      - text: 25 to 29 cm
+                  - listitem "Popular Shopping Ideas" [ref=e3285]:
+                    - link "Apply the filter 30 to 34 cm to narrow results" [ref=e3287] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506708111%3A100445451031&dc&qid=1782114443&rnid=100445373031&ref=sr_nr_p_n_g-101015506708111_3&ds=v1%3Aak72IKzvXm%2B5kW4gwrd3HMdKa3kdABYJJvZKtXWpYxk
+                      - checkbox [ref=e3290]
+                      - text: 30 to 34 cm
+                  - listitem "Popular Shopping Ideas" [ref=e3292]:
+                    - link "Apply the filter 35 cm & above to narrow results" [ref=e3294] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506708111%3A100445450031&dc&qid=1782114443&rnid=100445373031&ref=sr_nr_p_n_g-101015506708111_4&ds=v1%3AAX68LceUrObIPgD5%2FedVCz84nSvms330uP5YMTa%2BfOg
+                      - checkbox [ref=e3297]
+                      - text: 35 cm & above
+              - group "Surround Sound Format" [ref=e3299]:
+                - heading "Surround Sound Format" [level=2] [ref=e3300]
+                - list "Surround Sound Format" [ref=e3301]:
+                  - listitem "Popular Shopping Ideas" [ref=e3302]:
+                    - link "Apply the filter Dolby Atmos to narrow results" [ref=e3304] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101014967190111%3A90131140031&dc&qid=1782114443&rnid=90131108031&ref=sr_nr_p_n_g-101014967190111_1&ds=v1%3AE%2BtkoCCwhiObe4gD2xDdlhAi8aGVv05vRBVoWnbfxiY
+                      - checkbox [ref=e3307]
+                      - text: Dolby Atmos
+                  - listitem "Popular Shopping Ideas" [ref=e3309]:
+                    - link "Apply the filter Dolby Audio to narrow results" [ref=e3311] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101014967190111%3A90131136031&dc&qid=1782114443&rnid=90131108031&ref=sr_nr_p_n_g-101014967190111_2&ds=v1%3AubjH313RzPyLfpb5FrxJc3%2F95vUv%2BQbfYV1XISyg%2Bgc
+                      - checkbox [ref=e3314]
+                      - text: Dolby Audio
+              - group "Height" [ref=e3316]:
+                - heading "Height" [level=2] [ref=e3317]
+                - list "Height" [ref=e3318]:
+                  - listitem "Popular Shopping Ideas" [ref=e3319]:
+                    - link "Apply the filter Up to 69 cm to narrow results" [ref=e3321] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506821111%3A100445440031&dc&qid=1782114443&rnid=100445370031&ref=sr_nr_p_n_g-101015506821111_1&ds=v1%3Awrwr0wCCnEcZgd6i%2FsZuAHxlGBoYaZlC5Gck2AMeiMY
+                      - checkbox [ref=e3324]
+                      - text: Up to 69 cm
+                  - listitem "Popular Shopping Ideas" [ref=e3326]:
+                    - link "Apply the filter 70 to 84 cm to narrow results" [ref=e3328] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506821111%3A100445437031&dc&qid=1782114443&rnid=100445370031&ref=sr_nr_p_n_g-101015506821111_2&ds=v1%3AW0mWfBi5%2BhpiUnVsRz7lV6H6YkF%2BB2JJ0a4FDF7hIv4
+                      - checkbox [ref=e3331]
+                      - text: 70 to 84 cm
+                  - listitem "Popular Shopping Ideas" [ref=e3333]:
+                    - link "Apply the filter 85 to 99 cm to narrow results" [ref=e3335] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015506821111%3A100445438031&dc&qid=1782114443&rnid=100445370031&ref=sr_nr_p_n_g-101015506821111_3&ds=v1%3AJ17GAG7%2F4akQWW%2BtQYH248drMLDrJkGf9PZo4qmV%2BPM
+                      - checkbox [ref=e3338]
+                      - text: 85 to 99 cm
+              - group "Seller" [ref=e3340]:
+                - heading "Seller" [level=2] [ref=e3341]
+                - list "Seller" [ref=e3342]:
+                  - listitem "Popular Shopping Ideas" [ref=e3343]:
+                    - link "Apply the filter DAWNTECH ELECTRONICS PRIVATE LIMITED to narrow results" [ref=e3345] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_6%3AA3K8GDUW67973J&dc&qid=1782114443&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3AxVX%2B%2BA645uZ1tGe9KLIXBjrLGIZu2Y6hz2qBEk%2BtST0
+                      - checkbox [ref=e3348]
+                      - text: DAWNTECH ELECTRONICS PRIVATE LIMITED
+                  - listitem "Popular Shopping Ideas" [ref=e3350]:
+                    - link "Apply the filter Nitasha Enterprise to narrow results" [ref=e3352] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_6%3AA1DY7YTBD8J37L&dc&qid=1782114443&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3ALCPcvCooT8%2FzRMRHTTfQYq84Dg5FTSbHKUKIWGMIw7Q
+                      - checkbox [ref=e3355]
+                      - text: Nitasha Enterprise
+                  - listitem [ref=e3357]:
+                    - button "See more, Seller" [ref=e3360] [cursor=pointer]: See more
+              - group "Warranty Type" [ref=e3362]:
+                - heading "Warranty Type" [level=2] [ref=e3363]
+                - list "Warranty Type" [ref=e3364]:
+                  - listitem "Popular Shopping Ideas" [ref=e3365]:
+                    - link "Apply the filter Limited to narrow results" [ref=e3367] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-101015364782111%3A96329178031&dc&qid=1782114443&rnid=96329170031&ref=sr_nr_p_n_g-101015364782111_1&ds=v1%3AOcyPZm6Wz%2FC46DWx%2FPdkrsDsdGO4l2dSO1gwOMRmxvY
+                      - checkbox [ref=e3370]
+                      - text: Limited
+              - group "Mounting Type" [ref=e3372]:
+                - heading "Mounting Type" [level=2] [ref=e3373]
+                - list "Mounting Type" [ref=e3374]:
+                  - listitem "Popular Shopping Ideas" [ref=e3375]:
+                    - link "Apply the filter Wall Mount to narrow results" [ref=e3377] [cursor=pointer]:
+                      - /url: /s?k=samsung+tv+55+inch&rh=p_n_g-1003291775111%3A28215138031&dc&qid=1782114443&rnid=28215100031&ref=sr_nr_p_n_g-1003291775111_1&ds=v1%3AdXyFWLXzdivCfBHpq%2Fm0ifHNw0%2FCUCHOFM4ggD8d0b8
+                      - checkbox [ref=e3380]
+                      - text: Wall Mount
+            - generic [ref=e3385]:
+              - iframe [ref=e3386]
+              - button "Leave feedback on Sponsored advertisement" [ref=e3388] [cursor=pointer]:
+                - generic [ref=e3389]: Sponsored
+            - generic [ref=e3394]:
+              - iframe [ref=e3395]
+              - button "Leave feedback on Sponsored advertisement" [ref=e3397] [cursor=pointer]:
+                - generic [ref=e3398]: Sponsored
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=e3400]:
+    - button "Back to top" [ref=e3401] [cursor=pointer]:
+      - generic [ref=e3402]: Back to top
+    - generic [ref=e3403]:
+      - generic [ref=e3404]:
+        - heading "Get to Know Us" [level=6] [ref=e3405]
+        - list [ref=e3406]:
+          - listitem [ref=e3407]:
+            - link "About Amazon" [ref=e3408] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e3409]:
+            - link "Careers" [ref=e3410] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=e3411]:
+            - link "Press Releases" [ref=e3412] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e3413]:
+            - link "Amazon Science" [ref=e3414] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=e3416]:
+        - heading "Connect with Us" [level=6] [ref=e3417]
+        - list [ref=e3418]:
+          - listitem [ref=e3419]:
+            - link "Facebook" [ref=e3420] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=e3421]:
+            - link "Twitter" [ref=e3422] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=e3423]:
+            - link "Instagram" [ref=e3424] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=e3426]:
+        - heading "Make Money with Us" [level=6] [ref=e3427]
+        - list [ref=e3428]:
+          - listitem [ref=e3429]:
+            - link "Sell on Amazon" [ref=e3430] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=e3431]:
+            - link "Sell under Amazon Accelerator" [ref=e3432] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=e3433]:
+            - link "Protect and Build Your Brand" [ref=e3434] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=e3435]:
+            - link "Amazon Global Selling" [ref=e3436] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=e3437]:
+            - link "Supply to Amazon" [ref=e3438] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=e3439]:
+            - link "Become an Affiliate" [ref=e3440] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=e3441]:
+            - link "Fulfilment by Amazon" [ref=e3442] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=e3443]:
+            - link "Advertise Your Products" [ref=e3444] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=e3445]:
+            - link "Amazon Pay on Merchants" [ref=e3446] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=e3448]:
+        - heading "Let Us Help You" [level=6] [ref=e3449]
+        - list [ref=e3450]:
+          - listitem [ref=e3451]:
+            - link "Your Account" [ref=e3452] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=e3453]:
+            - link "Returns Centre" [ref=e3454] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=e3455]:
+            - link "Recalls and Product Safety Alerts" [ref=e3456] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=e3457]:
+            - link "100% Purchase Protection" [ref=e3458] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=e3459]:
+            - link "Amazon App Download" [ref=e3460] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=e3461]:
+            - link "Help" [ref=e3462] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=e3464]:
+      - link "Amazon India Home" [ref=e3467] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=e3470]:
+        - generic [ref=e3471]:
+          - link "Choose a language for shopping. Current selection is English." [ref=e3472] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=e3474]: English
+          - button "Expand to Change Language or Country" [ref=e3475] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=e3476] [cursor=pointer]:
+          - generic [ref=e3478]: India
+    - generic "More on Amazon" [ref=e3479]:
+      - generic "More on Amazon" [ref=e3480]:
+        - list [ref=e3481]:
+          - listitem [ref=e3482]:
+            - link "AbeBooks Books, art & collectibles" [ref=e3483] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=e3484]
+              - generic [ref=e3485]:
+                - text: Books, art
+                - text: "& collectibles"
+          - listitem [ref=e3486]
+          - listitem [ref=e3487]:
+            - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e3488] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=e3489]
+              - generic [ref=e3490]:
+                - text: Scalable Cloud
+                - text: Computing Services
+          - listitem [ref=e3491]
+          - listitem [ref=e3492]:
+            - link "Audible Download Audio Books" [ref=e3493] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=e3494]
+              - generic [ref=e3495]:
+                - text: Download
+                - text: Audio Books
+          - listitem [ref=e3496]
+          - listitem [ref=e3497]:
+            - link "IMDb Movies, TV & Celebrities" [ref=e3498] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=e3499]
+              - generic [ref=e3500]:
+                - text: Movies, TV
+                - text: "& Celebrities"
+        - list [ref=e3501]:
+          - listitem [ref=e3502]:
+            - link "Shopbop Designer Fashion Brands" [ref=e3503] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=e3504]
+              - generic [ref=e3505]:
+                - text: Designer
+                - text: Fashion Brands
+          - listitem [ref=e3506]
+          - listitem [ref=e3507]:
+            - link "Amazon Business Everything For Your Business" [ref=e3508] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=e3509]
+              - generic [ref=e3510]:
+                - text: Everything For
+                - text: Your Business
+          - listitem [ref=e3511]
+          - listitem [ref=e3512]:
+            - link "Amazon Music Stream millions of songs" [ref=e3513] [cursor=pointer]:
+              - /url: /music/player?ref=footer_apm
+              - heading "Amazon Music" [level=5] [ref=e3514]
+              - generic [ref=e3515]: Stream millions of songs
+          - listitem [ref=e3516]
+          - listitem [ref=e3517]
+    - generic [ref=e3518]:
+      - list [ref=e3519]:
+        - listitem [ref=e3520]:
+          - link "Conditions of Use & Sale" [ref=e3521] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=e3522]:
+          - link "Privacy Notice" [ref=e3523] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=e3524]:
+          - link "Interest-Based Ads" [ref=e3525] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=e3526]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=e3528]
+```
